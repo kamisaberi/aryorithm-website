@@ -1,4 +1,4 @@
-# https://themephi.net/template/aidoodleh/aidoodle/
+## https://themephi.net/template/aidoodleh/aidoodle/
 
 ## i have a domain name aryorithm.com that i want to create startup on it . and in have c++ 2 library  named xtorch that is libtorch extension and xInfer that is ternsorRT engine file hub and cusoton cuda. i want to create a website for aryorithm.com that introduce company and introduce xtorch and xInfer and create to section (my guess is 2 subdaim ) for each of libraries and their documenttation and usage andxInfer online cloud . what do you think
 
