@@ -5169,10 +5169,13 @@ Header CSS 01 Start
 .h2_work-area {
   position: relative;
   z-index: 1;
+
 }
 .h2_work-content-list {
   list-style: none;
   margin-bottom: 45px;
+  
+
 }
 .h2_work-content-list li {
   color: #1B2A52;
@@ -5181,9 +5184,11 @@ Header CSS 01 Start
   line-height: 24px;
   padding-left: 30px;
   margin-bottom: 12px;
+  margin-top: 12px;
   position: relative;
   z-index: 1;
 }
+
 .h2_work-content-list li::before {
   position: absolute;
   left: 0;
@@ -5192,13 +5197,47 @@ Header CSS 01 Start
   content: url("../../assets/images/work/home2/checkmark.png");
 }
 
-.h2_work-content-list li::after {
-  position: absolute;
-  left: 0;
-  top: calc(50% + 2px);
-  transform: translateY(-50%);
-  content: url("../../assets/images/work/home2/checkmark_white.png");
+
+
+.feature-area .h2_work-content-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+.feature-area .h2_work-content-list li{
+  position: relative;
+  padding-left: 28px;               
+}
+
+
+.feature-area .h2_work-content-list li::before,
+.feature-area .h2_work-content-list li::after{
+  content: "";
+  position: absolute;
+  left: 0;                         
+  top: 0.55em;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  transition: opacity .2s ease;
+}
+.feature-area .h2_work-content-list li::before{
+  background-image: url("/assets/images/work/home2/checkmark.png");
+  opacity: 1;
+}
+.feature-area .h2_work-content-list li::after{
+  background-image: url("/assets/images/work/home2/checkmark_white.png"); 
+  opacity: 0;
+}
+
+
+.feature-area .feature-item:hover .h2_work-content-list li::before { opacity: 0; }
+.feature-area .feature-item:hover .h2_work-content-list li::after  { opacity: 1; }
+
+.feature-area .feature-item:hover .h2_work-content-list li::before { opacity: 0; }
+.feature-area .feature-item:hover .h2_work-content-list li::after  { opacity: 1; }
 
 .h2_work-content-list li:last-child {
   margin-bottom: 0;
