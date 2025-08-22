@@ -5233,6 +5233,17 @@ Header CSS 01 Start
 }
 
 
+.feature-area .feature-item-2 .h2_work-content-list li::before{
+
+  background-image: url("/assets/images/work/home2/circle_x_gap_between_med_large_purple_thin2px.png");
+}
+
+.feature-area .feature-item-2 .h2_work-content-list li::after{
+  
+  background-image: url("/assets/images/work/home2/circle_x_gap_between_med_large_white_thin2px.png");
+}
+
+
 .feature-area .feature-item:hover .h2_work-content-list li::before { opacity: 0; }
 .feature-area .feature-item:hover .h2_work-content-list li::after  { opacity: 1; }
 
