@@ -5239,6 +5239,16 @@ Header CSS 01 Start
 .feature-area .feature-item:hover .h2_work-content-list li::before { opacity: 0; }
 .feature-area .feature-item:hover .h2_work-content-list li::after  { opacity: 1; }
 
+
+.feature-area .h2_work-content-list li {
+  transition: color .2s ease;
+}
+
+
+.feature-area .feature-item:hover .h2_work-content-list li {
+  color: #fff;
+}
+
 .h2_work-content-list li:last-child {
   margin-bottom: 0;
 }
