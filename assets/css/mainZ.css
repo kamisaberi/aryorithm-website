@@ -11720,4 +11720,25 @@ Header CSS 01 Start
   color: var(--clr-theme-primary);
 }
 
+
+.progress-wrap::after {
+    position: absolute;
+    content: '\f176';               
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;             
+    text-align: center;
+    line-height: 46px;
+    font-size: 20px;
+    color: #7D25EC;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
 /*# sourceMappingURL=main.css.map */
