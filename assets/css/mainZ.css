@@ -3402,6 +3402,8 @@ Header CSS 01 Start
 .h2_banner-area {
   position: relative;
   z-index: 1;
+  
+
 }
 .h2_banner-single {
   padding-top: 145px;
@@ -3585,6 +3587,12 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
+.h2_banner-bottom a{
+  margin-top: 20px;
+
+}
+
 @media (max-width: 1399px) {
   .h2_banner-bottom {
     margin-left: 150px;
