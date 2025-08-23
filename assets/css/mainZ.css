@@ -5177,6 +5177,7 @@ Header CSS 01 Start
 .h2_work-area {
   position: relative;
   z-index: 1;
+  background: #F2F8FD;
 
 }
 .h2_work-content-list {
