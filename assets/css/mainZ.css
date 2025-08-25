@@ -11738,7 +11738,7 @@ Header CSS 01 Start
     text-align: center;
     line-height: 46px;
     font-size: 20px;
-    color: #7D25EC;
+    color: #da0b0b;
     left: 0;
     top: 0;
     height: 46px;
@@ -11748,6 +11748,10 @@ Header CSS 01 Start
     z-index: 1;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
+}
+
+.progress-wrap .progress-circle path {
+  stroke: #da0b0b !important;
 }
 
 /*# sourceMappingURL=main.css.map */
