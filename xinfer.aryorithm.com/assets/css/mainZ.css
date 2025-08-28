@@ -5686,6 +5686,11 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
+.apps-area-chart {
+  position: relative;
+  z-index: 1;
+}
 .apps-icon {
   display: flex;
   align-items: center;
