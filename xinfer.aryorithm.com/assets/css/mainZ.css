@@ -4805,6 +4805,7 @@ Header CSS 01 Start
 07. choose
 /////////////////////////////////////////////////////////// */
 .choose-item {
+  min-height: 300px;
   border-radius: 10px;
   border: 1px solid rgba(27, 42, 82, 0.07);
   background: #FFF;
@@ -6376,6 +6377,7 @@ Header CSS 01 Start
 .h2_testimonial-pagination {
   margin-top: 2px;
 }
+
 
 .h2_testimonial-active.swiper .h2_testimonial-pagination span.swiper-pagination-bullet {
   margin: 0px 5px;
