@@ -2152,8 +2152,8 @@ Header CSS 01 Start
   z-index: 99;
 }
 .header-top {
-  background: linear-gradient(90deg, #EB42FA 0%, #7720FF 100%);
-  background: linear-gradient(90deg, #7720FF 0%, #EB42FA 100%);
+  background: linear-gradient(90deg, #da0b0b 0%, #da0b0b 100%);
+  background: linear-gradient(90deg, #da0b0b 0%, #da0b0b 100%);
   height: 40px;
   display: flex;
   align-items: center;
@@ -2317,13 +2317,13 @@ Header CSS 01 Start
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
-  background: linear-gradient(180deg, #9B1EFE 0%, #6917D0 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
   display: block;
   padding: 0 30px;
 }
 .header-action-btn:hover {
   color: #fff;
-  background: linear-gradient(180deg, #7D25EC 0%, #9425EC 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
 }
 
 /* ///////////////////////////////////////////////////////////
@@ -2771,7 +2771,7 @@ Header CSS 01 Start
   padding: 0 30px;
   gap: 8px;
   border-radius: 8px;
-  background: #7D25EC;
+  background: #da0b0b;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 .h4_header-action-btn:hover {
@@ -3094,7 +3094,7 @@ Header CSS 01 Start
   padding: 0 30px;
   gap: 8px;
   border-radius: 8px;
-  background: #7D25EC;
+  background: #da0b0b;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 @media (max-width: 1399px) {
@@ -3154,7 +3154,7 @@ Header CSS 01 Start
 /////////////////////////////////////////////////////////// */
 .theme-btn {
   border-radius: 50px;
-  background: linear-gradient(180deg, #9425EC 0%, #7D25EC 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
   color: #FFF;
   font-size: 14px;
   font-weight: 600;
@@ -3169,13 +3169,13 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .theme-btn:hover {
-  background: linear-gradient(180deg, #7D25EC 0%, #9425EC 100%);
+  background: linear-gradient(180deg, #aa0303 0%, #aa0303 100%);
   color: #fff;
 }
 
 .theme-btn-2 {
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425EC 0%, #7D25EC 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
   color: #FFF;
   font-size: 14px;
   font-weight: 600;
@@ -3190,7 +3190,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .theme-btn-2:hover {
-  background: linear-gradient(180deg, #7D25EC 0%, #9425EC 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
   color: #fff;
 }
 
@@ -3247,7 +3247,7 @@ Header CSS 01 Start
   background: rgba(125, 37, 236, 0.1);
   box-shadow: 0px 2px 4px 0px rgba(27, 42, 82, 0.2);
   display: inline-block;
-  color: #7D25EC;
+  color: #da0b0b;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -3442,7 +3442,7 @@ Header CSS 01 Start
   }
 }
 .h2_banner-content-subtitle {
-  color: #7D25EC;
+  color: #da0b0b;
   font-size: 18px;
   font-weight: 400;
   display: block;
@@ -3650,7 +3650,7 @@ Header CSS 01 Start
 }
 .h2_banner-form form button {
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425EC 0%, #7D25EC 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
   border: none;
   color: #FFF;
   font-size: 14px;
@@ -3711,7 +3711,7 @@ Header CSS 01 Start
   }
 }
 .h3_banner-content-subtitle {
-  color: #7D25EC;
+  color: #da0b0b;
   display: block;
   font-size: 16px;
   font-weight: 500;
@@ -3779,7 +3779,7 @@ Header CSS 01 Start
   display: block;
   flex-shrink: 0;
   border-radius: 8px;
-  background: #7D25EC;
+  background: #da0b0b;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 .h3_banner-form form button i {
@@ -4153,7 +4153,7 @@ Header CSS 01 Start
 }
 .h4_banner-form form button {
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425EC 0%, #7D25EC 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
   border: none;
   color: #FFF;
   font-size: 14px;
@@ -4345,7 +4345,7 @@ Header CSS 01 Start
   display: block;
   flex-shrink: 0;
   border-radius: 8px;
-  background: #7D25EC;
+  background: #da0b0b;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 .h5_banner-form form button i {
@@ -4631,7 +4631,7 @@ Header CSS 01 Start
 }
 
 .h2_section-subtitle {
-  color: #7D25EC;
+  color: #da0b0b;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -4735,7 +4735,7 @@ Header CSS 01 Start
 }
 
 .inner_section-subtitle {
-  color: #7D25EC;
+  color: #da0b0b;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -5177,6 +5177,7 @@ Header CSS 01 Start
 .h2_work-area {
   position: relative;
   z-index: 1;
+  background: #F2F8FD;
 
 }
 .h2_work-content-list {
@@ -5203,6 +5204,7 @@ Header CSS 01 Start
   top: calc(50% + 2px);
   transform: translateY(-50%);
   content: url("../../assets/images/work/home2/checkmark.png");
+  filter: brightness(0) saturate(100%) invert(12%) sepia(97%) saturate(6347%) hue-rotate(357deg) brightness(95%) contrast(107%);
 }
 
 
@@ -5473,7 +5475,7 @@ Header CSS 01 Start
   content: "+";
   width: 100%;
   height: 100%;
-  background-color: rgba(125, 37, 236, 0.5);
+  background-color: rgb(218, 11, 11);
   z-index: 1;
   display: flex;
   align-items: center;
@@ -5504,17 +5506,17 @@ Header CSS 01 Start
 }
 .h3_work-top-btn a {
   border-radius: 8px;
-  border: 1px solid #7D25EC;
+  border: 1px solid #da0b0b;
   height: 44px;
   padding: 0 30px;
-  color: #7D25EC;
+  color: #da0b0b;
   font-size: 14px;
   font-weight: 600;
   display: flex;
   align-items: center;
 }
 .h3_work-top-btn a:hover {
-  background-color: #7D25EC;
+  background-color: #da0b0b;
   color: #fff;
 }
 
@@ -5576,7 +5578,7 @@ Header CSS 01 Start
 .h5_work-navigation div:hover {
   border-color: transparent;
   color: #fff;
-  background: #7D25EC;
+  background: #da0b0b;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 @media (max-width: 575px) {
@@ -5629,7 +5631,7 @@ Header CSS 01 Start
   width: 105px;
 }
 .inner_work-item-number h3 {
-  color: #7D25EC;
+  color: #da0b0b;
   font-size: 36px;
   font-weight: 500;
   line-height: 1.44;
@@ -5757,7 +5759,7 @@ Header CSS 01 Start
   text-transform: uppercase;
   display: inline-block;
   border-radius: 0px 0px 8px 8px;
-  background: #7D25EC;
+  background: #da0b0b;
   padding: 0 12px;
   height: 24px;
   line-height: 24px;
@@ -11737,7 +11739,7 @@ Header CSS 01 Start
     text-align: center;
     line-height: 46px;
     font-size: 20px;
-    color: #7D25EC;
+    color: #da0b0b;
     left: 0;
     top: 0;
     height: 46px;
@@ -11747,6 +11749,10 @@ Header CSS 01 Start
     z-index: 1;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
+}
+
+.progress-wrap .progress-circle path {
+  stroke: #da0b0b !important;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -2152,8 +2152,8 @@ Header CSS 01 Start
   z-index: 99;
 }
 .header-top {
-  background: linear-gradient(90deg, #EB42FA 0%, #7720FF 100%);
-  background: linear-gradient(90deg, #7720FF 0%, #EB42FA 100%);
+  background: linear-gradient(90deg, #da0b0b 0%, #da0b0b 100%);
+  background: linear-gradient(90deg, #da0b0b 0%, #da0b0b 100%);
   height: 40px;
   display: flex;
   align-items: center;
@@ -2317,13 +2317,13 @@ Header CSS 01 Start
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
-  background: linear-gradient(180deg, #9B1EFE 0%, #6917D0 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
   display: block;
   padding: 0 30px;
 }
 .header-action-btn:hover {
   color: #fff;
-  background: linear-gradient(180deg, #da0b0b 0%, #9425EC 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
 }
 
 /* ///////////////////////////////////////////////////////////
@@ -2576,7 +2576,7 @@ Header CSS 01 Start
   display: block;
   padding: 0 30px;
   border-radius: 8px;
-  background: #da0b0b;
+  background: #7D25EC;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 @media (max-width: 1199px) {
@@ -3154,7 +3154,7 @@ Header CSS 01 Start
 /////////////////////////////////////////////////////////// */
 .theme-btn {
   border-radius: 50px;
-  background: linear-gradient(180deg, #9425EC 0%, #da0b0b 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
   color: #FFF;
   font-size: 14px;
   font-weight: 600;
@@ -3169,13 +3169,13 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .theme-btn:hover {
-  background: linear-gradient(180deg, #da0b0b 0%, #9425EC 100%);
+  background: linear-gradient(180deg, #aa0303 0%, #aa0303 100%);
   color: #fff;
 }
 
 .theme-btn-2 {
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425EC 0%, #da0b0b 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
   color: #FFF;
   font-size: 14px;
   font-weight: 600;
@@ -3190,7 +3190,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .theme-btn-2:hover {
-  background: linear-gradient(180deg, #da0b0b 0%, #9425EC 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
   color: #fff;
 }
 
@@ -3650,7 +3650,7 @@ Header CSS 01 Start
 }
 .h2_banner-form form button {
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425EC 0%, #da0b0b 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
   border: none;
   color: #FFF;
   font-size: 14px;
@@ -4153,7 +4153,7 @@ Header CSS 01 Start
 }
 .h4_banner-form form button {
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425EC 0%, #da0b0b 100%);
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
   border: none;
   color: #FFF;
   font-size: 14px;
@@ -5177,6 +5177,7 @@ Header CSS 01 Start
 .h2_work-area {
   position: relative;
   z-index: 1;
+  background: #F2F8FD;
 
 }
 .h2_work-content-list {
@@ -5203,6 +5204,7 @@ Header CSS 01 Start
   top: calc(50% + 2px);
   transform: translateY(-50%);
   content: url("../../assets/images/work/home2/checkmark.png");
+  filter: brightness(0) saturate(100%) invert(12%) sepia(97%) saturate(6347%) hue-rotate(357deg) brightness(95%) contrast(107%);
 }
 
 
@@ -5473,7 +5475,7 @@ Header CSS 01 Start
   content: "+";
   width: 100%;
   height: 100%;
-  background-color: rgba(125, 37, 236, 0.5);
+  background-color: rgb(218, 11, 11);
   z-index: 1;
   display: flex;
   align-items: center;
@@ -5835,7 +5837,7 @@ Header CSS 01 Start
   margin-bottom: 15px;
 }
 .price-item-offer {
-  color: #da0b0b;
+  color: #7D25EC;
   text-align: center;
   font-size: 13px;
   font-weight: 500;
@@ -5935,7 +5937,7 @@ Header CSS 01 Start
 }
 .price-item.active {
   border-radius: 14px;
-  border: 1.5px solid #da0b0b;
+  border: 1.5px solid #7D25EC;
   background: #FFF;
   box-shadow: 0px 10px 30px 0px rgba(27, 42, 82, 0.07);
 }
@@ -6163,7 +6165,7 @@ Header CSS 01 Start
 }
 .h3_price-tab ul.nav .nav-item .nav-link.active {
   border-radius: 50px;
-  background: #da0b0b;
+  background: #7D25EC;
   color: #fff;
 }
 
@@ -6643,7 +6645,7 @@ Header CSS 01 Start
 }
 .blog-content-meta a {
   border-radius: 40px;
-  background: #da0b0b;
+  background: #7D25EC;
   display: block;
   color: #fff;
   font-size: 13px;
@@ -6713,7 +6715,7 @@ Header CSS 01 Start
   z-index: 1;
 }
 .h2_blog-content-meta span a {
-  color: #da0b0b;
+  color: #7D25EC;
   text-transform: uppercase;
 }
 .h2_blog-content-meta span i {
@@ -6749,7 +6751,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .h2_blog-content-title:hover a {
-  color: #da0b0b;
+  color: #7D25EC;
 }
 
 .h2_blog-active.swiper .h2_blog-pagination span.swiper-pagination-bullet {
@@ -6822,7 +6824,7 @@ Header CSS 01 Start
   text-transform: uppercase;
 }
 .h3_blog-date b {
-  color: #da0b0b;
+  color: #7D25EC;
   text-align: center;
   font-size: 26px;
   font-weight: 700;
@@ -6846,7 +6848,7 @@ Header CSS 01 Start
   left: 30px;
   top: -14px;
   border-radius: 8px;
-  background: #da0b0b;
+  background: #7D25EC;
   display: block;
   height: 28px;
   color: #FFF;
@@ -6952,7 +6954,7 @@ Header CSS 01 Start
   width: 5px;
   content: "";
   border-radius: 6px 0px 0px 0px;
-  background: #da0b0b;
+  background: #7D25EC;
 }
 @media (max-width: 991px) {
   .blog_details-meta-box {
@@ -6975,7 +6977,7 @@ Header CSS 01 Start
   gap: 8px;
 }
 .blog_details-meta span:first-child {
-  color: #da0b0b;
+  color: #7D25EC;
   text-transform: uppercase;
 }
 .blog_details-meta span:not(:last-child) {
@@ -7088,7 +7090,7 @@ Header CSS 01 Start
 }
 .blog_details-content blockquote span {
   display: block;
-  color: #da0b0b;
+  color: #7D25EC;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -7308,7 +7310,7 @@ Header CSS 01 Start
 .blog_details-bottom .post-comments-btn button {
   border: none;
   border-radius: 8px;
-  background: #da0b0b;
+  background: #7D25EC;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
   height: 46px;
   display: flex;
@@ -7351,7 +7353,7 @@ Header CSS 01 Start
   width: 100px;
   height: 1px;
   content: "";
-  background-color: #da0b0b;
+  background-color: #7D25EC;
 }
 .blog_details-widget-search {
   position: relative;
@@ -7378,7 +7380,7 @@ Header CSS 01 Start
   height: 47px;
   border: none;
   border-radius: 10px;
-  background: #da0b0b;
+  background: #7D25EC;
   color: #fff;
   font-size: 15px;
   display: flex;
@@ -7436,7 +7438,7 @@ Header CSS 01 Start
   width: 100%;
   border: none;
   border-radius: 8px;
-  background: #da0b0b;
+  background: #7D25EC;
   height: 46px;
   display: flex;
   align-items: center;
@@ -8098,7 +8100,7 @@ Header CSS 01 Start
 .h4_service-navigation div:hover {
   border-color: transparent;
   color: #fff;
-  background: #da0b0b;
+  background: #7D25EC;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 @media (max-width: 575px) {
@@ -8572,7 +8574,7 @@ Header CSS 01 Start
   transition: all 0.4s linear 0s;
 }
 .h5_shop-img-icon a:hover {
-  background: #da0b0b;
+  background: #7D25EC;
   color: #fff;
 }
 .h5_shop-img-icon a:first-child {
@@ -8834,7 +8836,7 @@ Header CSS 01 Start
 }
 .shop_details-action-cart {
   border-radius: 8px;
-  background: #da0b0b;
+  background: #7D25EC;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -8861,7 +8863,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .shop_details-action-buy:hover {
-  background: #da0b0b;
+  background: #7D25EC;
   color: #fff;
 }
 .shop_details-action-box {
@@ -8910,7 +8912,7 @@ Header CSS 01 Start
   font-weight: 500;
 }
 .shop_details-action-2 a:hover {
-  color: #da0b0b;
+  color: #7D25EC;
 }
 .shop_details-action-2 a i {
   font-size: 16px;
@@ -9141,7 +9143,7 @@ Header CSS 01 Start
 }
 .shop_details-form-item button {
   border-radius: 8px;
-  background: #da0b0b;
+  background: #7D25EC;
   display: flex;
   align-items: center;
   height: 46px;
@@ -9426,7 +9428,7 @@ Header CSS 01 Start
   border-radius: 50%;
 }
 .breadcrumb-list span {
-  color: #da0b0b;
+  color: #7D25EC;
   font-size: 17px;
   font-weight: 500;
   line-height: 25px;
@@ -9755,7 +9757,7 @@ Header CSS 01 Start
   padding: 35px 30px 35px;
 }
 .inner_portfolio-content-tag {
-  color: #da0b0b;
+  color: #7D25EC;
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
@@ -9921,7 +9923,7 @@ Header CSS 01 Start
 }
 .wishlist-coupon button {
   border-radius: 10px;
-  background: #da0b0b;
+  background: #7D25EC;
   height: 46px;
   color: #fff;
   font-size: 14px;
@@ -9951,7 +9953,7 @@ Header CSS 01 Start
 }
 .wishlist-cart a {
   border-radius: 10px;
-  background: #da0b0b;
+  background: #7D25EC;
   height: 46px;
   color: #fff;
   font-size: 14px;
@@ -9985,7 +9987,7 @@ Header CSS 01 Start
   }
 }
 .login-content-subtitle {
-  color: #da0b0b;
+  color: #7D25EC;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
@@ -10015,7 +10017,7 @@ Header CSS 01 Start
   margin-bottom: 0;
 }
 .login-content-link p a {
-  color: #da0b0b;
+  color: #7D25EC;
 }
 .login-content-account {
   display: flex;
@@ -10077,7 +10079,7 @@ Header CSS 01 Start
   width: 100%;
   border: none;
   border-radius: 10px;
-  background: #da0b0b;
+  background: #7D25EC;
   height: 46px;
   line-height: 46px;
   color: #fff;
@@ -10121,7 +10123,7 @@ Header CSS 01 Start
   }
 }
 .login-condition a {
-  color: #da0b0b;
+  color: #7D25EC;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
@@ -10306,7 +10308,7 @@ Header CSS 01 Start
   width: 100%;
   border: none;
   border-radius: 8px;
-  background: #da0b0b;
+  background: #7D25EC;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
   height: 46px;
   display: flex;
@@ -10475,7 +10477,7 @@ Header CSS 01 Start
 }
 .checkout-top-item span {
   border-radius: 8px;
-  background: #da0b0b;
+  background: #7D25EC;
   height: 32px;
   width: 32px;
   display: flex;
@@ -10532,7 +10534,7 @@ Header CSS 01 Start
   width: 100%;
   border: none;
   border-radius: 8px;
-  background: #da0b0b;
+  background: #7D25EC;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
   height: 46px;
   display: flex;
@@ -10601,13 +10603,13 @@ Header CSS 01 Start
   margin-bottom: 35px;
 }
 .checkout-payment-text p a {
-  color: #da0b0b;
+  color: #7D25EC;
   text-decoration: underline;
   display: inline-block;
 }
 .checkout-payment-btn {
   border-radius: 10px;
-  background: #da0b0b;
+  background: #7D25EC;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10781,7 +10783,7 @@ Header CSS 01 Start
 }
 .cart-coupon button {
   border-radius: 10px;
-  background: #da0b0b;
+  background: #7D25EC;
   height: 46px;
   color: #fff;
   font-size: 14px;
@@ -10838,7 +10840,7 @@ Header CSS 01 Start
 }
 .cart-order-btn {
   border-radius: 10px;
-  background: #da0b0b;
+  background: #7D25EC;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10853,7 +10855,7 @@ Header CSS 01 Start
 
 .disable-cart-btn {
   border-radius: 10px;
-  background: #da0b0b;
+  background: #7D25EC;
   height: 46px;
   color: #fff;
   font-size: 14px;
@@ -11189,7 +11191,7 @@ Header CSS 01 Start
   top: 50%;
   transform: translateY(-50%);
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425EC 0%, #da0b0b 100%);
+  background: linear-gradient(180deg, #9425EC 0%, #7D25EC 100%);
   height: 44px;
   border: none;
   padding: 0 32px;
@@ -11443,7 +11445,7 @@ Header CSS 01 Start
   font-size: 14px;
 }
 .h4_footer-widget-social a:hover {
-  background: #da0b0b;
+  background: #7D25EC;
   color: #fff;
   border-color: transparent;
 }
@@ -11596,7 +11598,7 @@ Header CSS 01 Start
   font-size: 14px;
 }
 .h5_footer-widget-social a:hover {
-  background: #da0b0b;
+  background: #7D25EC;
   color: #fff;
   border-color: transparent;
 }
@@ -11652,7 +11654,7 @@ Header CSS 01 Start
   top: 50%;
   transform: translateY(-50%);
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425EC 0%, #da0b0b 100%);
+  background: linear-gradient(180deg, #9425EC 0%, #7D25EC 100%);
   height: 44px;
   border: none;
   padding: 0 32px;
@@ -11666,7 +11668,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .h5_footer-widget form button:hover {
-  background: linear-gradient(180deg, #e20de6 0%, #da0b0b 100%);
+  background: linear-gradient(180deg, #e20de6 0%, #E825EC 100%);
 }
 @media (max-width: 480px) {
   .h5_footer-widget form button {
@@ -11747,6 +11749,10 @@ Header CSS 01 Start
     z-index: 1;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
+}
+
+.progress-wrap .progress-circle path {
+  stroke: #da0b0b !important;
 }
 
 /*# sourceMappingURL=main.css.map */
