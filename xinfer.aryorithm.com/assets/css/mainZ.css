@@ -4948,6 +4948,36 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
+.feature-item .choose-item-content-btn {
+  color: #1B2A52;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.feature-item:hover .choose-item-content-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.feature-item .choose-item-content-btn:hover {
+  color: #fff;
+}
+
+.feature-item .choose-item-content-btn{
+  color: #1B2A52;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .feature-item-1::after {
   position: absolute;
   right: -84px;
@@ -4982,6 +5012,8 @@ Header CSS 01 Start
 .feature-item:hover p {
   color: rgba(255, 255, 255, 0.8);
 }
+
+
 
 .feature-left-img {
   margin-right: 30px;
