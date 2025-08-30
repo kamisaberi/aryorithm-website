@@ -1,139 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://your-username.github.io/xinfer/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/installation/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/installation/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/quickstart/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/quickstart/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/concepts/philosophy/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/concepts/philosophy/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/concepts/workflow/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/concepts/workflow/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/core-api/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/core-api/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/core-api/builders/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/core-api/builders/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/core-api/engine/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/core-api/engine/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/core-api/postproc/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/core-api/postproc/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/core-api/preproc/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/core-api/preproc/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/guides/building-engines/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/guides/building-engines/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/guides/custom-pipelines/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/guides/custom-pipelines/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/guides/int8-quantization/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/guides/int8-quantization/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/hub/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/hub/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/hub/usage/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/hub/usage/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/audio/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/audio/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/document/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/document/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/drones/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/drones/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/dsp/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/dsp/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/gaming/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/gaming/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/generative/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/generative/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/geospatial/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/geospatial/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/hft/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/hft/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/medical/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/medical/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/nlp/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/nlp/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/retail/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/retail/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/rl/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/rl/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/robotics/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/robotics/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/special/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/special/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/telecom/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/telecom/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/threed/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/threed/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/timeseries/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/timeseries/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
     <url>
-         <loc>https://your-username.github.io/xinfer/zoo-api/vision/</loc>
+         <loc>https://xinfer.aryorithm.com/docs/zoo-api/vision/</loc>
          <lastmod>2025-08-30</lastmod>
     </url>
 </urlset>
