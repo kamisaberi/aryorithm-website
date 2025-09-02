@@ -1304,4 +1304,148 @@ These pages must clearly separate the C++ Library from the Cloud API.
 |                                                                    |
 +--------------------------------------------------------------------+```
 
+```
+---
 
+
+Excellent decision. Structuring the `/hub` section of your `xinfer.aryorithm.com` site correctly is key to making your cloud service and engine downloads a success.
+
+Here are the visual schematics for the key pages within `xinfer.aryorithm.com/hub`.
+
+---
+
+### **1. Page: `xinfer.aryorithm.com/hub` (The Landing Page)**
+
+**Purpose:** This is the main "sales" page for your cloud service and engine downloads. It needs to clearly explain the value of both offerings and guide users to the right place.
+
+```
++--------------------------------------------------------------------+
+| Header (XInfer Logo, Docs, Hub, GitHub, [Log In / Dashboard])      |
++--------------------------------------------------------------------+
+|                                                                    |
+|                        [ HERO SECTION ]                            |
+|                                                                    |
+|    Brand Name: Ignition Hub                                        |
+|    Headline: Your Engine Room for Production AI.                   |
+|    Sub-headline: Access pre-built TensorRT engines or deploy      |
+|                  your own on our high-speed inference cloud.       |
+|                                                                    |
+|    [ Browse Engines ]      [ Get Your API Key ]                    |
+|                                                                    |
++--------------------------------------------------------------------+
+|                                                                    |
+|              [ TWO POWERFUL OFFERINGS SECTION ]                    |
+|                                                                    |
+|   +--------------------------+   +--------------------------+      |
+|   | FOR INSTANT RESULTS      |   | FOR CUSTOM MODELS        |      |
+|   | The Engine Library       |   | The Inference Cloud      |      |
+|   |                          |   |                          |      |
+|   |  Download optimized,     |   |  Upload any TensorRT     |      |
+|   |  production-ready engine |   |  engine and get a secure,|      |
+|   |  files for popular models|   |  scalable REST API.      |      |
+|   |                          |   |                          |      |
+|   |  [ Go to Library ]       |   |  [ View Cloud Docs ]     |      |
+|   +--------------------------+   +--------------------------+      |
+|                                                                    |
++--------------------------------------------------------------------+
+|                                                                    |
+|                     [ HOW THE CLOUD WORKS ]                        |
+|                                                                    |
+|   [1. Upload .engine] -> [2. Get API Key] -> [3. Make Request]     |
+|   (A simple 3-step graphic with short descriptions)                |
+|                                                                    |
++--------------------------------------------------------------------+
+|                                                                    |
+|                    [ PRICING SECTION ]                             |
+|                                                                    |
+|   A simple, clear table showing your pricing tiers (e.g., Free,   |
+|   Pro, Enterprise) for the Cloud API service.                      |
+|                                                                    |
+|   [ Sign Up for Free ]                                             |
+|                                                                    |
++--------------------------------------------------------------------+
+|                           [ FOOTER ]                               |
++--------------------------------------------------------------------+
+```
+
+---
+
+### **2. Page: `xinfer.aryorithm.com/hub/engines` (The Download Library)**
+
+**Purpose:** A clean, searchable, and filterable interface for developers to find and download pre-built engine files.
+
+```
++--------------------------------------------------------------------+
+| Header (XInfer Logo, Docs, Hub, GitHub, [Log In / Dashboard])      |
++--------------------------------------------------------------------+
+|                                                                    |
+|                    [ ENGINE LIBRARY HEADER ]                       |
+|    Headline: Production-Ready TensorRT Engines                     |
+|    Sub-headline: Optimized for various hardware and ready to deploy.|
+|                                                                    |
++--------------------------------------------------------------------+
+|                                                                    |
+|                  [ FILTER & SEARCH CONTROLS ]                      |
+|                                                                    |
+| +-----------------+  +-----------------+  +----------------------+ |
+| | Category:       |  | Precision:      |  | Search:               | |
+| | [All ▼]         |  | [All ▼]         |  | [ Enter model name ] | |
+| |  - Vision        |  |  - FP32         |  +----------------------+ |
+| |  - NLP           |  |  - FP16         |                           |
+| |                  |  |  - INT8         |                           |
+| +-----------------+  +-----------------+                           |
+|                                                                    |
++--------------------------------------------------------------------+
+|                                                                    |
+|                         [ ENGINE LISTING ]                         |
+|                                                                    |
+| +----------------------------------------------------------------+ |
+| | ResNet-50 | [Vision] [FP16] | Optimized for Jetson Nano. [Download] |
+| +----------------------------------------------------------------+ |
+| | BERT-Base | [NLP] [INT8] | For high-throughput servers. [Download] |
+| +----------------------------------------------------------------+ |
+| | YOLOv5s | [Vision] [FP32] | General purpose object detection. [Download] |
+| +----------------------------------------------------------------+ |
+| | ... (more engine cards) ...                                    | |
+|                                                                    |
++--------------------------------------------------------------------+
+|                           [ FOOTER ]                               |
++--------------------------------------------------------------------+
+```
+
+---
+
+### **3. Page: `xinfer.aryorithm.com/hub/dashboard` (User's Main Page)**
+
+**Purpose:** This is the mission control for a logged-in user. It must provide quick access to their API key, model management, and usage stats.
+
+```
++--------------------------------------------------------------------+
+| Header (XInfer Logo, Docs, Hub, GitHub, [Account/Logout])          |
++--------------------------------------------------------------------+
+| +--------------------+                                             |
+| | [SIDE NAV]         |         [ MAIN DASHBOARD CONTENT ]          |
+| |                    |                                             |
+| | - Dashboard Home   | # Welcome, [User Name]!                     |
+| | - My Models        |                                             |
+| | - API Keys         | +-----------------------------------------+ |
+| | - Billing          | | USAGE THIS MONTH                        | |
+| | - Settings         | | [ Progress bar: 34,120 / 100,000 ]      | |
+| +--------------------+ +-----------------------------------------+ |
+|                        |                                             |
+|                        | ## Quick Actions                          |
+|                        |                                             |
+|                        | [ Upload New Model + ] [ View API Keys ] |
+|                        |                                             |
+|                        | ## Your Deployed Models                   |
+|                        |                                             |
+|                        | +---------------------------------------+ |
+|                        | | my-resnet-model | Status: Active | Manage |
+|                        | +---------------------------------------+ |
+|                        | | yolo-detector | Status: Active | Manage |
+|                        | +---------------------------------------+ |
+|                        |                                             |
++--------------------------------------------------------------------+
+```
+
+This structure creates a self-contained, powerful "app within a site" at the `/hub` path, giving your Ignition-Hub brand a clear home without confusing the user's journey.
