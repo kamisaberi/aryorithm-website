@@ -9429,7 +9429,7 @@ Header CSS 01 Start
   border-radius: 50%;
 }
 .breadcrumb-list span {
-  color: #7D25EC;
+  color: #da0b0b;
   font-size: 17px;
   font-weight: 500;
   line-height: 25px;
@@ -9670,6 +9670,7 @@ Header CSS 01 Start
   background: linear-gradient(180deg, #F8FAFF 0%, rgba(248, 250, 255, 0) 100%);
 }
 .inner_team_member-img {
+ 
   border-radius: 14px;
   overflow: hidden;
   position: relative;
@@ -9677,7 +9678,9 @@ Header CSS 01 Start
   margin-bottom: 25px;
 }
 .inner_team_member-img img {
+  height: 277px;
   width: 100%;
+  object-fit: cover;
 }
 .inner_team_member-social {
   position: absolute;
