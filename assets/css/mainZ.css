@@ -9590,6 +9590,13 @@ Header CSS 01 Start
   z-index: 1;
   text-align: center;
 }
+
+.inner_team-img img {
+  width:350px ;
+  height: 360px;
+  object-fit: cover;
+}
+
 .inner_team-img-shape {
   position: absolute;
   left: 50%;
