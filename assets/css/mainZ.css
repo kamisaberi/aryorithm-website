@@ -9595,6 +9595,7 @@ Header CSS 01 Start
   width:350px ;
   height: 360px;
   object-fit: cover;
+  border-radius: 15px;
 }
 
 .inner_team-img-shape {
