@@ -4520,7 +4520,7 @@ Header CSS 01 Start
 05. about
 /////////////////////////////////////////////////////////// */
 .h2_about-img {
-  margin-right: 45px;
+  margin-right: 10px;
   position: relative;
   z-index: 1;
   padding-bottom: 110px;
@@ -5097,7 +5097,7 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
-.inner_feature-content-list li::before {
+.inner_feature-content .h2_work-content-list li::before {
   position: absolute;
   left: 0;
   top: calc(50% + 2px);
@@ -5108,7 +5108,7 @@ Header CSS 01 Start
   margin-bottom: 0;
 }
 .inner_feature-img {
-  margin-left: 30px;
+  margin-left: 100px;
 }
 .inner_feature-img img {
   width: 100%;
