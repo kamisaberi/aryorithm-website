@@ -6925,6 +6925,9 @@ Header CSS 01 Start
   z-index: 1;
 }
 .blog_details-img img {
+  width: 730px;
+  height: 368px;
+  object-fit: cover;
   border-radius: 14px 14px 0px 0px;
 }
 .blog_details-meta {
