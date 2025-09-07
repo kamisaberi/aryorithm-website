@@ -6955,7 +6955,7 @@ Header CSS 01 Start
   width: 5px;
   content: "";
   border-radius: 6px 0px 0px 0px;
-  background: #7D25EC;
+  background: #da0b0b;
 }
 @media (max-width: 991px) {
   .blog_details-meta-box {
@@ -6978,7 +6978,7 @@ Header CSS 01 Start
   gap: 8px;
 }
 .blog_details-meta span:first-child {
-  color: #7D25EC;
+  color: #da0b0b;
   text-transform: uppercase;
 }
 .blog_details-meta span:not(:last-child) {
@@ -7091,7 +7091,7 @@ Header CSS 01 Start
 }
 .blog_details-content blockquote span {
   display: block;
-  color: #7D25EC;
+  color: #da0b0b;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -7308,11 +7308,12 @@ Header CSS 01 Start
   height: 120px;
   padding-right: 20px;
 }
+
+
 .blog_details-bottom .post-comments-btn button {
   border: none;
   border-radius: 8px;
-  background: #7D25EC;
-  box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
+  /* box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5); */
   height: 46px;
   display: flex;
   align-items: center;
@@ -7321,6 +7322,20 @@ Header CSS 01 Start
   font-size: 14px;
   font-weight: 600;
   padding: 0 45px;
+  border-radius: 50px;
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
+  display: inline-block;
+  line-height: 45px;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+.post-comments-btn button:hover {
+  background: linear-gradient(180deg, #aa0303 0%, #aa0303 100%);
+  color: #fff;
 }
 
 .blog_details-widget {
@@ -7354,7 +7369,7 @@ Header CSS 01 Start
   width: 100px;
   height: 1px;
   content: "";
-  background-color: #7D25EC;
+  background-color: #da0b0b;
 }
 .blog_details-widget-search {
   position: relative;
@@ -7381,7 +7396,7 @@ Header CSS 01 Start
   height: 47px;
   border: none;
   border-radius: 10px;
-  background: #7D25EC;
+  background: #da0b0b;
   color: #fff;
   font-size: 15px;
   display: flex;
@@ -7435,11 +7450,12 @@ Header CSS 01 Start
   padding-right: 20px;
   margin-bottom: 25px;
 }
+
 .blog_details-widget-help button {
   width: 100%;
   border: none;
   border-radius: 8px;
-  background: #7D25EC;
+  /* box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5); */
   height: 46px;
   display: flex;
   align-items: center;
@@ -7447,7 +7463,23 @@ Header CSS 01 Start
   color: #fff;
   font-size: 14px;
   font-weight: 600;
+  padding: 0 45px;
+  border-radius: 50px;
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
+  display: inline-block;
+  line-height: 45px;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
 }
+
+.blog_details-widget-help button:hover {
+  background: linear-gradient(180deg, #aa0303 0%, #aa0303 100%);
+  color: #fff;
+}
+
 
 /* ///////////////////////////////////////////////////////////
 15. brand
