@@ -6716,7 +6716,7 @@ Header CSS 01 Start
   z-index: 1;
 }
 .h2_blog-content-meta span a {
-  color: #7D25EC;
+  color: #da0b0b;
   text-transform: uppercase;
 }
 .h2_blog-content-meta span i {
@@ -6752,7 +6752,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .h2_blog-content-title:hover a {
-  color: #7D25EC;
+  color: #da0b0b;
 }
 
 .h2_blog-active.swiper .h2_blog-pagination span.swiper-pagination-bullet {
