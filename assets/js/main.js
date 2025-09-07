@@ -172,9 +172,7 @@ const h2_testimonialActive = new Swiper(".h2_testimonial-active", {
 	spaceBetween: 30,
 	loop: true,
 	speed: 4000,
-  	autoplay: {
-		delay: 1000,
-	},
+  	autoplay: false,  
  	pagination: {
 		el: ".h2_testimonial-pagination",
 		clickable: true,

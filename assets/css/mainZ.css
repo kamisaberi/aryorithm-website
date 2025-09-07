@@ -7712,6 +7712,20 @@ Header CSS 01 Start
   }
 }
 
+
+/* Style and position the icons */
+.accordion-button .faq-icon {
+  margin-left: auto;
+  font-size: 16px;
+  color: #1B2A52;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate when expanded */
+.accordion-button:not(.collapsed) .faq-icon {
+  transform: rotate(180deg);  /* rotates angle-down to angle-up */
+}
+
 .h3_faq-area {
   background: #F2F8FD;
 }
@@ -7765,8 +7779,8 @@ Header CSS 01 Start
   right: 30px;
   top: 50%;
   transform: translateY(-50%);
-  content: "\f107";
-  font-family: "Font Awesome 6 Pro";
+  /* content: "\f107";
+  font-family: "Font Awesome 6 Pro"; */
   -webkit-transition: all 0.3s linear 0s;
   -moz-transition: all 0.3s linear 0s;
   -ms-transition: all 0.3s linear 0s;
@@ -7787,9 +7801,9 @@ Header CSS 01 Start
     right: 25px;
   }
 }
-.h3_faq-content .accordion-button:not(.collapsed)::before {
+/* .h3_faq-content .accordion-button:not(.collapsed)::before {
   content: "\f106";
-}
+} */
 .h3_faq-content .accordion-button img {
   width: 40px;
 }
