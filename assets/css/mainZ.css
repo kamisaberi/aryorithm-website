@@ -7346,7 +7346,7 @@ Header CSS 01 Start
   background: #F8FAFF;
   padding: 30px 30px 35px;
 }
-.blog_details-widget-title {
+/* .blog_details-widget-title {
   color: #1B2A52;
   font-size: 20px;
   font-weight: 700;
@@ -7373,7 +7373,42 @@ Header CSS 01 Start
   height: 1px;
   content: "";
   background-color: #da0b0b;
+} */
+
+.blog_details-widget ul {
+  padding-left: 0;
 }
+
+.blog_details-widget ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.blog_details-widget ul li .category-icon {
+  margin-right: 8px;
+  font-size: 12px;
+  color: #da0b0b;
+}
+
+
+.blog_details-widget ul li a {
+  color: #1B2A52;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.blog_details-widget ul li a span {
+  color: red;
+  margin-left: 5px;
+}
+
+.blog_details-widget-title ul li::before {
+  content: none !important;
+}
+
+
 .blog_details-widget-search {
   position: relative;
   z-index: 1;
@@ -7748,7 +7783,6 @@ Header CSS 01 Start
 }
 
 
-/* Style and position the icons */
 .accordion-button .faq-icon {
   margin-left: auto;
   font-size: 16px;
@@ -7756,9 +7790,9 @@ Header CSS 01 Start
   transition: transform 0.3s ease;
 }
 
-/* Rotate when expanded */
+
 .accordion-button:not(.collapsed) .faq-icon {
-  transform: rotate(180deg);  /* rotates angle-down to angle-up */
+  transform: rotate(180deg);  /
 }
 
 .h3_faq-area {
