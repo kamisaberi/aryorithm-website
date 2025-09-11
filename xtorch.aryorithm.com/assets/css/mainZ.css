@@ -4954,7 +4954,7 @@ Header CSS 01 Start
   right: -84px;
   top: 50%;
   transform: translateY(-50%);
-  content: url("../../assets/images/feature/shape-4.png");
+  content: url("../../assets/images/feature/shape-4-red.png");
 }
 @media (max-width: 1199px) {
   .feature-item-1::after {
@@ -4966,7 +4966,7 @@ Header CSS 01 Start
   right: -84px;
   top: 50%;
   transform: translateY(-50%);
-  content: url("../../assets/images/feature/shape-5.png");
+  content: url("../../assets/images/feature/shape-5-red.png");
 }
 @media (max-width: 1199px) {
   .feature-item-2::after {
