@@ -4913,6 +4913,7 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 @media (max-width: 991px) {
   .feature-item {
     width: calc(50% - 15px);
@@ -5003,6 +5004,73 @@ Header CSS 01 Start
     display: none;
   }
 }
+
+.feature-item-hub {
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid rgba(27, 42, 82, 0.07);
+  background-color: #FFF;
+  padding: 30px 30px;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+@media (max-width: 991px) {
+  .feature-item-hub {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 575px) {
+  .feature-item-hub {
+    width: 100%;
+  }
+}
+.feature-item-hub .feature-item-title {
+  text-align: center;
+  color: #1B2A52;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.feature-item-hub p {
+  color: #6A738B;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+.feature-item-hub:hover {
+  background-color: var(--clr-theme-primary);
+  border-color: transparent;
+}
+.feature-item-hub:hover .feature-item-title {
+  color: #fff;
+}
+.feature-item-hub:hover p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+
 .feature-item:hover {
   background-color: var(--clr-theme-primary);
   border-color: transparent;
