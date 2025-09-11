@@ -10090,7 +10090,7 @@ Header CSS 01 Start
   }
 }
 .login-content-subtitle {
-  color: #7D25EC;
+  color: #da0b0b ;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
@@ -10120,7 +10120,7 @@ Header CSS 01 Start
   margin-bottom: 0;
 }
 .login-content-link p a {
-  color: #7D25EC;
+  color: #da0b0b;
 }
 .login-content-account {
   display: flex;
@@ -10188,6 +10188,14 @@ Header CSS 01 Start
   color: #fff;
   font-size: 14px;
   font-weight: 600;
+  border-radius: 50px;
+  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
+  color: #FFF;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
 }
 .login-break {
   position: relative;
@@ -10226,7 +10234,7 @@ Header CSS 01 Start
   }
 }
 .login-condition a {
-  color: #7D25EC;
+  color: #da0b0b;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
