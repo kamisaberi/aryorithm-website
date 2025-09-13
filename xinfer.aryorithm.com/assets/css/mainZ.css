@@ -5,6 +5,7 @@ Responsive Layout Declaration
 Font Family Declaration 
 /////////////////////////////////////////////////////////// */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
 /* ///////////////////////////////////////////////////////////
 Color Declaration 
 /////////////////////////////////////////////////////////// */
@@ -34,45 +35,54 @@ Animation Declaration
     -moz-transform: rotate(360deg);
   }
 }
+
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
 @-webkit-keyframes wcSlideBottom {
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   50% {
     -webkit-transform: translateY(50px);
     transform: translateY(50px);
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
+
 @keyframes wcSlideBottom {
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   50% {
     -webkit-transform: translateY(50px);
     transform: translateY(50px);
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
+
 @-webkit-keyframes reveal {
   to {
     opacity: 1;
@@ -80,6 +90,7 @@ Animation Declaration
     filter: blur(0px);
   }
 }
+
 @keyframes reveal {
   to {
     opacity: 1;
@@ -87,58 +98,69 @@ Animation Declaration
     filter: blur(0px);
   }
 }
+
 @-webkit-keyframes wcfadeUp {
   0% {
     opacity: 0;
     -webkit-transform: translateY(50px);
     transform: translateY(50px);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
+
 @keyframes wcfadeUp {
   0% {
     opacity: 0;
     -webkit-transform: translateY(50px);
     transform: translateY(50px);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
+
 @-webkit-keyframes wcSpinner {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   50% {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
 @keyframes wcSpinner {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   50% {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
 /*
 ************
 *************************
@@ -204,7 +226,8 @@ body {
   line-height: 26px;
 }
 
-.img, img {
+.img,
+img {
   max-width: 100%;
   -webkit-transition: all 0.3s linear 0s;
   -moz-transition: all 0.3s linear 0s;
@@ -214,7 +237,8 @@ body {
 }
 
 a,
-.button, button {
+.button,
+button {
   -webkit-transition: all 0.3s linear 0s;
   -moz-transition: all 0.3s linear 0s;
   -ms-transition: all 0.3s linear 0s;
@@ -240,7 +264,11 @@ button {
   outline: medium none;
 }
 
-button:focus, input:focus, input:focus, textarea, textarea:focus {
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
   outline: 0;
 }
 
@@ -341,16 +369,19 @@ input::-webkit-input-placeholder {
   font-size: 14px;
   opacity: 1;
 }
+
 input:-moz-placeholder {
   color: #7F879E;
   font-size: 14px;
   opacity: 1;
 }
+
 input::-moz-placeholder {
   color: #7F879E;
   font-size: 14px;
   opacity: 1;
 }
+
 input:-ms-input-placeholder {
   color: #7F879E;
   font-size: 14px;
@@ -362,23 +393,27 @@ textarea::-webkit-input-placeholder {
   font-size: 14px;
   opacity: 1;
 }
+
 textarea:-moz-placeholder {
   color: #7F879E;
   font-size: 14px;
   opacity: 1;
 }
+
 textarea::-moz-placeholder {
   color: #7F879E;
   font-size: 14px;
   opacity: 1;
 }
+
 textarea:-ms-input-placeholder {
   color: #7F879E;
   font-size: 14px;
   opacity: 1;
 }
 
-input:focus::placeholder, textarea:focus::placeholder {
+input:focus::placeholder,
+textarea:focus::placeholder {
   opacity: 0;
 }
 
@@ -416,6 +451,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     margin-right: auto;
   }
 }
+
 @media (min-width: 1600px) and (max-width: 1699px) {
   .container.custom-container-1 {
     max-width: 1530px;
@@ -423,6 +459,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     margin-right: auto;
   }
 }
+
 @media (min-width: 1600px) {
   .container.custom-container-2 {
     max-width: 1700px;
@@ -430,6 +467,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     margin-right: auto;
   }
 }
+
 /* <<<<<<<    Overlay   >>>>>>>>> */
 [data-overlay] {
   position: relative;
@@ -437,6 +475,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 [data-overlay]::before {
   position: absolute;
   left: 0;
@@ -1815,6 +1854,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 .row {
   --bs-gutter-x: 30px;
 }
+
 .row.g-0 {
   --bs-gutter-x: 0;
 }
@@ -1824,7 +1864,9 @@ input:focus::placeholder, textarea:focus::placeholder {
     max-width: 1750px;
   }
 }
-i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
+
+i[class^=flaticon-]:before,
+i[class*=" flaticon-"]:before {
   line-height: inherit;
 }
 
@@ -1892,6 +1934,7 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
     display: none;
   }
 }
+
 .cursor1.hide {
   opacity: 0;
   visibility: hidden;
@@ -1914,7 +1957,7 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   mix-blend-mode: difference;
 }
 
-.h3_header-nav-menu ul li:hover ~ .cursor2 {
+.h3_header-nav-menu ul li:hover~.cursor2 {
   width: 40px;
   height: 40px;
 }
@@ -1963,6 +2006,7 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
     display: none;
   }
 }
+
 .cursor-link {
   width: 30px;
   height: 30px;
@@ -2151,6 +2195,7 @@ Header CSS 01 Start
   top: 0;
   z-index: 99;
 }
+
 .header-top {
   background: linear-gradient(90deg, #da0b0b 0%, #da0b0b 100%);
   background: linear-gradient(90deg, #da0b0b 0%, #da0b0b 100%);
@@ -2158,12 +2203,14 @@ Header CSS 01 Start
   display: flex;
   align-items: center;
 }
+
 .header-top-text p {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 0;
 }
+
 .header-top-social ul {
   display: flex;
   align-items: center;
@@ -2171,6 +2218,7 @@ Header CSS 01 Start
   list-style: none;
   margin-bottom: 0;
 }
+
 .header-top-social ul li a {
   color: #fff;
   font-size: 16px;
@@ -2179,6 +2227,7 @@ Header CSS 01 Start
   padding-left: 10px;
   margin-left: 10px;
 }
+
 .header-top-social ul li a::before {
   position: absolute;
   left: 0;
@@ -2189,42 +2238,52 @@ Header CSS 01 Start
   width: 1px;
   height: 16px;
 }
+
 .header-top-social ul li a:hover {
   color: #fff;
 }
+
 .header-top-social ul li:first-child a {
   padding-left: 0;
   margin-left: 0;
 }
+
 .header-top-social ul li:first-child a::before {
   display: none;
 }
+
 .header-main-left {
   display: flex;
   align-items: center;
   gap: 85px;
 }
+
 @media (max-width: 1199px) {
   .header-main-left {
     gap: 50px;
   }
 }
+
 .header-logo {
   width: 135px;
   padding: 20px 0;
   flex-shrink: 0;
 }
+
 .header-nav-menu ul {
   list-style: none;
 }
+
 .header-nav-menu ul li {
   display: inline-block;
   margin-right: 30px;
 }
+
 .header-nav-menu ul li:last-child {
   margin-right: 30px;
 }
-.header-nav-menu ul li:is(.menu-has-child) > a::after {
+
+.header-nav-menu ul li:is(.menu-has-child)>a::after {
   display: inline-block;
   font-family: "Font Awesome 6 Pro";
   content: "+";
@@ -2232,10 +2291,12 @@ Header CSS 01 Start
   font-weight: 500;
   margin-left: 5px;
 }
+
 .header-nav-menu ul li.menu-has-child {
   position: relative;
   z-index: 99;
 }
+
 .header-nav-menu ul li a {
   display: block;
   color: #6A738B;
@@ -2244,6 +2305,7 @@ Header CSS 01 Start
   line-height: 1;
   padding: 30px 0;
 }
+
 .header-nav-menu ul li .submenu {
   position: absolute;
   left: 0;
@@ -2259,12 +2321,14 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   box-shadow: 0 9px 19px rgba(0, 0, 0, 0.1);
 }
+
 .header-nav-menu ul li .submenu li {
   display: block;
   margin-right: 0;
   position: relative;
   z-index: 99;
 }
+
 .header-nav-menu ul li .submenu li a {
   padding: 18px 25px;
   color: #6A738B;
@@ -2275,30 +2339,37 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .header-nav-menu ul li .submenu li .submenu {
   left: 100%;
   top: 0;
 }
-.header-nav-menu ul li .submenu li:hover > a {
+
+.header-nav-menu ul li .submenu li:hover>a {
   background-color: #1B2A52;
   color: #fff;
 }
+
 .header-nav-menu ul li .submenu li:not(:last-child) {
   border-bottom: 1px solid #f2f2f2;
 }
-.header-nav-menu ul li:hover > .submenu {
+
+.header-nav-menu ul li:hover>.submenu {
   opacity: 1;
   visibility: visible;
 }
-.header-nav-menu ul li:hover > a {
+
+.header-nav-menu ul li:hover>a {
   color: #1B2A52;
 }
+
 .header-action {
   display: flex;
   align-items: center;
   gap: 20px;
   justify-content: end;
 }
+
 .header-action-login {
   color: #1B2A52;
   font-size: 14px;
@@ -2307,9 +2378,11 @@ Header CSS 01 Start
   align-items: center;
   gap: 6px;
 }
+
 .header-action-login:hover {
   color: var(--clr-theme-primary);
 }
+
 .header-action-btn {
   color: #fff;
   font-size: 14px;
@@ -2321,6 +2394,7 @@ Header CSS 01 Start
   display: block;
   padding: 0 30px;
 }
+
 .header-action-btn:hover {
   color: #fff;
   background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
@@ -2332,37 +2406,45 @@ Header CSS 01 Start
 .h2_header-left {
   margin-right: 98px;
 }
+
 @media (max-width: 1399px) {
   .h2_header-left {
     margin-right: 53px;
   }
 }
+
 @media (max-width: 1199px) {
   .h2_header-left {
     margin-right: 0;
   }
 }
+
 .h2_header-logo {
   width: 135px;
   height: 80px;
   line-height: 80px;
   flex-shrink: 0;
 }
+
 .h2_header-nav-menu ul {
   list-style: none;
 }
+
 .h2_header-nav-menu ul li {
   display: inline-block;
   margin-right: 8px;
 }
+
 .h2_header-nav-menu ul li:last-child {
   margin-right: 30px;
 }
+
 .h2_header-nav-menu ul li.menu-has-child {
   position: relative;
   z-index: 99;
 }
-.h2_header-nav-menu ul li > a {
+
+.h2_header-nav-menu ul li>a {
   display: block;
   color: #6A738B;
   font-size: 14px;
@@ -2372,6 +2454,7 @@ Header CSS 01 Start
   border-radius: 6px;
   border: 1px solid transparent;
 }
+
 .h2_header-nav-menu ul li .submenu {
   position: absolute;
   left: 0;
@@ -2387,12 +2470,14 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   box-shadow: 0 9px 19px rgba(0, 0, 0, 0.1);
 }
+
 .h2_header-nav-menu ul li .submenu li {
   display: block;
   margin-right: 0;
   position: relative;
   z-index: 99;
 }
+
 .h2_header-nav-menu ul li .submenu li a {
   padding: 18px 25px;
   color: #6A738B;
@@ -2404,31 +2489,38 @@ Header CSS 01 Start
   border-radius: 0;
   text-align: start;
 }
+
 .h2_header-nav-menu ul li .submenu li .submenu {
   left: 100%;
   top: 0;
 }
-.h2_header-nav-menu ul li .submenu li:hover > a {
+
+.h2_header-nav-menu ul li .submenu li:hover>a {
   background-color: #1B2A52;
   color: #fff;
 }
+
 .h2_header-nav-menu ul li .submenu li:not(:last-child) {
   border-bottom: 1px solid #f2f2f2;
 }
-.h2_header-nav-menu ul li:hover > .submenu {
+
+.h2_header-nav-menu ul li:hover>.submenu {
   opacity: 1;
   visibility: visible;
 }
-.h2_header-nav-menu ul li:hover > a {
+
+.h2_header-nav-menu ul li:hover>a {
   color: var(--clr-theme-primary);
   border-color: rgba(27, 42, 82, 0.2);
 }
+
 .h2_header-action {
   display: flex;
   align-items: center;
   gap: 20px;
   justify-content: end;
 }
+
 .h2_header-action-login {
   color: #1B2A52;
   font-size: 14px;
@@ -2437,9 +2529,11 @@ Header CSS 01 Start
   align-items: center;
   gap: 6px;
 }
+
 .h2_header-action-login:hover {
   color: var(--clr-theme-primary);
 }
+
 .h2_header-action-btn {
   color: #fff;
   font-size: 14px;
@@ -2462,27 +2556,33 @@ Header CSS 01 Start
   top: 0;
   z-index: 99;
 }
+
 .h3_header-logo {
   width: 135px;
   padding: 32px 0;
   flex-shrink: 0;
 }
+
 @media (max-width: 575px) {
   .h3_header-logo {
     padding: 20px 0;
   }
 }
+
 .h3_header-nav-menu ul {
   list-style: none;
 }
+
 .h3_header-nav-menu ul li {
   display: inline-block;
   margin-right: 30px;
 }
+
 .h3_header-nav-menu ul li:last-child {
   margin-right: 30px;
 }
-.h3_header-nav-menu ul li:is(.menu-has-child) > a::after {
+
+.h3_header-nav-menu ul li:is(.menu-has-child)>a::after {
   display: inline-block;
   font-family: "Font Awesome 6 Pro";
   content: "+";
@@ -2490,10 +2590,12 @@ Header CSS 01 Start
   font-weight: 500;
   margin-left: 5px;
 }
+
 .h3_header-nav-menu ul li.menu-has-child {
   position: relative;
   z-index: 99;
 }
+
 .h3_header-nav-menu ul li a {
   display: block;
   color: #6A738B;
@@ -2502,6 +2604,7 @@ Header CSS 01 Start
   line-height: 1;
   padding: 30px 0;
 }
+
 .h3_header-nav-menu ul li .submenu {
   position: absolute;
   left: 0;
@@ -2517,12 +2620,14 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   box-shadow: 0 9px 19px rgba(0, 0, 0, 0.1);
 }
+
 .h3_header-nav-menu ul li .submenu li {
   display: block;
   margin-right: 0;
   position: relative;
   z-index: 99;
 }
+
 .h3_header-nav-menu ul li .submenu li a {
   padding: 18px 25px;
   color: #6A738B;
@@ -2533,32 +2638,40 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h3_header-nav-menu ul li .submenu li .submenu {
   left: 100%;
   top: 0;
 }
-.h3_header-nav-menu ul li .submenu li:hover > a {
+
+.h3_header-nav-menu ul li .submenu li:hover>a {
   background-color: #1B2A52;
   color: #fff;
 }
+
 .h3_header-nav-menu ul li .submenu li:not(:last-child) {
   border-bottom: 1px solid #f2f2f2;
 }
-.h3_header-nav-menu ul li:hover > .submenu {
+
+.h3_header-nav-menu ul li:hover>.submenu {
   opacity: 1;
   visibility: visible;
 }
-.h3_header-nav-menu ul li:hover > a {
+
+.h3_header-nav-menu ul li:hover>a {
   color: #1B2A52;
 }
+
 .h3_header-action {
   display: flex;
 }
+
 @media (max-width: 1199px) {
   .h3_header-action {
     justify-content: end;
   }
 }
+
 .h3_header-action-login {
   color: #1B2A52;
   font-size: 14px;
@@ -2567,6 +2680,7 @@ Header CSS 01 Start
   align-items: center;
   gap: 6px;
 }
+
 .h3_header-action-btn {
   color: #fff;
   font-size: 14px;
@@ -2579,23 +2693,28 @@ Header CSS 01 Start
   background: #7D25EC;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
+
 @media (max-width: 1199px) {
   .h3_header-action-btn {
     padding: 0 20px;
   }
 }
+
 .h3_header-action-btn:hover {
   color: #fff;
   background-color: var(--clr-color-violet);
 }
+
 .h3_header-left {
   gap: 165px;
 }
+
 @media (max-width: 1399px) {
   .h3_header-left {
     gap: 150px;
   }
 }
+
 @media (max-width: 1199px) {
   .h3_header-left {
     gap: 50px;
@@ -2607,6 +2726,7 @@ Header CSS 01 Start
   position: relative;
   z-index: 9;
 }
+
 .h4_header-top-text {
   display: flex;
   justify-content: center;
@@ -2614,12 +2734,14 @@ Header CSS 01 Start
   height: 35px;
   align-items: center;
 }
+
 .h4_header-top-text p {
   margin-bottom: 0;
   color: #FFF;
   font-size: 13px;
   font-weight: 500;
 }
+
 .h4_header-top-text a {
   color: #FFF;
   font-size: 14px;
@@ -2628,6 +2750,7 @@ Header CSS 01 Start
   align-items: center;
   gap: 5px;
 }
+
 .h4_header-top-text a i {
   margin-top: 2px;
 }
@@ -2637,12 +2760,14 @@ Header CSS 01 Start
   background: #FFF;
   box-shadow: 0px 1px 1px 0px rgba(27, 42, 82, 0.07);
 }
+
 .h4_header-logo {
   width: 135px;
   height: 70px;
   line-height: 70px;
   flex-shrink: 0;
 }
+
 .h4_header-menu {
   display: flex;
   justify-content: center;
@@ -2653,37 +2778,45 @@ Header CSS 01 Start
   border-radius: 6px;
   background: #F0F2F8;
 }
+
 @media (max-width: 1199px) {
   .h4_header-menu {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
+
 .h4_header-nav-menu ul {
   list-style: none;
 }
+
 .h4_header-nav-menu ul li {
   display: inline-block;
   margin-right: 38px;
 }
+
 .h4_header-nav-menu ul li:last-child {
   margin-right: 0;
 }
+
 @media (max-width: 1399px) {
   .h4_header-nav-menu ul li {
     margin-right: 30px;
   }
 }
+
 @media (max-width: 1199px) {
   .h4_header-nav-menu ul li {
     margin-right: 20px;
   }
 }
+
 .h4_header-nav-menu ul li.menu-has-child {
   position: relative;
   z-index: 99;
 }
-.h4_header-nav-menu ul li > a {
+
+.h4_header-nav-menu ul li>a {
   display: block;
   color: #6A738B;
   font-size: 14px;
@@ -2692,6 +2825,7 @@ Header CSS 01 Start
   padding: 6px 8px;
   border-radius: 4px;
 }
+
 .h4_header-nav-menu ul li .submenu {
   position: absolute;
   left: 0;
@@ -2707,12 +2841,14 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   box-shadow: 0 9px 19px rgba(0, 0, 0, 0.1);
 }
+
 .h4_header-nav-menu ul li .submenu li {
   display: block;
   margin-right: 0;
   position: relative;
   z-index: 99;
 }
+
 .h4_header-nav-menu ul li .submenu li a {
   padding: 18px 25px;
   color: #6A738B;
@@ -2723,32 +2859,39 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   border-radius: 0;
 }
+
 .h4_header-nav-menu ul li .submenu li .submenu {
   left: 100%;
   top: 0;
 }
-.h4_header-nav-menu ul li .submenu li:hover > a {
+
+.h4_header-nav-menu ul li .submenu li:hover>a {
   background-color: #1B2A52;
   color: #fff;
 }
+
 .h4_header-nav-menu ul li .submenu li:not(:last-child) {
   border-bottom: 1px solid #f2f2f2;
 }
-.h4_header-nav-menu ul li:hover > .submenu {
+
+.h4_header-nav-menu ul li:hover>.submenu {
   opacity: 1;
   visibility: visible;
 }
-.h4_header-nav-menu ul li:hover > a {
+
+.h4_header-nav-menu ul li:hover>a {
   color: var(--clr-theme-primary);
   background: #FFF;
   box-shadow: 0px 1px 2px 0px rgba(27, 42, 82, 0.2);
 }
+
 .h4_header-action {
   display: flex;
   align-items: center;
   gap: 20px;
   justify-content: end;
 }
+
 .h4_header-action-login {
   color: #1B2A52;
   font-size: 14px;
@@ -2757,9 +2900,11 @@ Header CSS 01 Start
   align-items: center;
   gap: 6px;
 }
+
 .h4_header-action-login:hover {
   color: var(--clr-theme-primary);
 }
+
 .h4_header-action-btn {
   color: #fff;
   font-size: 14px;
@@ -2774,6 +2919,7 @@ Header CSS 01 Start
   background: #da0b0b;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
+
 .h4_header-action-btn:hover {
   background-color: var(--clr-color-violet);
   color: #fff;
@@ -2782,20 +2928,24 @@ Header CSS 01 Start
 .h5_header-area {
   background: #1B2A52;
 }
+
 .h5_header-top {
   height: 35px;
 }
+
 .h5_header-top-text {
   display: flex;
   gap: 10px;
   align-items: center;
 }
+
 .h5_header-top-text p {
   margin-bottom: 0;
   color: #FFF;
   font-size: 13px;
   font-weight: 500;
 }
+
 .h5_header-top-text a {
   color: #FFF;
   font-size: 14px;
@@ -2804,23 +2954,28 @@ Header CSS 01 Start
   align-items: center;
   gap: 5px;
 }
+
 .h5_header-top-text a i {
   margin-top: 2px;
 }
+
 .h5_header-top-text a:hover {
   color: var(--clr-color-violet);
 }
+
 .h5_header-top-right {
   display: flex;
   justify-content: end;
   align-items: center;
 }
+
 .h5_header-top-language {
   position: relative;
   z-index: 9;
   padding-right: 20px;
   margin-right: 20px;
 }
+
 .h5_header-top-language::after {
   position: absolute;
   right: 0;
@@ -2831,6 +2986,7 @@ Header CSS 01 Start
   height: 18px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 .h5_header-top-language-option.nice-select {
   border-radius: 8px;
   border: 1px solid rgba(27, 42, 82, 0.07);
@@ -2847,6 +3003,7 @@ Header CSS 01 Start
   font-size: 13px;
   font-weight: 500;
 }
+
 .h5_header-top-language-option.nice-select ul {
   background-color: #fff;
   width: 85px;
@@ -2856,6 +3013,7 @@ Header CSS 01 Start
   margin-top: 7px;
   box-shadow: 0px 6px 50px 0px rgba(27, 42, 82, 0.2);
 }
+
 .h5_header-top-language-option.nice-select ul li {
   color: #7F879E;
   font-size: 13px;
@@ -2866,12 +3024,15 @@ Header CSS 01 Start
   height: 30px;
   line-height: 30px;
 }
+
 .h5_header-top-language-option.nice-select .option.selected {
   font-weight: 500;
 }
+
 .h5_header-top-language-option.nice-select::after {
   display: none;
 }
+
 .h5_header-top-language-option.nice-select::before {
   position: absolute;
   right: 0;
@@ -2881,15 +3042,18 @@ Header CSS 01 Start
   content: "\f107";
   margin-top: 1px;
 }
+
 .h5_header-top-language-option.nice-select.open::before {
   content: "\f106";
 }
+
 .h5_header-top-currency {
   padding-right: 20px;
   margin-right: 20px;
   position: relative;
   z-index: 9;
 }
+
 .h5_header-top-currency::after {
   position: absolute;
   right: 0;
@@ -2900,6 +3064,7 @@ Header CSS 01 Start
   height: 18px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 .h5_header-top-currency-option.nice-select {
   border-radius: 8px;
   border: 1px solid rgba(27, 42, 82, 0.07);
@@ -2916,6 +3081,7 @@ Header CSS 01 Start
   font-size: 13px;
   font-weight: 500;
 }
+
 .h5_header-top-currency-option.nice-select ul {
   background-color: #fff;
   width: 85px;
@@ -2925,6 +3091,7 @@ Header CSS 01 Start
   margin-top: 7px;
   box-shadow: 0px 6px 50px 0px rgba(27, 42, 82, 0.2);
 }
+
 .h5_header-top-currency-option.nice-select ul li {
   color: #7F879E;
   font-size: 13px;
@@ -2935,17 +3102,21 @@ Header CSS 01 Start
   height: 30px;
   line-height: 30px;
 }
+
 .h5_header-top-currency-option.nice-select.open ul {
   border-radius: 4px;
   border: none;
   margin-top: 5px;
 }
+
 .h5_header-top-currency-option.nice-select .option.selected {
   font-weight: 500;
 }
+
 .h5_header-top-currency-option.nice-select::after {
   display: none;
 }
+
 .h5_header-top-currency-option.nice-select::before {
   position: absolute;
   right: 0;
@@ -2955,9 +3126,11 @@ Header CSS 01 Start
   content: "\f107";
   margin-top: 1px;
 }
+
 .h5_header-top-currency-option.nice-select.open::before {
   content: "\f106";
 }
+
 .h5_header-top-account a {
   display: flex;
   align-items: center;
@@ -2970,52 +3143,63 @@ Header CSS 01 Start
 .h5_header-left {
   gap: 98px;
 }
+
 @media (max-width: 1399px) {
   .h5_header-left {
     gap: 80px;
   }
 }
+
 @media (max-width: 1199px) {
   .h5_header-left {
     gap: 40px;
   }
 }
+
 .h5_header-bottom {
   border-radius: 24px 24px 0px 0px;
   background: #FFF;
   box-shadow: 0px 1px 1px 0px rgba(27, 42, 82, 0.07);
 }
+
 .h5_header-logo {
   width: 135px;
   height: 70px;
   line-height: 70px;
   flex-shrink: 0;
 }
+
 .h5_header-nav-menu ul {
   list-style: none;
 }
+
 .h5_header-nav-menu ul li {
   display: inline-block;
   margin-right: 38px;
 }
+
 .h5_header-nav-menu ul li:last-child {
   margin-right: 0;
 }
+
 @media (max-width: 1399px) {
   .h5_header-nav-menu ul li {
     margin-right: 30px;
   }
 }
+
 @media (max-width: 1199px) {
   .h5_header-nav-menu ul li {
     margin-right: 15px;
   }
 }
+
 .h5_header-nav-menu ul li.menu-has-child {
   position: relative;
   z-index: 99;
 }
-.h5_header-nav-menu ul li > a {
+
+.h5_header-nav-menu ul li>a {
   display: block;
   color: #6A738B;
   font-size: 14px;
@@ -3025,6 +3209,7 @@ Header CSS 01 Start
   border-radius: 4px;
   text-align: start;
 }
+
 .h5_header-nav-menu ul li .submenu {
   position: absolute;
   left: 0;
@@ -3040,12 +3225,14 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   box-shadow: 0 9px 19px rgba(0, 0, 0, 0.1);
 }
+
 .h5_header-nav-menu ul li .submenu li {
   display: block;
   margin-right: 0;
   position: relative;
   z-index: 99;
 }
+
 .h5_header-nav-menu ul li .submenu li a {
   padding: 18px 25px;
   color: #6A738B;
@@ -3056,33 +3243,40 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   border-radius: 0;
 }
+
 .h5_header-nav-menu ul li .submenu li .submenu {
   left: 100%;
   top: 0;
 }
-.h5_header-nav-menu ul li .submenu li:hover > a {
+
+.h5_header-nav-menu ul li .submenu li:hover>a {
   background-color: #1B2A52;
   color: #fff;
 }
+
 .h5_header-nav-menu ul li .submenu li:not(:last-child) {
   border-bottom: 1px solid #f2f2f2;
 }
-.h5_header-nav-menu ul li:hover > .submenu {
+
+.h5_header-nav-menu ul li:hover>.submenu {
   opacity: 1;
   visibility: visible;
 }
-.h5_header-nav-menu ul li:hover > a {
+
+.h5_header-nav-menu ul li:hover>a {
   color: var(--clr-theme-primary);
   border-radius: 4px;
   background: rgba(125, 37, 236, 0.1);
   box-shadow: 0px 1px 2px 0px rgba(27, 42, 82, 0.2);
 }
+
 .h5_header-action {
   display: flex;
   align-items: center;
   gap: 25px;
   justify-content: end;
 }
+
 .h5_header-action-btn {
   color: #fff;
   font-size: 14px;
@@ -3097,20 +3291,24 @@ Header CSS 01 Start
   background: #da0b0b;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
+
 @media (max-width: 1399px) {
   .h5_header-action-btn {
     padding: 0 20px;
   }
 }
+
 .h5_header-action-btn:hover {
   background-color: var(--clr-color-violet);
   color: #fff;
 }
+
 .h5_header-action-inner {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .h5_header-action-inner a {
   border-radius: 40px;
   border: 1.5px solid rgba(27, 42, 82, 0.07);
@@ -3123,12 +3321,15 @@ Header CSS 01 Start
   color: #1B2A52;
   font-size: 16px;
 }
+
 .h5_header-action-inner a:hover {
   border-color: rgb(27, 42, 82);
 }
+
 .h5_header-action-cart {
   position: relative;
 }
+
 .h5_header-action-cart span {
   position: absolute;
   right: -7px;
@@ -3168,6 +3369,7 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .theme-btn:hover {
   background: linear-gradient(180deg, #aa0303 0%, #aa0303 100%);
   color: #fff;
@@ -3189,6 +3391,7 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .theme-btn-2:hover {
   background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
   color: #fff;
@@ -3202,6 +3405,7 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .banner-single {
   padding-top: 240px;
   padding-bottom: 200px;
@@ -3211,37 +3415,44 @@ Header CSS 01 Start
   min-height: 600px;
   gap: 40px;
 }
+
 @media (max-width: 991px) {
   .banner-single {
     flex-wrap: wrap;
     gap: 70px;
   }
 }
+
 @media (max-width: 575px) {
   .banner-single {
     padding-top: 200px;
     padding-bottom: 160px;
   }
 }
+
 .banner-content {
   width: 720px;
   flex-shrink: 0;
 }
+
 @media (max-width: 1399px) {
   .banner-content {
     width: 610px;
   }
 }
+
 @media (max-width: 1199px) {
   .banner-content {
     width: 465px;
   }
 }
+
 @media (max-width: 991px) {
   .banner-content {
     width: 100%;
   }
 }
+
 .banner-content-subtitle {
   border-radius: 50px;
   background: rgba(125, 37, 236, 0.1);
@@ -3257,6 +3468,7 @@ Header CSS 01 Start
   line-height: 36px;
   margin-bottom: 12px;
 }
+
 @media (max-width: 480px) {
   .banner-content-subtitle {
     font-size: 13px;
@@ -3265,6 +3477,7 @@ Header CSS 01 Start
     line-height: 32px;
   }
 }
+
 .banner-content-title {
   color: #1B2A52;
   font-size: 70px;
@@ -3273,36 +3486,43 @@ Header CSS 01 Start
   letter-spacing: -2.1px;
   margin-bottom: 20px;
 }
+
 @media (max-width: 1399px) {
   .banner-content-title {
     font-size: 60px;
   }
 }
+
 @media (max-width: 1199px) {
   .banner-content-title {
     font-size: 46px;
   }
 }
+
 @media (max-width: 991px) {
   .banner-content-title {
     font-size: 60px;
   }
 }
+
 @media (max-width: 767px) {
   .banner-content-title {
     font-size: 50px;
   }
 }
+
 @media (max-width: 575px) {
   .banner-content-title {
     font-size: 44px;
   }
 }
+
 @media (max-width: 480px) {
   .banner-content-title {
     font-size: 36px;
   }
 }
+
 .banner-content p {
   color: #1B2A52;
   font-size: 18px;
@@ -3310,31 +3530,37 @@ Header CSS 01 Start
   line-height: 28px;
   margin-bottom: 43px;
 }
+
 @media (max-width: 1199px) {
   .banner-content p br {
     display: none;
   }
 }
+
 @media (max-width: 991px) {
   .banner-content p br {
     display: block;
   }
 }
+
 @media (max-width: 767px) {
   .banner-content p br {
     display: none;
   }
 }
+
 @media (max-width: 480px) {
   .banner-content p {
     font-size: 16px;
   }
 }
+
 .banner-content-btn {
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
 .banner-content-btn span {
   display: flex;
   align-items: center;
@@ -3343,23 +3569,28 @@ Header CSS 01 Start
   font-size: 14px;
   font-weight: 500;
 }
+
 @media (max-width: 480px) {
   .banner-content-btn {
     flex-wrap: wrap;
   }
 }
+
 .banner-img {
   max-width: 644px;
 }
+
 @media (max-width: 991px) {
   .banner-img {
     max-width: 100%;
     width: 100%;
   }
+
   .banner-img img {
     width: 100%;
   }
 }
+
 .banner-shape-1 {
   position: absolute;
   left: 75px;
@@ -3367,6 +3598,7 @@ Header CSS 01 Start
   top: 21%;
   z-index: -1;
 }
+
 .banner-shape-2 {
   position: absolute;
   left: calc(37% + 11px);
@@ -3374,6 +3606,7 @@ Header CSS 01 Start
   top: 180px;
   z-index: -1;
 }
+
 .banner-shape-3 {
   position: absolute;
   left: calc(44% - 5px);
@@ -3381,6 +3614,7 @@ Header CSS 01 Start
   bottom: 120px;
   z-index: -1;
 }
+
 .banner-shape-4 {
   position: absolute;
   left: calc(51% - 5px);
@@ -3388,6 +3622,7 @@ Header CSS 01 Start
   bottom: 395px;
   z-index: -1;
 }
+
 .banner-shape-5 {
   position: absolute;
   left: 0;
@@ -3402,9 +3637,10 @@ Header CSS 01 Start
 .h2_banner-area {
   position: relative;
   z-index: 1;
-  
+
 
 }
+
 .h2_banner-single {
   padding-top: 145px;
   padding-bottom: 150px;
@@ -3412,46 +3648,54 @@ Header CSS 01 Start
   align-items: center;
   min-height: 600px;
 }
+
 .h2_banner-content {
   padding-left: 180px;
   padding-right: 180px;
   text-align: center;
 }
+
 @media (max-width: 1399px) {
   .h2_banner-content {
     padding-left: 150px;
     padding-right: 150px;
   }
 }
+
 @media (max-width: 1199px) {
   .h2_banner-content {
     padding-left: 100px;
     padding-right: 100px;
   }
 }
+
 @media (max-width: 991px) {
   .h2_banner-content {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
+
 @media (max-width: 767px) {
   .h2_banner-content {
     padding-left: 0;
     padding-right: 0;
   }
 }
+
 .h2_banner-content-subtitle {
   color: #da0b0b;
   font-size: 18px;
   font-weight: 400;
   display: block;
 }
+
 @media (max-width: 767px) {
   .h2_banner-content-subtitle {
     font-size: 16px;
   }
 }
+
 .h2_banner-content-title {
   color: #1B2A52;
   font-size: 80px;
@@ -3460,36 +3704,43 @@ Header CSS 01 Start
   letter-spacing: -2.4px;
   margin-bottom: 20px;
 }
+
 @media (max-width: 1399px) {
   .h2_banner-content-title {
     font-size: 70px;
   }
 }
+
 @media (max-width: 1199px) {
   .h2_banner-content-title {
     font-size: 60px;
   }
 }
+
 @media (max-width: 991px) {
   .h2_banner-content-title {
     font-size: 55px;
   }
 }
+
 @media (max-width: 767px) {
   .h2_banner-content-title {
     font-size: 45px;
   }
 }
+
 @media (max-width: 575px) {
   .h2_banner-content-title {
     font-size: 40px;
   }
 }
+
 @media (max-width: 480px) {
   .h2_banner-content-title {
     font-size: 34px;
   }
 }
+
 .h2_banner-content p {
   color: #1B2A52;
   font-size: 17px;
@@ -3497,89 +3748,106 @@ Header CSS 01 Start
   line-height: 25px;
   margin-bottom: 0;
 }
+
 @media (max-width: 991px) {
   .h2_banner-content p br {
     display: none;
   }
 }
+
 @media (max-width: 767px) {
   .h2_banner-content p {
     font-size: 16px;
   }
 }
+
 .h2_banner-shape-1 {
   position: absolute;
   left: 9%;
   top: 15%;
 }
+
 @media (max-width: 991px) {
   .h2_banner-shape-1 {
     top: 12%;
   }
 }
+
 @media (max-width: 480px) {
   .h2_banner-shape-1 {
     display: none;
   }
 }
+
 .h2_banner-shape-2 {
   position: absolute;
   left: 365px;
   top: 45%;
   transform: translateY(-50%);
 }
+
 @media (max-width: 991px) {
   .h2_banner-shape-2 {
     display: none;
   }
 }
+
 @media (max-width: 480px) {
   .h2_banner-shape-2 {
     display: none;
   }
 }
+
 .h2_banner-shape-3 {
   position: absolute;
   left: 11%;
   bottom: 22%;
 }
+
 @media (max-width: 991px) {
   .h2_banner-shape-3 {
     left: 6%;
     bottom: 15%;
   }
 }
+
 @media (max-width: 480px) {
   .h2_banner-shape-3 {
     display: none;
   }
 }
+
 .h2_banner-shape-4 {
   position: absolute;
   right: calc(12% + 15px);
   top: 50%;
   transform: translateY(-50%);
 }
+
 @media (max-width: 991px) {
   .h2_banner-shape-4 {
     right: 3%;
   }
 }
+
 @media (max-width: 767px) {
   .h2_banner-shape-4 {
     display: none;
   }
 }
+
 .h2_banner-shape-5 {
   position: absolute;
   right: 0;
   bottom: 0;
 }
+
 @media (max-width: 480px) {
   .h2_banner-shape-5 {
     display: none;
   }
 }
+
 .h2_banner-bottom {
   margin-left: 190px;
   margin-right: 190px;
@@ -3588,7 +3856,7 @@ Header CSS 01 Start
   z-index: 1;
 }
 
-.h2_banner-bottom a{
+.h2_banner-bottom a {
   margin-top: 20px;
 
 }
@@ -3599,30 +3867,35 @@ Header CSS 01 Start
     margin-right: 150px;
   }
 }
+
 @media (max-width: 1199px) {
   .h2_banner-bottom {
     margin-left: 100px;
     margin-right: 100px;
   }
 }
+
 @media (max-width: 991px) {
   .h2_banner-bottom {
     margin-left: 30px;
     margin-right: 30px;
   }
 }
+
 @media (max-width: 767px) {
   .h2_banner-bottom {
     margin-left: 0;
     margin-right: 0;
   }
 }
+
 .h2_banner-bottom-shape {
   position: absolute;
   left: 5px;
   top: -50px;
   z-index: -2;
 }
+
 .h2_banner-form {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.3);
@@ -3632,22 +3905,26 @@ Header CSS 01 Start
   padding: 25px 30px 30px;
   margin-top: 65px;
 }
+
 .h2_banner-form-title {
   color: #1B2A52;
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 16px;
 }
+
 .h2_banner-form form {
   display: flex;
   gap: 10px;
 }
+
 @media (max-width: 480px) {
   .h2_banner-form form {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
+
 .h2_banner-form form button {
   border-radius: 8px;
   background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
@@ -3660,10 +3937,12 @@ Header CSS 01 Start
   display: block;
   flex-shrink: 0;
 }
+
 .h2_banner-form form button i {
   font-size: 12px;
   margin-right: 8px;
 }
+
 .h2_banner-form form input {
   border-radius: 8px;
   border: 1px solid rgba(27, 42, 82, 0.07);
@@ -3681,41 +3960,48 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .h3_banner-single {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 600px;
 }
+
 .h3_banner-content {
   padding-top: 195px;
   padding-bottom: 140px;
   width: 735px;
   flex-shrink: 0;
 }
+
 @media (max-width: 1399px) {
   .h3_banner-content {
     width: 590px;
   }
 }
+
 @media (max-width: 1199px) {
   .h3_banner-content {
     width: 530px;
     margin-right: 40px;
   }
 }
+
 @media (max-width: 991px) {
   .h3_banner-content {
     width: 100%;
     margin-right: 0;
   }
 }
+
 .h3_banner-content-subtitle {
   color: #da0b0b;
   display: block;
   font-size: 16px;
   font-weight: 500;
 }
+
 .h3_banner-content-title {
   margin-bottom: 0;
   color: #1B2A52;
@@ -3724,29 +4010,35 @@ Header CSS 01 Start
   line-height: 1.1;
   letter-spacing: -2.28px;
 }
+
 @media (max-width: 1399px) {
   .h3_banner-content-title {
     font-size: 60px;
   }
 }
+
 @media (max-width: 1199px) {
   .h3_banner-content-title {
     font-size: 54px;
   }
 }
+
 @media (max-width: 575px) {
   .h3_banner-content-title {
     font-size: 48px;
   }
 }
+
 @media (max-width: 480px) {
   .h3_banner-content-title {
     font-size: 40px;
   }
 }
+
 .h3_banner-content-title span {
   color: var(--clr-theme-primary);
 }
+
 .h3_banner-form {
   border-radius: 10px;
   background: #FFF;
@@ -3754,21 +4046,25 @@ Header CSS 01 Start
   padding: 30px 35px 30px;
   margin-top: 45px;
 }
+
 @media (max-width: 480px) {
   .h3_banner-form {
     padding: 30px 30px 30px;
   }
 }
+
 .h3_banner-form form {
   display: flex;
   gap: 10px;
 }
+
 @media (max-width: 480px) {
   .h3_banner-form form {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
+
 .h3_banner-form form button {
   border: none;
   color: #FFF;
@@ -3782,10 +4078,12 @@ Header CSS 01 Start
   background: #da0b0b;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
+
 .h3_banner-form form button i {
   font-size: 12px;
   margin-right: 8px;
 }
+
 .h3_banner-form form input {
   border-radius: 8px;
   border: 1px solid rgba(27, 42, 82, 0.07);
@@ -3798,6 +4096,7 @@ Header CSS 01 Start
   padding: 0 20px;
   background: transparent;
 }
+
 .h3_banner-right {
   width: 495px;
   flex-shrink: 0;
@@ -3809,11 +4108,13 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 @media (max-width: 1199px) {
   .h3_banner-right {
     width: calc(100% - 570px);
   }
 }
+
 .h3_banner-right::before {
   position: absolute;
   left: 0;
@@ -3824,39 +4125,46 @@ Header CSS 01 Start
   background: linear-gradient(180deg, #F2F8FD 0%, rgba(242, 248, 253, 0.2) 17.75%, rgba(255, 255, 255, 0) 76.89%, #F2F8FD 100%);
   z-index: 9;
 }
+
 .h3_banner-shape-1 {
   position: absolute;
   left: 80px;
   bottom: 100px;
 }
+
 .h3_banner-shape-2 {
   position: absolute;
   top: 185px;
   left: 52%;
   transform: translateX(-50%);
 }
+
 @media (max-width: 767px) {
   .h3_banner-shape-2 {
     left: 55%;
     top: 160px;
   }
 }
+
 .h3_banner-shape-3 {
   position: absolute;
   bottom: 42%;
   left: 55%;
   transform: translateX(-50%);
 }
+
 @media (max-width: 1399px) {
   .h3_banner-shape-3 {
     left: 50%;
   }
 }
+
 @media (max-width: 767px) {
   .h3_banner-shape-3 {
     display: none;
   }
 }
+
 .h3_banner-img img {
   border-radius: 10px;
 }
@@ -3866,7 +4174,9 @@ Header CSS 01 Start
   height: 990px;
   transition-timing-function: linear;
 }
+
 @media (max-width: 1199px) {
+
   .h3_banner-active .swiper-wrapper,
   .h3_banner-active-2 .swiper-wrapper {
     height: 720px;
@@ -3877,14 +4187,17 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .h4_banner-single {
   min-height: 600px;
 }
+
 .h4_banner-content {
   padding-top: 116px;
   padding-bottom: 70px;
   text-align: center;
 }
+
 .h4_banner-content-title {
   color: #1B2A52;
   margin-bottom: 20px;
@@ -3893,31 +4206,37 @@ Header CSS 01 Start
   line-height: 1.1;
   letter-spacing: -2.4px;
 }
+
 @media (max-width: 1399px) {
   .h4_banner-content-title {
     font-size: 75px;
   }
 }
+
 @media (max-width: 1199px) {
   .h4_banner-content-title {
     font-size: 65px;
   }
 }
+
 @media (max-width: 991px) {
   .h4_banner-content-title {
     font-size: 60px;
   }
 }
+
 @media (max-width: 767px) {
   .h4_banner-content-title {
     font-size: 45px;
   }
 }
+
 @media (max-width: 575px) {
   .h4_banner-content-title {
     font-size: 42px;
   }
 }
+
 .h4_banner-content p {
   color: #1B2A52;
   font-size: 17px;
@@ -3925,23 +4244,27 @@ Header CSS 01 Start
   line-height: 25px;
   margin-bottom: 0;
 }
+
 @media (max-width: 991px) {
   .h4_banner-content p br {
     display: none;
   }
 }
+
 .h4_banner-shape-1 {
   position: absolute;
   left: calc(6% - 10px);
   top: 15%;
   text-align: center;
 }
+
 @media (max-width: 1399px) {
   .h4_banner-shape-1 {
     top: 13%;
     left: 5%;
   }
 }
+
 .h4_banner-shape-1 img {
   border-radius: 8px;
   background: #FFF;
@@ -3949,6 +4272,7 @@ Header CSS 01 Start
   padding: 11px 11px;
   margin-bottom: 12px;
 }
+
 .h4_banner-shape-1 p {
   color: #1B2A52;
   font-size: 14px;
@@ -3956,18 +4280,21 @@ Header CSS 01 Start
   line-height: 1;
   margin-bottom: 0;
 }
+
 .h4_banner-shape-2 {
   position: absolute;
   left: calc(15% + 15px);
   top: calc(25% + 5px);
   text-align: center;
 }
+
 @media (max-width: 1399px) {
   .h4_banner-shape-2 {
     top: 25%;
     left: 12%;
   }
 }
+
 .h4_banner-shape-2 img {
   border-radius: 8px;
   background: #FFF;
@@ -3975,6 +4302,7 @@ Header CSS 01 Start
   padding: 11px 11px;
   margin-bottom: 12px;
 }
+
 .h4_banner-shape-2 p {
   color: #1B2A52;
   font-size: 14px;
@@ -3982,18 +4310,21 @@ Header CSS 01 Start
   line-height: 1;
   margin-bottom: 0;
 }
+
 .h4_banner-shape-3 {
   position: absolute;
   left: calc(6% + 5px);
   top: calc(36% - 2px);
   text-align: center;
 }
+
 @media (max-width: 1399px) {
   .h4_banner-shape-3 {
     top: 36%;
     left: 5%;
   }
 }
+
 .h4_banner-shape-3 img {
   border-radius: 8px;
   background: #FFF;
@@ -4001,6 +4332,7 @@ Header CSS 01 Start
   padding: 11px 11px;
   margin-bottom: 12px;
 }
+
 .h4_banner-shape-3 p {
   color: #1B2A52;
   font-size: 14px;
@@ -4008,18 +4340,21 @@ Header CSS 01 Start
   line-height: 1;
   margin-bottom: 0;
 }
+
 .h4_banner-shape-4 {
   position: absolute;
   right: calc(6% - 10px);
   top: 15%;
   text-align: center;
 }
+
 @media (max-width: 1399px) {
   .h4_banner-shape-4 {
     top: 13%;
     right: 5%;
   }
 }
+
 .h4_banner-shape-4 img {
   border-radius: 8px;
   background: #FFF;
@@ -4027,6 +4362,7 @@ Header CSS 01 Start
   padding: 11px 11px;
   margin-bottom: 12px;
 }
+
 .h4_banner-shape-4 p {
   color: #1B2A52;
   font-size: 14px;
@@ -4034,18 +4370,21 @@ Header CSS 01 Start
   line-height: 1;
   margin-bottom: 0;
 }
+
 .h4_banner-shape-5 {
   position: absolute;
   right: calc(15% + 15px);
   top: calc(25% + 5px);
   text-align: center;
 }
+
 @media (max-width: 1399px) {
   .h4_banner-shape-5 {
     top: 25%;
     right: 12%;
   }
 }
+
 .h4_banner-shape-5 img {
   border-radius: 8px;
   background: #FFF;
@@ -4053,6 +4392,7 @@ Header CSS 01 Start
   padding: 11px 11px;
   margin-bottom: 12px;
 }
+
 .h4_banner-shape-5 p {
   color: #1B2A52;
   font-size: 14px;
@@ -4060,18 +4400,21 @@ Header CSS 01 Start
   line-height: 1;
   margin-bottom: 0;
 }
+
 .h4_banner-shape-6 {
   position: absolute;
   right: calc(6% + 5px);
   top: calc(36% - 2px);
   text-align: center;
 }
+
 @media (max-width: 1399px) {
   .h4_banner-shape-6 {
     top: 36%;
     right: 5%;
   }
 }
+
 .h4_banner-shape-6 img {
   border-radius: 8px;
   background: #FFF;
@@ -4079,6 +4422,7 @@ Header CSS 01 Start
   padding: 11px 11px;
   margin-bottom: 12px;
 }
+
 .h4_banner-shape-6 p {
   color: #1B2A52;
   font-size: 14px;
@@ -4086,16 +4430,19 @@ Header CSS 01 Start
   line-height: 1;
   margin-bottom: 0;
 }
+
 .h4_banner-bottom {
   position: relative;
   z-index: 1;
 }
+
 .h4_banner-bottom-shape {
   position: absolute;
   left: 5px;
   top: -50px;
   z-index: -2;
 }
+
 .h4_banner-bottom-img {
   max-width: 1110px;
   width: 100%;
@@ -4103,6 +4450,7 @@ Header CSS 01 Start
   margin-right: auto;
   text-align: center;
 }
+
 .h4_banner-form {
   border-radius: 10px;
   background: #FFF;
@@ -4115,17 +4463,20 @@ Header CSS 01 Start
   margin-right: auto;
   width: 100%;
 }
+
 @media (max-width: 480px) {
   .h4_banner-form {
     padding: 25px 30px 30px;
   }
 }
+
 .h4_banner-form-top {
   display: flex;
   align-items: center;
   gap: 25px;
   margin-bottom: 16px;
 }
+
 .h4_banner-form-top span {
   color: #7F879E;
   display: block;
@@ -4134,6 +4485,7 @@ Header CSS 01 Start
   text-transform: uppercase;
   display: block;
 }
+
 .h4_banner-form-title {
   color: #1B2A52;
   margin-bottom: 0;
@@ -4142,15 +4494,18 @@ Header CSS 01 Start
   text-decoration-line: underline;
   text-transform: uppercase;
 }
+
 .h4_banner-form form {
   display: flex;
   gap: 10px;
 }
+
 @media (max-width: 767px) {
   .h4_banner-form form {
     flex-wrap: wrap;
   }
 }
+
 .h4_banner-form form button {
   border-radius: 8px;
   background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
@@ -4163,10 +4518,12 @@ Header CSS 01 Start
   display: block;
   flex-shrink: 0;
 }
+
 .h4_banner-form form button svg {
   font-size: 12px;
   margin-right: 5px;
 }
+
 .h4_banner-form form input {
   border-radius: 8px;
   border: 1px solid rgba(27, 42, 82, 0.07);
@@ -4179,30 +4536,35 @@ Header CSS 01 Start
   padding: 0 20px;
   background: transparent;
 }
+
 .h4_banner-form form input::-webkit-input-placeholder {
   color: #7F879E;
   font-size: 14px;
   font-weight: 500;
   opacity: 1;
 }
+
 .h4_banner-form form input:-moz-placeholder {
   color: #7F879E;
   font-size: 14px;
   font-weight: 500;
   opacity: 1;
 }
+
 .h4_banner-form form input::-moz-placeholder {
   color: #7F879E;
   font-size: 14px;
   font-weight: 500;
   opacity: 1;
 }
+
 .h4_banner-form form input:-ms-input-placeholder {
   color: #7F879E;
   font-size: 14px;
   font-weight: 500;
   opacity: 1;
 }
+
 .h4_banner-form-option.nice-select {
   border-radius: 8px;
   border: 1px solid rgba(27, 42, 82, 0.07);
@@ -4212,6 +4574,7 @@ Header CSS 01 Start
   padding: 0 20px;
   background: transparent;
 }
+
 .h4_banner-form-option.nice-select ul li {
   color: #7F879E;
   font-size: 14px;
@@ -4221,15 +4584,18 @@ Header CSS 01 Start
   line-height: 42px;
   padding: 0 20px;
 }
+
 .h4_banner-form-option.nice-select.open ul {
   width: 100%;
   border-radius: 6px;
   border: none;
   margin-top: 5px;
 }
+
 .h4_banner-form-option.nice-select .option.selected {
   font-weight: 500;
 }
+
 .h4_banner-form-option.nice-select::after {
   border-bottom: 1.5px solid rgba(18, 18, 18, 0.6);
   border-right: 1.5px solid rgba(18, 18, 18, 0.6);
@@ -4251,6 +4617,7 @@ Header CSS 01 Start
   background: linear-gradient(180deg, rgba(125, 37, 236, 0.2) 0%, rgba(125, 37, 236, 0.04) 100%);
   position: relative;
 }
+
 .h5_banner-single {
   display: flex;
   align-items: center;
@@ -4259,9 +4626,11 @@ Header CSS 01 Start
   padding-top: 125px;
   padding-bottom: 150px;
 }
+
 .h5_banner-content {
   text-align: center;
 }
+
 .h5_banner-content-title {
   margin-bottom: 20px;
   color: #1B2A52;
@@ -4270,26 +4639,31 @@ Header CSS 01 Start
   line-height: 1.1;
   letter-spacing: -2.1px;
 }
+
 @media (max-width: 1199px) {
   .h5_banner-content-title {
     font-size: 65px;
   }
 }
+
 @media (max-width: 991px) {
   .h5_banner-content-title {
     font-size: 54px;
   }
 }
+
 @media (max-width: 767px) {
   .h5_banner-content-title {
     font-size: 46px;
   }
 }
+
 @media (max-width: 575px) {
   .h5_banner-content-title {
     font-size: 42px;
   }
 }
+
 .h5_banner-content p {
   color: rgba(27, 42, 82, 0.7);
   font-size: 17px;
@@ -4297,16 +4671,19 @@ Header CSS 01 Start
   line-height: 25px;
   margin-bottom: 45px;
 }
+
 @media (max-width: 991px) {
   .h5_banner-content p br {
     display: none;
   }
 }
+
 @media (max-width: 767px) {
   .h5_banner-content p {
     font-size: 16px;
   }
 }
+
 .h5_banner-form {
   border-radius: 10px;
   background: #FFF;
@@ -4314,27 +4691,32 @@ Header CSS 01 Start
   padding: 30px 35px 30px;
   margin-top: 45px;
 }
+
 @media (max-width: 480px) {
   .h5_banner-form {
     padding: 30px 30px 30px;
   }
 }
+
 .h5_banner-form-title {
   color: #1B2A52;
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 16px;
 }
+
 .h5_banner-form form {
   display: flex;
   gap: 10px;
 }
+
 @media (max-width: 480px) {
   .h5_banner-form form {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
+
 .h5_banner-form form button {
   border: none;
   color: #FFF;
@@ -4348,10 +4730,12 @@ Header CSS 01 Start
   background: #da0b0b;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
+
 .h5_banner-form form button i {
   font-size: 12px;
   margin-right: 8px;
 }
+
 .h5_banner-form form input {
   border-radius: 8px;
   border: 1px solid rgba(27, 42, 82, 0.07);
@@ -4364,22 +4748,26 @@ Header CSS 01 Start
   padding: 0 20px;
   background: transparent;
 }
+
 .h5_banner-shape-1 {
   position: absolute;
   left: calc(12% + 5px);
   top: 17%;
 }
+
 @media (max-width: 1399px) {
   .h5_banner-shape-1 {
     top: 10%;
   }
 }
+
 @media (max-width: 991px) {
   .h5_banner-shape-1 {
     left: 15%;
     top: 8%;
   }
 }
+
 .h5_banner-shape-1 p {
   position: absolute;
   right: 80px;
@@ -4392,16 +4780,19 @@ Header CSS 01 Start
   font-size: 12px;
   color: var(--clr-body-heading);
 }
+
 .h5_banner-shape-2 {
   position: absolute;
   bottom: 43%;
   left: calc(10% + 10px);
 }
+
 @media (max-width: 1399px) {
   .h5_banner-shape-2 {
     bottom: 45%;
   }
 }
+
 .h5_banner-shape-2 p {
   position: absolute;
   left: 62px;
@@ -4414,29 +4805,34 @@ Header CSS 01 Start
   font-size: 12px;
   color: var(--clr-body-heading);
 }
+
 .h5_banner-shape-3 {
   position: absolute;
   top: 17%;
   right: 13%;
 }
+
 @media (max-width: 1399px) {
   .h5_banner-shape-3 {
     top: 10%;
     right: 10%;
   }
 }
+
 @media (max-width: 1199px) {
   .h5_banner-shape-3 {
     top: 10%;
     right: 13%;
   }
 }
+
 @media (max-width: 1199px) {
   .h5_banner-shape-3 {
     top: 8%;
     right: 15%;
   }
 }
+
 .h5_banner-shape-3 p {
   position: absolute;
   left: 80px;
@@ -4449,17 +4845,20 @@ Header CSS 01 Start
   font-size: 12px;
   color: var(--clr-body-heading);
 }
+
 .h5_banner-shape-4 {
   position: absolute;
   bottom: 43%;
   right: 12%;
 }
+
 @media (max-width: 1399px) {
   .h5_banner-shape-4 {
     bottom: 45%;
     right: 6%;
   }
 }
+
 .h5_banner-shape-4 p {
   position: absolute;
   right: 62px;
@@ -4472,16 +4871,19 @@ Header CSS 01 Start
   font-size: 12px;
   color: var(--clr-body-heading);
 }
+
 .h5_banner-tag {
   display: flex;
   gap: 20px;
   align-items: center;
 }
+
 @media (max-width: 991px) {
   .h5_banner-tag {
     align-items: start;
   }
 }
+
 .h5_banner-tag span {
   color: #1B2A52;
   font-size: 15px;
@@ -4489,17 +4891,20 @@ Header CSS 01 Start
   line-height: 25px;
   display: block;
 }
+
 .h5_banner-tag ul {
   display: flex;
   gap: 10px;
   align-items: center;
   list-style: none;
 }
+
 @media (max-width: 991px) {
   .h5_banner-tag ul {
     flex-wrap: wrap;
   }
 }
+
 .h5_banner-tag ul li a {
   border-radius: 6px;
   border: 1px solid rgba(27, 42, 82, 0.2);
@@ -4510,6 +4915,7 @@ Header CSS 01 Start
   font-weight: 500;
   line-height: 20px;
 }
+
 .h5_banner-tag ul li a:hover {
   background-color: var(--clr-theme-primary);
   color: #fff;
@@ -4526,46 +4932,55 @@ Header CSS 01 Start
   padding-bottom: 110px;
   padding-right: 70px;
 }
+
 @media (max-width: 1399px) {
   .h2_about-img {
     margin-right: 15px;
   }
 }
+
 @media (max-width: 1199px) {
   .h2_about-img {
     margin-right: 0;
   }
 }
+
 .h2_about-img .inner-img-1 {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   box-shadow: 0px 2px 30px 0px rgba(27, 42, 82, 0.07);
 }
+
 .h2_about-img .inner-img-2 {
   position: absolute;
   right: 0;
   bottom: 0;
 }
+
 @media (max-width: 1199px) {
   .h2_about-img .inner-img-2 {
     width: 50%;
   }
 }
+
 @media (max-width: 991px) {
   .h2_about-img .inner-img-2 {
     width: 45%;
   }
 }
+
 @media (max-width: 767px) {
   .h2_about-img .inner-img-2 {
     width: initial;
   }
 }
+
 @media (max-width: 575px) {
   .h2_about-img .inner-img-2 {
     width: 50%;
   }
 }
+
 .h2_about-img .inner-img-shape {
   position: absolute;
   left: 18%;
@@ -4589,6 +5004,7 @@ Header CSS 01 Start
   line-height: 36px;
   margin-bottom: 11px;
 }
+
 .section-title {
   color: var(--clr-body-heading);
   font-size: 44px;
@@ -4596,34 +5012,41 @@ Header CSS 01 Start
   line-height: 1.13;
   letter-spacing: -1.76px;
 }
+
 @media (max-width: 991px) {
   .section-title {
     font-size: 40px;
   }
 }
+
 @media (max-width: 767px) {
   .section-title {
     font-size: 36px;
   }
 }
+
 @media (max-width: 480px) {
   .section-title {
     font-size: 34px;
   }
 }
+
 .section-title-big {
   font-size: 55px;
 }
+
 @media (max-width: 991px) {
   .section-title-big {
     font-size: 45px;
   }
 }
+
 @media (max-width: 767px) {
   .section-title-big {
     font-size: 40px;
   }
 }
+
 @media (max-width: 575px) {
   .section-title-big {
     font-size: 36px;
@@ -4639,6 +5062,7 @@ Header CSS 01 Start
   line-height: 20px;
   margin-bottom: 7px;
 }
+
 .h2_section-title {
   color: var(--clr-body-heading);
   font-size: 55px;
@@ -4646,26 +5070,31 @@ Header CSS 01 Start
   line-height: 1.1;
   letter-spacing: -1.76px;
 }
+
 @media (max-width: 1399px) {
   .h2_section-title {
     font-size: 50px;
   }
 }
+
 @media (max-width: 1199px) {
   .h2_section-title {
     font-size: 42px;
   }
 }
+
 @media (max-width: 767px) {
   .h2_section-title {
     font-size: 36px;
   }
 }
+
 @media (max-width: 480px) {
   .h2_section-title {
     font-size: 34px;
   }
 }
+
 .h2_section-text {
   color: #6A738B;
   font-size: 15px;
@@ -4673,6 +5102,7 @@ Header CSS 01 Start
   line-height: 26px;
   margin-bottom: 0;
 }
+
 @media (max-width: 1399px) {
   .h2_section-text br {
     display: none;
@@ -4686,16 +5116,19 @@ Header CSS 01 Start
   font-weight: 700;
   letter-spacing: -1.92px;
 }
+
 @media (max-width: 991px) {
   .h3_section-title {
     font-size: 42px;
   }
 }
+
 @media (max-width: 575px) {
   .h3_section-title {
     font-size: 38px;
   }
 }
+
 @media (max-width: 480px) {
   .h3_section-title {
     font-size: 34px;
@@ -4710,24 +5143,29 @@ Header CSS 01 Start
   letter-spacing: -1.92px;
   letter-spacing: -2.2px;
 }
+
 @media (max-width: 1399px) {
   .h4_section-title {
     font-size: 50px;
   }
 }
+
 @media (max-width: 1199px) {
   .h4_section-title {
     font-size: 45px;
   }
 }
+
 @media (max-width: 767px) {
   .h4_section-title {
     font-size: 38px;
   }
+
   .h4_section-title br {
     display: none;
   }
 }
+
 @media (max-width: 480px) {
   .h4_section-title {
     font-size: 34px;
@@ -4743,6 +5181,7 @@ Header CSS 01 Start
   line-height: 20px;
   margin-bottom: 7px;
 }
+
 .inner_section-title {
   color: var(--clr-body-heading);
   font-size: 44px;
@@ -4750,44 +5189,53 @@ Header CSS 01 Start
   line-height: 1.1;
   letter-spacing: -1.76px;
 }
+
 @media (max-width: 1199px) {
   .inner_section-title br {
     display: none;
   }
 }
+
 @media (max-width: 991px) {
   .inner_section-title {
     font-size: 40px;
   }
 }
+
 @media (max-width: 767px) {
   .inner_section-title {
     font-size: 36px;
   }
 }
+
 @media (max-width: 480px) {
   .inner_section-title {
     font-size: 34px;
   }
 }
+
 .inner_section-title-big {
   font-size: 55px;
 }
+
 @media (max-width: 991px) {
   .inner_section-title-big {
     font-size: 45px;
   }
 }
+
 @media (max-width: 767px) {
   .inner_section-title-big {
     font-size: 40px;
   }
 }
+
 @media (max-width: 575px) {
   .inner_section-title-big {
     font-size: 36px;
   }
 }
+
 .inner_section-text {
   color: #6A738B;
   font-size: 15px;
@@ -4795,6 +5243,7 @@ Header CSS 01 Start
   line-height: 26px;
   margin-bottom: 0;
 }
+
 @media (max-width: 1399px) {
   .inner_section-text br {
     display: none;
@@ -4818,22 +5267,26 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 @media (max-width: 1399px) {
   .choose-item {
     padding: 40px 30px 35px;
   }
 }
+
 @media (max-width: 1199px) {
   .choose-item {
     padding: 40px 35px 35px;
   }
 }
+
 .choose-item:hover {
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 16px 60px 0px rgba(26, 40, 75, 0.1);
   border-color: transparent;
 }
+
 .choose-item-count {
   position: absolute;
   right: 45px;
@@ -4846,9 +5299,11 @@ Header CSS 01 Start
   display: block;
   transform: rotate(-15deg);
 }
+
 .choose-item-img {
   margin-bottom: 34px;
 }
+
 .choose-item-content-title {
   color: #1B2A52;
   font-size: 20px;
@@ -4857,9 +5312,11 @@ Header CSS 01 Start
   letter-spacing: -0.6px;
   margin-bottom: 15px;
 }
+
 .choose-item-content-title:hover a {
   color: var(--clr-theme-primary);
 }
+
 .choose-item-content p {
   color: #6A738B;
   font-size: 14px;
@@ -4867,6 +5324,7 @@ Header CSS 01 Start
   line-height: 22px;
   margin-bottom: 32px;
 }
+
 .choose-item-content-btn {
   color: #1B2A52;
   font-size: 14px;
@@ -4876,9 +5334,11 @@ Header CSS 01 Start
   align-items: center;
   gap: 8px;
 }
+
 .choose-item-content-btn i {
   margin-top: 2px;
 }
+
 .choose-item-content-btn:hover {
   color: var(--clr-theme-primary);
 }
@@ -4887,7 +5347,7 @@ Header CSS 01 Start
 08. feature
 /////////////////////////////////////////////////////////// */
 
-.feature-area-hub{
+.feature-area-hub {
   background: #F2F8FD;
 }
 
@@ -4896,16 +5356,19 @@ Header CSS 01 Start
   display: flex;
   gap: 105px;
 }
+
 @media (max-width: 1199px) {
   .feature-top {
     gap: 30px;
   }
 }
+
 @media (max-width: 991px) {
   .feature-top {
     flex-wrap: wrap;
   }
 }
+
 .feature-item {
   border-radius: 10px;
   border: 1px solid rgba(27, 42, 82, 0.07);
@@ -4925,11 +5388,13 @@ Header CSS 01 Start
     width: calc(50% - 15px);
   }
 }
+
 @media (max-width: 575px) {
   .feature-item {
     width: 100%;
   }
 }
+
 .feature-item-title {
   color: #1B2A52;
   font-size: 20px;
@@ -4944,6 +5409,7 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .feature-item p {
   color: #6A738B;
   font-size: 14px;
@@ -4976,7 +5442,7 @@ Header CSS 01 Start
   color: #fff;
 }
 
-.feature-item .choose-item-content-btn{
+.feature-item .choose-item-content-btn {
   color: #1B2A52;
   font-size: 14px;
   line-height: 21px;
@@ -4993,11 +5459,13 @@ Header CSS 01 Start
   transform: translateY(-50%);
   content: url("../../assets/images/feature/shape-4-red.png");
 }
+
 @media (max-width: 1199px) {
   .feature-item-1::after {
     display: none;
   }
 }
+
 .feature-item-2::after {
   position: absolute;
   right: -84px;
@@ -5005,6 +5473,7 @@ Header CSS 01 Start
   transform: translateY(-50%);
   content: url("../../assets/images/feature/shape-5-red.png");
 }
+
 @media (max-width: 1199px) {
   .feature-item-2::after {
     display: none;
@@ -5031,11 +5500,13 @@ Header CSS 01 Start
     width: calc(50% - 15px);
   }
 }
+
 @media (max-width: 575px) {
   .feature-item-hub {
     width: 100%;
   }
 }
+
 .feature-item-hub .feature-item-title {
   text-align: center;
   color: #1B2A52;
@@ -5051,6 +5522,7 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .feature-item-hub p {
   color: #6A738B;
   font-size: 14px;
@@ -5068,9 +5540,11 @@ Header CSS 01 Start
   background-color: var(--clr-theme-primary);
   border-color: transparent;
 }
+
 .feature-item-hub:hover .feature-item-title {
   color: #fff;
 }
+
 .feature-item-hub:hover p {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -5081,9 +5555,11 @@ Header CSS 01 Start
   background-color: var(--clr-theme-primary);
   border-color: transparent;
 }
+
 .feature-item:hover .feature-item-title {
   color: #fff;
 }
+
 .feature-item:hover p {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -5093,62 +5569,74 @@ Header CSS 01 Start
 .feature-left-img {
   margin-right: 30px;
 }
+
 .feature-left-img img {
   width: 100%;
 }
+
 @media (max-width: 767px) {
   .feature-left-img {
     margin-right: 0;
   }
 }
+
 .feature-right-img {
   position: relative;
   z-index: 1;
   display: flex;
   justify-content: end;
 }
+
 @media (max-width: 575px) {
   .feature-right-img {
     justify-content: center;
     order: 0;
   }
 }
+
 .feature-shape-1 {
   position: absolute;
   right: -45px;
   top: 75px;
 }
+
 @media (max-width: 1399px) {
   .feature-shape-1 {
     right: -20px;
   }
 }
+
 @media (max-width: 767px) {
   .feature-shape-1 {
     display: none;
   }
 }
+
 .feature-shape-2 {
   position: absolute;
   left: 105px;
   top: -15px;
 }
+
 @media (max-width: 767px) {
   .feature-shape-2 {
     display: none;
   }
 }
+
 .feature-shape-3 {
   position: absolute;
   left: 25px;
   top: 135px;
 }
+
 @media (max-width: 991px) {
   .feature-shape-3 {
     left: 0;
     top: 30px;
   }
 }
+
 @media (max-width: 767px) {
   .feature-shape-3 {
     display: none;
@@ -5161,26 +5649,31 @@ Header CSS 01 Start
   padding: 0 50px 55px;
   text-align: center;
 }
+
 @media (max-width: 480px) {
   .h4_feature-item {
     padding: 0 30px 55px;
   }
 }
+
 .h4_feature-item-img {
   height: 205px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .h4_feature-item-content-title {
   color: #1B2A52;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.72px;
 }
+
 .h4_feature-item-content-title:hover a {
   color: var(--clr-theme-primary);
 }
+
 .h4_feature-item-content p {
   color: #7F879E;
   text-align: center;
@@ -5194,6 +5687,7 @@ Header CSS 01 Start
   list-style: none;
   margin-bottom: 45px;
 }
+
 .inner_feature-content-list li {
   color: #1B2A52;
   font-size: 15px;
@@ -5204,6 +5698,7 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .inner_feature-content-list li::before {
   position: absolute;
   left: 0;
@@ -5211,20 +5706,25 @@ Header CSS 01 Start
   transform: translateY(-50%);
   content: url("../../assets/images/work/home2/checkmark.png");
 }
+
 .inner_feature-content-list li:last-child {
   margin-bottom: 0;
 }
+
 .inner_feature-img {
   margin-left: 30px;
 }
+
 .inner_feature-img img {
   width: 100%;
 }
+
 @media (max-width: 1199px) {
   .inner_feature-img {
     margin-left: 0;
   }
 }
+
 .inner_feature-img-2 {
   margin-left: 45px;
   position: relative;
@@ -5232,46 +5732,55 @@ Header CSS 01 Start
   padding-bottom: 110px;
   padding-right: 70px;
 }
+
 @media (max-width: 1399px) {
   .inner_feature-img-2 {
     margin-left: 15px;
   }
 }
+
 @media (max-width: 1199px) {
   .inner_feature-img-2 {
     margin-left: 0;
   }
 }
+
 .inner_feature-img-2 .inner-img-1 {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   box-shadow: 0px 2px 30px 0px rgba(27, 42, 82, 0.07);
 }
+
 .inner_feature-img-2 .inner-img-2 {
   position: absolute;
   right: 0;
   bottom: 0;
 }
+
 @media (max-width: 1199px) {
   .inner_feature-img-2 .inner-img-2 {
     width: 50%;
   }
 }
+
 @media (max-width: 991px) {
   .inner_feature-img-2 .inner-img-2 {
     width: 45%;
   }
 }
+
 @media (max-width: 767px) {
   .inner_feature-img-2 .inner-img-2 {
     width: initial;
   }
 }
+
 @media (max-width: 575px) {
   .inner_feature-img-2 .inner-img-2 {
     width: 50%;
   }
 }
+
 .inner_feature-img-2 .inner-img-shape {
   position: absolute;
   left: 18%;
@@ -5287,12 +5796,14 @@ Header CSS 01 Start
   background: #F2F8FD;
 
 }
+
 .h2_work-content-list {
   list-style: none;
   margin-bottom: 45px;
-  
+
 
 }
+
 .h2_work-content-list li {
   color: #1B2A52;
   font-size: 15px;
@@ -5321,17 +5832,18 @@ Header CSS 01 Start
   margin: 0;
   padding: 0;
 }
-.feature-area .h2_work-content-list li{
+
+.feature-area .h2_work-content-list li {
   position: relative;
-  padding-left: 28px;               
+  padding-left: 28px;
 }
 
 
 .feature-area .h2_work-content-list li::before,
-.feature-area .h2_work-content-list li::after{
+.feature-area .h2_work-content-list li::after {
   content: "";
   position: absolute;
-  left: 0;                         
+  left: 0;
   top: 0.55em;
   transform: translateY(-50%);
   width: 18px;
@@ -5340,32 +5852,44 @@ Header CSS 01 Start
   background-size: 18px 18px;
   transition: opacity .2s ease;
 }
-.feature-area .h2_work-content-list li::before{
+
+.feature-area .h2_work-content-list li::before {
   background-image: url("/assets/images/work/home2/checkmark.png");
   opacity: 1;
 }
-.feature-area .h2_work-content-list li::after{
-  background-image: url("/assets/images/work/home2/checkmark_white.png"); 
+
+.feature-area .h2_work-content-list li::after {
+  background-image: url("/assets/images/work/home2/checkmark_white.png");
   opacity: 0;
 }
 
 
-.feature-area .feature-item-2 .h2_work-content-list li::before{
+.feature-area .feature-item-2 .h2_work-content-list li::before {
 
   background-image: url("/assets/images/work/home2/circle_x_gap_between_med_large_purple_thin2px.png");
 }
 
-.feature-area .feature-item-2 .h2_work-content-list li::after{
-  
+.feature-area .feature-item-2 .h2_work-content-list li::after {
+
   background-image: url("/assets/images/work/home2/circle_x_gap_between_med_large_white_thin2px.png");
 }
 
 
-.feature-area .feature-item:hover .h2_work-content-list li::before { opacity: 0; }
-.feature-area .feature-item:hover .h2_work-content-list li::after  { opacity: 1; }
+.feature-area .feature-item:hover .h2_work-content-list li::before {
+  opacity: 0;
+}
 
-.feature-area .feature-item:hover .h2_work-content-list li::before { opacity: 0; }
-.feature-area .feature-item:hover .h2_work-content-list li::after  { opacity: 1; }
+.feature-area .feature-item:hover .h2_work-content-list li::after {
+  opacity: 1;
+}
+
+.feature-area .feature-item:hover .h2_work-content-list li::before {
+  opacity: 0;
+}
+
+.feature-area .feature-item:hover .h2_work-content-list li::after {
+  opacity: 1;
+}
 
 
 .feature-area .h2_work-content-list li {
@@ -5380,12 +5904,15 @@ Header CSS 01 Start
 .h2_work-content-list li:last-child {
   margin-bottom: 0;
 }
+
 .h2_work-img {
   margin-left: 30px;
 }
+
 .h2_work-img img {
   width: 100%;
 }
+
 @media (max-width: 1199px) {
   .h2_work-img {
     margin-left: 0;
@@ -5398,11 +5925,13 @@ Header CSS 01 Start
   gap: 20px;
   flex-wrap: wrap;
 }
+
 @media (max-width: 1199px) {
   .h2_work-bottom {
     justify-content: center;
   }
 }
+
 .h2_work-item {
   display: flex;
   align-items: center;
@@ -5414,11 +5943,13 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 @media (max-width: 1199px) {
   .h2_work-item {
     padding: 15px 30px 15px 15px;
   }
 }
+
 .h2_work-item-1::after {
   position: absolute;
   right: -113px;
@@ -5426,11 +5957,13 @@ Header CSS 01 Start
   transform: translateY(-50%);
   content: url("../../assets/images/work/home2/line.png");
 }
+
 @media (max-width: 1399px) {
   .h2_work-item-1::after {
     display: none;
   }
 }
+
 .h2_work-item-2::after {
   position: absolute;
   right: -113px;
@@ -5438,11 +5971,13 @@ Header CSS 01 Start
   transform: translateY(-50%);
   content: url("../../assets/images/work/home2/line.png");
 }
+
 @media (max-width: 1399px) {
   .h2_work-item-2::after {
     display: none;
   }
 }
+
 .h2_work-item-icon {
   border-radius: 50px;
   background: #F0F2F8;
@@ -5457,6 +5992,7 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h2_work-item-icon i {
   color: #1B2A52;
   font-size: 24px;
@@ -5466,6 +6002,7 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h2_work-item-info span {
   color: #1B2A52;
   font-size: 17px;
@@ -5479,32 +6016,38 @@ Header CSS 01 Start
   left: 6%;
   top: 22%;
 }
+
 @media (max-width: 1399px) {
   .h2_work-shape-1 {
     display: none;
   }
 }
+
 .h2_work-shape-2 {
   position: absolute;
   left: 10%;
   bottom: calc(28% - 5px);
 }
+
 @media (max-width: 1399px) {
   .h2_work-shape-2 {
     display: none;
   }
 }
+
 .h2_work-shape-3 {
   position: absolute;
   left: 42%;
   transform: translateX(-50%);
   top: 14%;
 }
+
 .h2_work-shape-4 {
   position: absolute;
   top: 30%;
   right: 6%;
 }
+
 @media (max-width: 1399px) {
   .h2_work-shape-4 {
     display: none;
@@ -5514,6 +6057,7 @@ Header CSS 01 Start
 .h2_work-item:hover .h2_work-item-icon {
   background-color: var(--clr-body-heading);
 }
+
 .h2_work-item:hover .h2_work-item-icon i {
   color: #fff;
 }
@@ -5523,6 +6067,7 @@ Header CSS 01 Start
   gap: 20px;
   align-items: center;
 }
+
 @media (max-width: 767px) {
   .h3_work-wrap {
     flex-wrap: wrap;
@@ -5534,46 +6079,55 @@ Header CSS 01 Start
     width: calc(50% - 10px);
   }
 }
+
 @media (max-width: 480px) {
   .h3_work-item {
     width: 100%;
   }
 }
+
 @media (max-width: 767px) {
   .h3_work-item-2 {
     width: 100%;
     order: 2;
   }
 }
+
 @media (max-width: 480px) {
   .h3_work-item-2 {
     order: 1;
   }
 }
+
 @media (max-width: 767px) {
   .h3_work-item-3 {
     order: 1;
   }
 }
+
 @media (max-width: 480px) {
   .h3_work-item-3 {
     order: 2;
   }
 }
+
 .h3_work-item-img {
   border-radius: 14px;
   overflow: hidden;
 }
+
 .h3_work-item-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .h3_work-item-img a {
   position: relative;
   z-index: 1;
   display: block;
 }
+
 .h3_work-item-img a::before {
   position: absolute;
   left: 0;
@@ -5597,6 +6151,7 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h3_work-item-img a:hover::before {
   opacity: 1;
   visibility: visible;
@@ -5606,11 +6161,13 @@ Header CSS 01 Start
   display: flex;
   justify-content: end;
 }
+
 @media (max-width: 767px) {
   .h3_work-top-btn {
     justify-content: flex-start;
   }
 }
+
 .h3_work-top-btn a {
   border-radius: 8px;
   border: 1px solid #da0b0b;
@@ -5622,6 +6179,7 @@ Header CSS 01 Start
   display: flex;
   align-items: center;
 }
+
 .h3_work-top-btn a:hover {
   background-color: #da0b0b;
   color: #fff;
@@ -5633,6 +6191,7 @@ Header CSS 01 Start
   z-index: 1;
   overflow: hidden;
 }
+
 .h5_work-item::before {
   position: absolute;
   left: 0;
@@ -5643,6 +6202,7 @@ Header CSS 01 Start
   background: linear-gradient(180deg, rgba(27, 42, 82, 0) 67.16%, rgba(27, 42, 82, 0.5) 82.32%, rgba(27, 42, 82, 0.6) 100%);
   z-index: 1;
 }
+
 .h5_work-item a {
   position: absolute;
   left: 30px;
@@ -5655,17 +6215,21 @@ Header CSS 01 Start
   display: block;
   z-index: 1;
 }
+
 .h5_work-item a:hover {
   color: var(--clr-color-violet);
 }
+
 .h5_work-item img {
   width: 100%;
 }
+
 .h5_work-navigation {
   display: flex;
   gap: 10px;
   justify-content: end;
 }
+
 .h5_work-navigation div {
   width: 40px;
   height: 40px;
@@ -5682,12 +6246,14 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   font-weight: 500;
 }
+
 .h5_work-navigation div:hover {
   border-color: transparent;
   color: #fff;
   background: #da0b0b;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
+
 @media (max-width: 575px) {
   .h5_work-navigation {
     justify-content: flex-start;
@@ -5697,46 +6263,56 @@ Header CSS 01 Start
 .inner_work-img {
   margin-right: 45px;
 }
+
 @media (max-width: 1199px) {
   .inner_work-img {
     margin-right: 0;
   }
 }
+
 @media (max-width: 767px) {
   .inner_work-img {
     margin-bottom: 40px;
   }
 }
+
 .inner_work-wrap {
   margin-right: 80px;
 }
+
 @media (max-width: 1399px) {
   .inner_work-wrap {
     margin-right: 0;
   }
 }
+
 .inner_work-content {
   margin-bottom: 42px;
 }
+
 .inner_work-item {
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
 @media (max-width: 480px) {
   .inner_work-item {
     flex-wrap: wrap;
     gap: 10px;
   }
 }
+
 .inner_work-item:not(:last-child) {
   border-bottom: 1px solid rgba(27, 42, 82, 0.08);
   padding-bottom: 17px;
   margin-bottom: 16px;
 }
+
 .inner_work-item-number {
   width: 105px;
 }
+
 .inner_work-item-number h3 {
   color: #da0b0b;
   font-size: 36px;
@@ -5745,6 +6321,7 @@ Header CSS 01 Start
   letter-spacing: -1.44px;
   margin-bottom: 0;
 }
+
 .inner_work-item-text p {
   color: #7F879E;
   font-size: 15px;
@@ -5765,6 +6342,7 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .apps-icon {
   display: flex;
   align-items: center;
@@ -5773,12 +6351,15 @@ Header CSS 01 Start
   column-gap: 45px;
   flex-wrap: wrap;
 }
+
 .apps-icon-item:nth-child(even) {
   margin-bottom: 50px;
 }
+
 .apps-content {
   text-align: center;
 }
+
 .apps-content h2 {
   font-size: 44px;
   font-weight: 700;
@@ -5786,58 +6367,69 @@ Header CSS 01 Start
   letter-spacing: -1.76px;
   margin-bottom: 20px;
 }
+
 @media (max-width: 991px) {
   .apps-content h2 {
     font-size: 40px;
   }
 }
+
 @media (max-width: 575px) {
   .apps-content h2 {
     font-size: 35px;
   }
 }
+
 @media (max-width: 480px) {
   .apps-content h2 {
     font-size: 30px;
   }
 }
+
 .apps-content p {
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
   margin-bottom: 45px;
 }
+
 @media (max-width: 575px) {
   .apps-content p br {
     display: none;
   }
 }
+
 .apps-shape-1 {
   position: absolute;
   left: 5%;
   top: 40%;
 }
+
 .apps-shape-2 {
   position: absolute;
   left: calc(22% + 8px);
   bottom: 165px;
 }
+
 .apps-shape-3 {
   position: absolute;
   left: 0;
   bottom: 0;
 }
+
 .apps-shape-4 {
   position: absolute;
   bottom: 185px;
   right: calc(21% - 12px);
 }
+
 .apps-shape-5 {
   position: absolute;
   right: calc(9% + 7px);
   top: 50%;
   transform: translateY(-50%);
 }
+
 .apps-shape-6 {
   position: absolute;
   right: calc(13% + 3px);
@@ -5853,15 +6445,18 @@ Header CSS 01 Start
   padding: 0 34px 42px;
   margin-bottom: 30px;
 }
+
 @media (max-width: 480px) {
   .price-item {
     padding: 0 30px 42px;
   }
 }
+
 .price-item-option {
   display: flex;
   justify-content: center;
 }
+
 .price-item-option span {
   color: #FFF;
   font-size: 12px;
@@ -5875,16 +6470,19 @@ Header CSS 01 Start
   height: 24px;
   line-height: 24px;
 }
+
 .price-item-head {
   text-align: center;
   padding-top: 40px;
   margin-bottom: 30px;
 }
+
 .price-item-title {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
 }
+
 .price-item-amount {
   display: flex;
   align-items: center;
@@ -5892,6 +6490,7 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .price-item-amount del {
   color: #6A738B;
   font-size: 18px;
@@ -5899,6 +6498,7 @@ Header CSS 01 Start
   letter-spacing: -0.72px;
   margin-right: 5px;
 }
+
 .price-item-amount-title {
   color: #1B2A52;
   font-size: 40px;
@@ -5906,12 +6506,14 @@ Header CSS 01 Start
   letter-spacing: -1.6px;
   margin-bottom: 0px;
 }
+
 .price-item-amount-title span {
   color: #1B2A52;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.96px;
 }
+
 .price-item-amount .amount-offer {
   position: absolute;
   top: -5px;
@@ -5929,6 +6531,7 @@ Header CSS 01 Start
   border-radius: 2px;
   letter-spacing: 0px;
 }
+
 .price-item-amount .amount-offer::before {
   position: absolute;
   left: 6px;
@@ -5939,6 +6542,7 @@ Header CSS 01 Start
   width: 9px;
   height: 6px;
 }
+
 .price-item p {
   color: #6A738B;
   font-size: 14px;
@@ -5947,6 +6551,7 @@ Header CSS 01 Start
   text-align: center;
   margin-bottom: 15px;
 }
+
 .price-item-offer {
   color: #7D25EC;
   text-align: center;
@@ -5962,6 +6567,7 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .price-item-offer::before {
   position: absolute;
   left: -5px;
@@ -5973,6 +6579,7 @@ Header CSS 01 Start
   height: 10px;
   border-radius: 50%;
 }
+
 .price-item-offer::after {
   position: absolute;
   right: -5px;
@@ -5984,6 +6591,7 @@ Header CSS 01 Start
   height: 10px;
   border-radius: 50%;
 }
+
 .price-item-btn {
   border-radius: 8px;
   background: #FFF;
@@ -6007,16 +6615,20 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .price-item-btn i {
   margin-top: 2px;
 }
+
 .price-item-btn:hover {
   background-color: var(--clr-theme-primary);
   color: #fff;
 }
+
 .price-item-list {
   list-style: none;
 }
+
 .price-item-list li {
   color: #1B2A52;
   font-size: 14px;
@@ -6027,6 +6639,7 @@ Header CSS 01 Start
   z-index: 1;
   margin-bottom: 20px;
 }
+
 .price-item-list li::before {
   position: absolute;
   left: 0;
@@ -6037,25 +6650,31 @@ Header CSS 01 Start
   background: linear-gradient(180deg, #1FDB00 0%, #099B18 93.72%);
   top: 7px;
 }
+
 .price-item-list li:last-child {
   margin-bottom: 0;
 }
+
 .price-item-list li.not-abatable {
   color: #6A738B;
 }
+
 .price-item-list li.not-abatable::before {
   background: #6A738B;
 }
+
 .price-item.active {
   border-radius: 14px;
   border: 1.5px solid #7D25EC;
   background: #FFF;
   box-shadow: 0px 10px 30px 0px rgba(27, 42, 82, 0.07);
 }
+
 .price-item.active .price-item-btn {
   background-color: var(--clr-theme-primary);
   color: #fff;
 }
+
 .price-item-1 p {
   margin-bottom: 75px;
 }
@@ -6069,6 +6688,7 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .price-tab .yearly-pack .amount-offer {
   position: absolute;
   top: -30px;
@@ -6085,11 +6705,13 @@ Header CSS 01 Start
   border-radius: 3px;
   letter-spacing: 0px;
 }
+
 @media (max-width: 480px) {
   .price-tab .yearly-pack .amount-offer {
     right: -15px;
   }
 }
+
 .price-tab .yearly-pack .amount-offer::before {
   position: absolute;
   left: 20px;
@@ -6100,6 +6722,7 @@ Header CSS 01 Start
   width: 9px;
   height: 6px;
 }
+
 .price-tab .switch {
   position: absolute;
   left: 5px;
@@ -6114,19 +6737,26 @@ Header CSS 01 Start
   transition-delay: 0s, 0.08s;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
-.price-tab .toggle, .price-tab .toggler {
+
+.price-tab .toggle,
+.price-tab .toggler {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .price-tab .toggle, .price-tab .toggler {
+
+  .price-tab .toggle,
+  .price-tab .toggler {
     margin-right: 5px;
   }
 }
+
 .price-tab .hide {
   display: none;
 }
+
 .price-tab .toggler {
   transition: 0.2s;
   cursor: pointer;
@@ -6136,9 +6766,11 @@ Header CSS 01 Start
   font-size: 15px;
   font-weight: 600;
 }
+
 .price-tab .toggler--is-active {
   color: var(--clr-body-heading);
 }
+
 .price-tab .toggle {
   position: relative;
   width: 70px;
@@ -6148,6 +6780,7 @@ Header CSS 01 Start
   overflow: hidden;
   box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.05);
 }
+
 .price-tab .tp-check {
   position: absolute;
   display: block;
@@ -6159,19 +6792,26 @@ Header CSS 01 Start
   opacity: 0;
   z-index: 6;
 }
-.price-tab .tp-check:checked ~ .switch {
+
+.price-tab .tp-check:checked~.switch {
   right: 5px;
   left: 57.5%;
   transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition-property: left, right;
   transition-delay: 0.08s, 0s;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px),
+only screen and (min-width: 576px) and (max-width: 767px) {
   .price-tab .price-scroll-width {
     width: 1100px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px),
+only screen and (min-width: 576px) and (max-width: 767px) {
   .price-tab .price-scroll {
     overflow-x: scroll;
     scrollbar-color: rgba(181, 165, 165, 0.56) rgba(255, 255, 255, 0.1);
@@ -6184,30 +6824,37 @@ Header CSS 01 Start
   box-shadow: 0px 2px 8px 0px rgba(27, 42, 82, 0.07);
   padding: 0 70px 50px;
 }
+
 @media (max-width: 1399px) {
   .h2_price-area .price-item {
     padding: 0 40px 50px;
   }
 }
+
 .h2_price-area .price-item.active {
   box-shadow: 0px 16px 60px 0px rgba(26, 40, 75, 0.1);
 }
+
 .h2_price-area .price-item.active .price-item-btn {
   background-color: var(--clr-theme-primary);
   color: #fff;
 }
+
 .h2_price-area .price-item-list li {
   padding-left: 0;
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .h2_price-area .price-item-list li::before {
   display: none;
 }
+
 .h2_price-area .price-item-list li svg {
   color: var(--clr-theme-primary);
 }
+
 .h2_price-area .price-item-list li.not-abatable svg {
   color: #6A738B;
 }
@@ -6215,39 +6862,47 @@ Header CSS 01 Start
 .h3_price-area {
   background: #F2F8FD;
 }
+
 .h3_price-area .price-item {
   border-radius: 10px;
   background: #FFF;
   padding: 0 70px 50px;
   box-shadow: 0px 2px 8px 0px rgba(27, 42, 82, 0.07);
 }
+
 @media (max-width: 1399px) {
   .h3_price-area .price-item {
     padding: 0 40px 50px;
   }
 }
+
 .h3_price-area .price-item.active {
   border-radius: 14px;
   border: none;
   background: #FFF;
   box-shadow: 0px 20px 60px 0px rgba(27, 42, 82, 0.07);
 }
+
 .h3_price-area .price-item.active .price-item-btn {
   background-color: var(--clr-theme-primary);
   color: #fff;
 }
+
 .h3_price-area .price-item-list li {
   padding-left: 0;
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .h3_price-area .price-item-list li::before {
   display: none;
 }
+
 .h3_price-area .price-item-list li svg {
   color: var(--clr-theme-primary);
 }
+
 .h3_price-area .price-item-list li.not-abatable svg {
   color: #6A738B;
 }
@@ -6256,12 +6911,14 @@ Header CSS 01 Start
   display: flex;
   justify-content: center;
 }
+
 .h3_price-tab ul.nav {
   border-radius: 50px;
   border: 1px solid rgba(27, 42, 82, 0.07);
   background: #FFF;
   padding: 5px;
 }
+
 .h3_price-tab ul.nav .nav-item .nav-link {
   color: #1B2A52;
   font-size: 14px;
@@ -6274,6 +6931,7 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h3_price-tab ul.nav .nav-item .nav-link.active {
   border-radius: 50px;
   background: #7D25EC;
@@ -6286,6 +6944,7 @@ Header CSS 01 Start
 .testimonial-area {
   background: linear-gradient(180deg, rgba(242, 248, 253, 0) 0%, #F2F8FD 100%);
 }
+
 .testimonial-item {
   border-radius: 10px;
   background: #FFF;
@@ -6300,11 +6959,13 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .testimonial-item:hover {
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 20px 100px 0px rgba(27, 42, 82, 0.14);
 }
+
 .testimonial-item p {
   color: #6A738B;
   font-size: 15px;
@@ -6312,23 +6973,27 @@ Header CSS 01 Start
   line-height: 25px;
   margin-bottom: 0;
 }
+
 .testimonial-icon {
   position: absolute;
   right: 30px;
   top: 35px;
 }
+
 .testimonial-head {
   display: flex;
   gap: 10px;
   align-items: center;
   margin-bottom: 13px;
 }
+
 .testimonial-head-img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   overflow: hidden;
 }
+
 .testimonial-head-info h6 {
   color: #1B2A52;
   font-size: 15px;
@@ -6342,9 +7007,11 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   cursor: pointer;
 }
+
 .testimonial-head-info h6:hover {
   color: var(--clr-theme-primary);
 }
+
 .testimonial-head-info span {
   color: #6A738B;
   font-size: 14px;
@@ -6352,12 +7019,14 @@ Header CSS 01 Start
   display: block;
   line-height: 22px;
 }
+
 .testimonial-rating {
   list-style: none;
   display: flex;
   gap: 5px;
   margin-bottom: 17px;
 }
+
 .testimonial-rating li {
   font-size: 14px;
   color: #F59E0B;
@@ -6370,6 +7039,7 @@ Header CSS 01 Start
 .h2_testimonial-area {
   background: #fff;
 }
+
 .h2_testimonial-item {
   border-radius: 10px;
   background: #FFF;
@@ -6384,11 +7054,13 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h2_testimonial-item:hover {
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 16px 60px 0px rgba(26, 40, 75, 0.1);
 }
+
 .h2_testimonial-item p {
   color: #6A738B;
   font-size: 15px;
@@ -6396,23 +7068,27 @@ Header CSS 01 Start
   line-height: 25px;
   margin-bottom: 0;
 }
+
 .h2_testimonial-icon {
   position: absolute;
   right: 30px;
   top: 35px;
 }
+
 .h2_testimonial-head {
   display: flex;
   gap: 10px;
   align-items: center;
   margin-bottom: 13px;
 }
+
 .h2_testimonial-head-img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   overflow: hidden;
 }
+
 .h2_testimonial-head-info h6 {
   color: #1B2A52;
   font-size: 15px;
@@ -6426,9 +7102,11 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   cursor: pointer;
 }
+
 .h2_testimonial-head-info h6:hover {
   color: var(--clr-theme-primary);
 }
+
 .h2_testimonial-head-info span {
   color: #6A738B;
   font-size: 14px;
@@ -6436,12 +7114,14 @@ Header CSS 01 Start
   display: block;
   line-height: 22px;
 }
+
 .h2_testimonial-rating {
   list-style: none;
   display: flex;
   gap: 5px;
   margin-bottom: 17px;
 }
+
 .h2_testimonial-rating li {
   font-size: 14px;
   color: #F59E0B;
@@ -6477,6 +7157,7 @@ Header CSS 01 Start
 .h3_testimonial-area {
   background: #F2F8FD;
 }
+
 .h3_testimonial-item {
   border-radius: 10px;
   background: #FFF;
@@ -6491,11 +7172,13 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h3_testimonial-item:hover {
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 20px 60px 0px rgba(27, 42, 82, 0.07);
 }
+
 .h3_testimonial-item p {
   color: #6A738B;
   font-size: 15px;
@@ -6503,23 +7186,27 @@ Header CSS 01 Start
   line-height: 25px;
   margin-bottom: 0;
 }
+
 .h3_testimonial-icon {
   position: absolute;
   right: 30px;
   top: 35px;
 }
+
 .h3_testimonial-head {
   display: flex;
   gap: 10px;
   align-items: center;
   margin-bottom: 13px;
 }
+
 .h3_testimonial-head-img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   overflow: hidden;
 }
+
 .h3_testimonial-head-info h6 {
   color: #1B2A52;
   font-size: 15px;
@@ -6533,9 +7220,11 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   cursor: pointer;
 }
+
 .h3_testimonial-head-info h6:hover {
   color: var(--clr-theme-primary);
 }
+
 .h3_testimonial-head-info span {
   color: #6A738B;
   font-size: 14px;
@@ -6543,12 +7232,14 @@ Header CSS 01 Start
   display: block;
   line-height: 22px;
 }
+
 .h3_testimonial-rating {
   list-style: none;
   display: flex;
   gap: 5px;
   margin-bottom: 9px;
 }
+
 .h3_testimonial-rating li {
   font-size: 14px;
   color: #F59E0B;
@@ -6585,11 +7276,13 @@ Header CSS 01 Start
   background: #FFF;
   box-shadow: 0px 2px 4px 0px rgba(27, 42, 82, 0.2);
 }
+
 .h4_testimonial-item-top {
   padding: 40px 25px 38px;
   position: relative;
   z-index: 1;
 }
+
 .h4_testimonial-item-top p {
   color: #7F879E;
   font-size: 15px;
@@ -6597,17 +7290,20 @@ Header CSS 01 Start
   line-height: 25px;
   margin-bottom: 0;
 }
+
 .h4_testimonial-rating {
   list-style: none;
   display: flex;
   gap: 5px;
   margin-bottom: 20px;
 }
+
 .h4_testimonial-rating li {
   font-size: 14px;
   color: #F59E0B;
   line-height: 22px;
 }
+
 .h4_testimonial-icon {
   position: absolute;
   right: 20px;
@@ -6620,9 +7316,11 @@ Header CSS 01 Start
   align-items: center;
   justify-content: center;
 }
+
 .h4_testimonial-icon svg {
   color: rgba(27, 42, 82, 0.5);
 }
+
 .h4_testimonial-head {
   display: flex;
   gap: 10px;
@@ -6630,12 +7328,14 @@ Header CSS 01 Start
   border-top: 1px solid rgba(27, 42, 82, 0.07);
   padding: 20px 25px;
 }
+
 .h4_testimonial-head-img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   overflow: hidden;
 }
+
 .h4_testimonial-head-info h6 {
   color: #1B2A52;
   font-size: 15px;
@@ -6649,9 +7349,11 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   cursor: pointer;
 }
+
 .h4_testimonial-head-info h6:hover {
   color: var(--clr-theme-primary);
 }
+
 .h4_testimonial-head-info span {
   color: #6A738B;
   font-size: 14px;
@@ -6692,31 +7394,37 @@ Header CSS 01 Start
   justify-content: end;
   gap: 15px;
 }
+
 @media (max-width: 767px) {
   .h4_testimonial-top {
     justify-content: start;
   }
 }
+
 .h4_testimonial-top-icon {
   width: 40px;
   height: 40px;
 }
+
 .h4_testimonial-top-icon img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .h4_testimonial-top-rating ul {
   list-style: none;
   display: flex;
   gap: 5px;
   margin-bottom: 5px;
 }
+
 .h4_testimonial-top-rating ul li {
   font-size: 12px;
   color: #F59E0B;
   line-height: 1;
 }
+
 .h4_testimonial-top-rating p {
   color: #1B2A52;
   font-size: 14px;
@@ -6739,15 +7447,19 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .blog-item:hover {
   box-shadow: 0px 16px 80px rgba(26, 40, 75, 0.14);
 }
+
 .blog-img img {
   width: 100%;
 }
+
 .blog-content {
   padding: 30px 30px 30px;
 }
+
 .blog-content-meta {
   display: flex;
   align-items: center;
@@ -6755,6 +7467,7 @@ Header CSS 01 Start
   gap: 12px;
   margin-bottom: 20px;
 }
+
 .blog-content-meta a {
   border-radius: 40px;
   background: #7D25EC;
@@ -6766,6 +7479,7 @@ Header CSS 01 Start
   padding: 6px 15px;
   line-height: 1;
 }
+
 .blog-content-meta span {
   display: flex;
   align-items: center;
@@ -6775,6 +7489,7 @@ Header CSS 01 Start
   font-weight: 500;
   line-height: 22px;
 }
+
 .blog-content-title {
   color: #1B2A52;
   font-size: 22px;
@@ -6783,9 +7498,11 @@ Header CSS 01 Start
   letter-spacing: -0.66px;
   margin-bottom: 21px;
 }
+
 .blog-content-title:hover a {
   color: var(--clr-theme-primary);
 }
+
 .blog-content-btn {
   color: #1B2A52;
   font-size: 14px;
@@ -6795,9 +7512,11 @@ Header CSS 01 Start
   gap: 8px;
   line-height: 22px;
 }
+
 .blog-content-btn i {
   margin-top: 2px;
 }
+
 .blog-content-btn:hover {
   color: var(--clr-theme-primary);
 }
@@ -6806,17 +7525,21 @@ Header CSS 01 Start
   border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
+
 .h2_blog-img:hover img {
   transform: scale(1.03);
 }
+
 .h2_blog-img img {
   transition: all 0.5s linear 0s;
 }
+
 .h2_blog-content-meta {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
+
 .h2_blog-content-meta span {
   display: block;
   color: #6A738B;
@@ -6826,17 +7549,21 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .h2_blog-content-meta span a {
   color: #7D25EC;
   text-transform: uppercase;
 }
+
 .h2_blog-content-meta span i {
   margin-right: 6px;
 }
+
 .h2_blog-content-meta span:not(:last-child) {
   padding-right: 11px;
   margin-right: 10px;
 }
+
 .h2_blog-content-meta span:not(:last-child)::before {
   position: absolute;
   right: 0;
@@ -6847,6 +7574,7 @@ Header CSS 01 Start
   width: 1px;
   height: 14px;
 }
+
 .h2_blog-content-title {
   font-size: 24px;
   font-weight: 700;
@@ -6854,14 +7582,17 @@ Header CSS 01 Start
   letter-spacing: -0.72px;
   margin-bottom: 0;
 }
+
 @media (max-width: 480px) {
   .h2_blog-content-title {
     font-size: 22px;
   }
 }
+
 .h2_blog-content-title a {
   transition: all 0.3s linear 0s;
 }
+
 .h2_blog-content-title:hover a {
   color: #7D25EC;
 }
@@ -6891,6 +7622,7 @@ Header CSS 01 Start
 .h3_blog-area {
   background: #F2F8FD;
 }
+
 .h3_blog-item {
   border-radius: 10px;
   background: #FFF;
@@ -6902,17 +7634,21 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h3_blog-item:hover {
   box-shadow: 0px 10px 60px 0px rgba(68, 82, 119, 0.2);
 }
+
 .h3_blog-item:hover .h3_blog-img img {
   transform: scale(1.1);
 }
+
 .h3_blog-img {
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
+
 .h3_blog-img img {
   -webkit-transition: all 0.6s linear 0s;
   -moz-transition: all 0.6s linear 0s;
@@ -6920,6 +7656,7 @@ Header CSS 01 Start
   -o-transition: all 0.6s linear 0s;
   transition: all 0.6s linear 0s;
 }
+
 .h3_blog-date {
   position: absolute;
   right: 30px;
@@ -6935,6 +7672,7 @@ Header CSS 01 Start
   line-height: 1;
   text-transform: uppercase;
 }
+
 .h3_blog-date b {
   color: #7D25EC;
   text-align: center;
@@ -6945,16 +7683,19 @@ Header CSS 01 Start
   display: block;
   margin-top: 6px;
 }
+
 .h3_blog-content {
   padding: 50px 30px 50px;
   position: relative;
   z-index: 1;
 }
+
 @media (max-width: 480px) {
   .h3_blog-content {
     padding: 50px 25px 50px;
   }
 }
+
 .h3_blog-content-meta {
   position: absolute;
   left: 30px;
@@ -6971,25 +7712,30 @@ Header CSS 01 Start
   padding: 0 14px;
   z-index: 1;
 }
+
 .h3_blog-content-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.72px;
 }
+
 .h3_blog-content-title:hover a {
   color: var(--clr-theme-primary);
 }
+
 @media (max-width: 1399px) {
   .h3_blog-content-title {
     font-size: 22px;
   }
 }
+
 @media (max-width: 480px) {
   .h3_blog-content-title {
     font-size: 20px;
   }
 }
+
 .h3_blog-content-admin {
   color: #6A738B;
   font-size: 15px;
@@ -6997,11 +7743,13 @@ Header CSS 01 Start
   line-height: 22px;
   display: block;
 }
+
 .h3_blog-content-admin a {
   color: #1B2A52;
   font-weight: 500;
   display: inline-block;
 }
+
 .h3_blog-content-admin a:hover {
   color: var(--clr-theme-primary);
 }
@@ -7035,13 +7783,16 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .blog_details-img img {
   border-radius: 14px 14px 0px 0px;
 }
+
 .blog_details-meta {
   display: flex;
   align-items: center;
 }
+
 .blog_details-meta-box {
   border-radius: 0px 10px 0px 0px;
   background: #FFF;
@@ -7058,6 +7809,7 @@ Header CSS 01 Start
   margin-left: 35px;
   box-shadow: 0px 2px 10px rgba(27, 42, 82, 0.06);
 }
+
 .blog_details-meta-box::before {
   position: absolute;
   left: -5px;
@@ -7068,17 +7820,20 @@ Header CSS 01 Start
   border-radius: 6px 0px 0px 0px;
   background: #7D25EC;
 }
+
 @media (max-width: 991px) {
   .blog_details-meta-box {
     flex-wrap: wrap;
     row-gap: 15px;
   }
 }
+
 @media (max-width: 480px) {
   .blog_details-meta-box {
     display: none;
   }
 }
+
 .blog_details-meta span {
   color: #7F879E;
   font-size: 14px;
@@ -7088,16 +7843,19 @@ Header CSS 01 Start
   align-items: center;
   gap: 8px;
 }
+
 .blog_details-meta span:first-child {
   color: #7D25EC;
   text-transform: uppercase;
 }
+
 .blog_details-meta span:not(:last-child) {
   position: relative;
   z-index: 1;
   margin-right: 10px;
   padding-right: 10px;
 }
+
 .blog_details-meta span:not(:last-child)::after {
   position: absolute;
   right: 0;
@@ -7109,20 +7867,24 @@ Header CSS 01 Start
   width: 1px;
   z-index: 1;
 }
+
 .blog_details-meta span a {
   font-size: 14px;
   line-height: 1;
   display: block;
 }
+
 .blog_details-meta span a:hover {
   color: var(--clr-theme-primary);
 }
+
 .blog_details-meta-action ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 15px;
 }
+
 .blog_details-meta-action ul li a {
   display: flex;
   align-items: center;
@@ -7133,20 +7895,24 @@ Header CSS 01 Start
   line-height: 26px;
   text-transform: uppercase;
 }
+
 .blog_details-meta-action ul li a:hover {
   color: var(--clr-theme-primary);
 }
+
 .blog_details-content {
   border-radius: 0px 0px 10px 10px;
   border: 1px solid rgba(27, 42, 82, 0.07);
   border-top: 0;
   padding: 30px 30px 0;
 }
+
 @media (max-width: 480px) {
   .blog_details-content {
     padding: 30px 20px 0;
   }
 }
+
 .blog_details-content-title {
   color: #1B2A52;
   font-size: 30px;
@@ -7155,17 +7921,20 @@ Header CSS 01 Start
   letter-spacing: -0.9px;
   margin-bottom: 22px;
 }
+
 @media (max-width: 480px) {
   .blog_details-content-title {
     font-size: 25px;
   }
 }
+
 .blog_details-content-text {
   color: #7F879E;
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
 }
+
 .blog_details-content blockquote {
   border-radius: 10px;
   background: #F8FAFF;
@@ -7174,11 +7943,13 @@ Header CSS 01 Start
   z-index: 1;
   margin-bottom: 23px;
 }
+
 @media (max-width: 575px) {
   .blog_details-content blockquote {
     padding-right: 25px;
   }
 }
+
 .blog_details-content blockquote::before {
   display: inline-block;
   font-family: "Font Awesome 6 Pro";
@@ -7188,6 +7959,7 @@ Header CSS 01 Start
   font-weight: 700;
   padding-bottom: 12px;
 }
+
 .blog_details-content blockquote p {
   color: #1B2A52;
   font-size: 18px;
@@ -7195,11 +7967,13 @@ Header CSS 01 Start
   line-height: 30px;
   margin-bottom: 15px;
 }
+
 @media (max-width: 480px) {
   .blog_details-content blockquote p {
     font-size: 16px;
   }
 }
+
 .blog_details-content blockquote span {
   display: block;
   color: #7D25EC;
@@ -7210,6 +7984,7 @@ Header CSS 01 Start
   z-index: 1;
   padding-left: 50px;
 }
+
 .blog_details-content blockquote span::before {
   position: absolute;
   left: 0;
@@ -7220,9 +7995,11 @@ Header CSS 01 Start
   height: 2px;
   background-color: var(--clr-theme-primary);
 }
+
 .blog_details-content .inner-img img {
   border-radius: 14px;
 }
+
 .blog_details-content-bottom {
   display: flex;
   align-items: center;
@@ -7230,23 +8007,27 @@ Header CSS 01 Start
   border-top: 1px solid rgba(27, 42, 82, 0.07);
   padding: 20px 0;
 }
+
 @media (max-width: 575px) {
   .blog_details-content-bottom {
     flex-wrap: wrap;
     gap: 10px;
   }
 }
+
 .blog_details-content-tag {
   display: flex;
   align-items: center;
   gap: 12px;
 }
+
 @media (max-width: 480px) {
   .blog_details-content-tag {
     flex-wrap: wrap;
     gap: 10px;
   }
 }
+
 .blog_details-content-tag span {
   color: #1B2A52;
   font-size: 20px;
@@ -7256,17 +8037,20 @@ Header CSS 01 Start
   text-transform: uppercase;
   display: block;
 }
+
 @media (max-width: 480px) {
   .blog_details-content-tag span {
     font-size: 18px;
   }
 }
+
 .blog_details-content-tag ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 15px;
 }
+
 .blog_details-content-tag ul li a {
   border-radius: 8px;
   background: #F8FAFF;
@@ -7278,10 +8062,12 @@ Header CSS 01 Start
   font-size: 15px;
   font-weight: 500;
 }
+
 .blog_details-content-tag ul li a:hover {
   background-color: var(--clr-theme-primary);
   color: #fff;
 }
+
 .blog_details-content-share a {
   display: flex;
   align-items: center;
@@ -7293,9 +8079,11 @@ Header CSS 01 Start
   text-transform: uppercase;
   font-family: "Space Grotesk", sans-serif;
 }
+
 .blog_details-content-share a i {
   color: #1B2A52;
 }
+
 .blog_details-content-share a:hover {
   color: var(--clr-theme-primary);
 }
@@ -7308,6 +8096,7 @@ Header CSS 01 Start
   letter-spacing: -0.72px;
   margin-bottom: 23px;
 }
+
 .blog_details-comment-item {
   display: flex;
   gap: 20px;
@@ -7315,24 +8104,29 @@ Header CSS 01 Start
   margin-bottom: 30px;
   padding-bottom: 40px;
 }
+
 @media (max-width: 1199px) {
   .blog_details-comment-item.ml-80 {
     margin-left: 60px;
   }
 }
+
 @media (max-width: 575px) {
   .blog_details-comment-item.ml-80 {
     margin-left: 50px;
   }
 }
+
 @media (max-width: 480px) {
   .blog_details-comment-item {
     flex-wrap: wrap;
   }
+
   .blog_details-comment-item.ml-80 {
     margin-left: 0;
   }
 }
+
 .blog_details-comment-img {
   width: 60px;
   flex-shrink: 0;
@@ -7340,15 +8134,18 @@ Header CSS 01 Start
   overflow: hidden;
   height: 60px;
 }
+
 .blog_details-comment-img img {
   width: 100%;
   height: 100%;
 }
+
 .blog_details-comment-content h6 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 3px;
 }
+
 .blog_details-comment-content span {
   font-size: 13px;
   color: var(--clr-theme-primary);
@@ -7357,9 +8154,11 @@ Header CSS 01 Start
   display: block;
   margin-bottom: 5px;
 }
+
 .blog_details-comment-content p {
   margin-bottom: 22px;
 }
+
 .blog_details-comment-content .comment-reply {
   font-size: 15px;
   display: inline-block;
@@ -7370,6 +8169,7 @@ Header CSS 01 Start
   color: var(--clr-body-heading);
   border-radius: 4px;
 }
+
 .blog_details-comment-content .comment-reply:hover {
   background-color: var(--clr-theme-primary);
   color: #fff;
@@ -7383,6 +8183,7 @@ Header CSS 01 Start
   letter-spacing: -0.72px;
   margin-bottom: 7px;
 }
+
 .blog_details-bottom .post-comments p {
   color: #7F879E;
   font-size: 15px;
@@ -7391,10 +8192,12 @@ Header CSS 01 Start
   line-height: 25px;
   margin-bottom: 23px;
 }
+
 .blog_details-bottom .post-input {
   position: relative;
   z-index: auto;
 }
+
 .blog_details-bottom .post-input i {
   position: absolute;
   right: 0;
@@ -7404,7 +8207,9 @@ Header CSS 01 Start
   color: #7F879E;
   font-size: 16px;
 }
-.blog_details-bottom .post-input input, .blog_details-bottom .post-input textarea {
+
+.blog_details-bottom .post-input input,
+.blog_details-bottom .post-input textarea {
   width: 100%;
   border: 1px solid rgba(27, 42, 82, 0.07);
   border-radius: 8px;
@@ -7415,10 +8220,12 @@ Header CSS 01 Start
   color: #7F879E;
   font-size: 14px;
 }
+
 .blog_details-bottom .post-input textarea {
   height: 120px;
   padding-right: 20px;
 }
+
 .blog_details-bottom .post-comments-btn button {
   border: none;
   border-radius: 8px;
@@ -7439,6 +8246,7 @@ Header CSS 01 Start
   background: #F8FAFF;
   padding: 30px 30px 35px;
 }
+
 .blog_details-widget-title {
   color: #1B2A52;
   font-size: 20px;
@@ -7449,6 +8257,7 @@ Header CSS 01 Start
   z-index: 1;
   padding-bottom: 10px;
 }
+
 .blog_details-widget-title::before {
   position: absolute;
   left: 0;
@@ -7458,6 +8267,7 @@ Header CSS 01 Start
   content: "";
   background-color: rgba(27, 42, 82, 0.07);
 }
+
 .blog_details-widget-title::after {
   position: absolute;
   left: 0;
@@ -7467,10 +8277,12 @@ Header CSS 01 Start
   content: "";
   background-color: #7D25EC;
 }
+
 .blog_details-widget-search {
   position: relative;
   z-index: 1;
 }
+
 .blog_details-widget-search input {
   width: 100%;
   border: 1px solid rgba(27, 42, 82, 0.07);
@@ -7483,6 +8295,7 @@ Header CSS 01 Start
   font-size: 14px;
   font-weight: 400;
 }
+
 .blog_details-widget-search button {
   position: absolute;
   right: 5px;
@@ -7499,12 +8312,15 @@ Header CSS 01 Start
   align-items: center;
   justify-content: center;
 }
+
 .blog_details-widget ul {
   list-style: none;
 }
+
 .blog_details-widget ul li:not(:last-child) {
   margin-bottom: 12px;
 }
+
 .blog_details-widget ul li a {
   color: #7F879E;
   font-size: 15px;
@@ -7517,6 +8333,7 @@ Header CSS 01 Start
   z-index: 1;
   padding-left: 17px;
 }
+
 .blog_details-widget ul li a::before {
   font-family: "Font Awesome 6 Pro";
   content: "\f105";
@@ -7526,10 +8343,13 @@ Header CSS 01 Start
   transform: translateY(-50%);
   font-size: 14px;
 }
+
 .blog_details-widget ul li a:hover {
   color: var(--clr-theme-primary);
 }
-.blog_details-widget-help input, .blog_details-widget-help textarea {
+
+.blog_details-widget-help input,
+.blog_details-widget-help textarea {
   width: 100%;
   border: 1px solid rgba(27, 42, 82, 0.07);
   border-radius: 8px;
@@ -7541,11 +8361,13 @@ Header CSS 01 Start
   color: #7F879E;
   font-size: 14px;
 }
+
 .blog_details-widget-help textarea {
   height: 110px;
   padding-right: 20px;
   margin-bottom: 25px;
 }
+
 .blog_details-widget-help button {
   width: 100%;
   border: none;
@@ -7570,6 +8392,7 @@ Header CSS 01 Start
   justify-content: center;
   align-items: center;
 }
+
 .brand-item {
   border-radius: 60px;
   background: #FFF;
@@ -7586,6 +8409,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   cursor: pointer;
 }
+
 .brand-item:hover {
   box-shadow: 0px 8px 60px 0px rgba(44, 58, 95, 0.16);
 }
@@ -7597,6 +8421,7 @@ Header CSS 01 Start
   justify-content: center;
   align-items: center;
 }
+
 .h2_brand-item {
   border-radius: 60px;
   background: #FFF;
@@ -7613,6 +8438,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   cursor: pointer;
 }
+
 .h2_brand-item:hover {
   box-shadow: 0px 8px 60px 0px rgba(44, 58, 95, 0.16);
 }
@@ -7620,6 +8446,7 @@ Header CSS 01 Start
 .h3_brand-area {
   background: #F2F8FD;
 }
+
 .h3_brand-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -7631,17 +8458,20 @@ Header CSS 01 Start
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 @media (max-width: 1399px) {
   .h3_brand-wrap {
     padding-bottom: 0;
   }
 }
+
 @media (max-width: 991px) {
   .h3_brand-wrap {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
+
 .h3_brand-wrap-bg {
   position: absolute;
   left: 0;
@@ -7653,11 +8483,13 @@ Header CSS 01 Start
   margin-right: auto;
   border-radius: 500px;
 }
+
 @media (max-width: 991px) {
   .h3_brand-wrap-bg {
     display: none;
   }
 }
+
 .h3_brand-img {
   border-radius: 100px;
   background: #FFF;
@@ -7686,6 +8518,7 @@ Header CSS 01 Start
   justify-content: space-evenly;
   align-items: center;
 }
+
 @media (max-width: 991px) {
   .h5_brand-wrap {
     gap: 30px;
@@ -7699,24 +8532,28 @@ Header CSS 01 Start
   margin-left: 25px;
   margin-right: 25px;
 }
+
 @media (max-width: 1399px) {
   .h2_faq-wrap {
     margin-left: 5px;
     margin-right: 5px;
   }
 }
+
 @media (max-width: 1199px) {
   .h2_faq-wrap {
     margin-left: 0;
     margin-right: 0;
   }
 }
+
 .h2_faq-content .accordion-item {
   overflow: hidden;
   background: #fff;
   border-radius: 10px;
   border: 1px solid rgba(27, 42, 82, 0.07);
 }
+
 .h2_faq-content .accordion-button {
   position: relative;
   padding-left: 30px;
@@ -7735,11 +8572,13 @@ Header CSS 01 Start
   font-weight: 700;
   letter-spacing: -0.6px;
 }
+
 @media (max-width: 767px) {
   .h2_faq-content .accordion-button {
     padding-right: 60px;
   }
 }
+
 @media (max-width: 575px) {
   .h2_faq-content .accordion-button {
     font-size: 18px;
@@ -7747,14 +8586,17 @@ Header CSS 01 Start
     padding-right: 60px;
   }
 }
+
 @media (max-width: 480px) {
   .h2_faq-content .accordion-button {
     font-size: 16px;
   }
 }
+
 .h2_faq-content .accordion-button::after {
   display: none;
 }
+
 .h2_faq-content .accordion-button::before {
   position: absolute;
   right: 30px;
@@ -7777,11 +8619,13 @@ Header CSS 01 Start
   border: 1px solid rgba(27, 42, 82, 0.07);
   border-radius: 50%;
 }
+
 @media (max-width: 575px) {
   .h2_faq-content .accordion-button::before {
     right: 20px;
   }
 }
+
 .h2_faq-content .accordion-button:not(.collapsed)::before {
   border-color: transparent;
   background-color: #F2F8FD;
@@ -7789,34 +8633,41 @@ Header CSS 01 Start
   content: "\f106";
   line-height: 29px;
 }
+
 .h2_faq-content .accordion-button img {
   width: 40px;
 }
+
 @media (max-width: 575px) {
   .h2_faq-content .accordion-button img {
     width: 30px;
   }
 }
+
 @media (max-width: 767px) {
   .h2_faq-content .accordion-button img {
     width: 40px;
   }
 }
+
 .h2_faq-content .accordion-body {
   padding: 0 100px 24px 30px;
   background: #fff;
 }
+
 .h2_faq-content .accordion-body p {
   font-size: 15px;
   font-weight: 500;
   line-height: 24px;
   margin-bottom: 0;
 }
+
 @media (max-width: 767px) {
   .h2_faq-content .accordion-body {
     padding: 0 70px 24px 30px;
   }
 }
+
 @media (max-width: 575px) {
   .h2_faq-content .accordion-body {
     padding: 0 25px 24px 25px;
@@ -7826,6 +8677,7 @@ Header CSS 01 Start
 .h3_faq-area {
   background: #F2F8FD;
 }
+
 .h3_faq-content .accordion-item {
   overflow: hidden;
   border: none;
@@ -7833,6 +8685,7 @@ Header CSS 01 Start
   background-color: #FFF;
   box-shadow: 0px 6px 20px 0px rgba(121, 133, 165, 0.16);
 }
+
 .h3_faq-content .accordion-button {
   position: relative;
   cursor: pointer;
@@ -7849,11 +8702,13 @@ Header CSS 01 Start
   padding: 29px 30px;
   line-height: 1;
 }
+
 @media (max-width: 767px) {
   .h3_faq-content .accordion-button {
     padding-right: 60px;
   }
 }
+
 @media (max-width: 575px) {
   .h3_faq-content .accordion-button {
     font-size: 18px;
@@ -7862,15 +8717,18 @@ Header CSS 01 Start
     line-height: 24px;
   }
 }
+
 @media (max-width: 480px) {
   .h3_faq-content .accordion-button {
     font-size: 16px;
     line-height: 22px;
   }
 }
+
 .h3_faq-content .accordion-button::after {
   display: none;
 }
+
 .h3_faq-content .accordion-button::before {
   position: absolute;
   right: 30px;
@@ -7888,41 +8746,50 @@ Header CSS 01 Start
   font-size: 16px;
   margin-top: 1px;
 }
+
 @media (max-width: 575px) {
   .h3_faq-content .accordion-button::before {
     right: 20px;
   }
 }
+
 @media (max-width: 767px) {
   .h3_faq-content .accordion-button::before {
     right: 25px;
   }
 }
+
 .h3_faq-content .accordion-button:not(.collapsed)::before {
   content: "\f106";
 }
+
 .h3_faq-content .accordion-button img {
   width: 40px;
 }
+
 @media (max-width: 575px) {
   .h3_faq-content .accordion-button img {
     width: 30px;
   }
 }
+
 @media (max-width: 767px) {
   .h3_faq-content .accordion-button img {
     width: 40px;
   }
 }
+
 .h3_faq-content .accordion-body {
   padding: 0 70px 31px 30px;
   background: #fff;
 }
+
 @media (max-width: 575px) {
   .h3_faq-content .accordion-body {
     padding: 0 25px 24px 25px;
   }
 }
+
 .h3_faq-content .accordion-body p {
   font-size: 15px;
   font-weight: 500;
@@ -7937,6 +8804,7 @@ Header CSS 01 Start
   background-color: #FFF;
   box-shadow: 0px 5px 20px rgba(27, 42, 82, 0.05);
 }
+
 .h4_faq-content .accordion-button {
   position: relative;
   cursor: pointer;
@@ -7953,11 +8821,13 @@ Header CSS 01 Start
   padding: 29px 30px;
   line-height: 1;
 }
+
 @media (max-width: 767px) {
   .h4_faq-content .accordion-button {
     padding-right: 60px;
   }
 }
+
 @media (max-width: 575px) {
   .h4_faq-content .accordion-button {
     font-size: 18px;
@@ -7966,15 +8836,18 @@ Header CSS 01 Start
     line-height: 24px;
   }
 }
+
 @media (max-width: 480px) {
   .h4_faq-content .accordion-button {
     font-size: 16px;
     line-height: 22px;
   }
 }
+
 .h4_faq-content .accordion-button::after {
   display: none;
 }
+
 .h4_faq-content .accordion-button::before {
   position: absolute;
   right: 30px;
@@ -7992,44 +8865,54 @@ Header CSS 01 Start
   font-size: 16px;
   margin-top: 1px;
 }
+
 @media (max-width: 575px) {
   .h4_faq-content .accordion-button::before {
     right: 20px;
   }
 }
+
 @media (max-width: 767px) {
   .h4_faq-content .accordion-button::before {
     right: 25px;
   }
 }
+
 .h4_faq-content .accordion-button:not(.collapsed) {
   background-color: #fff;
 }
+
 .h4_faq-content .accordion-button:not(.collapsed)::before {
   content: "\f106";
 }
+
 .h4_faq-content .accordion-button img {
   width: 40px;
 }
+
 @media (max-width: 575px) {
   .h4_faq-content .accordion-button img {
     width: 30px;
   }
 }
+
 @media (max-width: 767px) {
   .h4_faq-content .accordion-button img {
     width: 40px;
   }
 }
+
 .h4_faq-content .accordion-body {
   padding: 0 70px 29px 30px;
   background: #fff;
 }
+
 @media (max-width: 575px) {
   .h4_faq-content .accordion-body {
     padding: 0 25px 24px 25px;
   }
 }
+
 .h4_faq-content .accordion-body p {
   font-size: 15px;
   font-weight: 500;
@@ -8043,6 +8926,7 @@ Header CSS 01 Start
 .h3_service-area {
   background: #F2F8FD;
 }
+
 .h3_service-item {
   background: #fff;
   padding: 40px 35px 40px;
@@ -8054,19 +8938,23 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 @media (max-width: 1399px) {
   .h3_service-item {
     padding: 40px 30px 40px;
   }
 }
+
 @media (max-width: 1199px) {
   .h3_service-item {
     padding: 40px 35px 40px;
   }
 }
+
 .h3_service-item:hover {
   box-shadow: 0px 30px 110px 0px rgba(27, 42, 82, 0.14);
 }
+
 .h3_service-item-number {
   border-radius: 30px;
   background: #FFF;
@@ -8081,13 +8969,16 @@ Header CSS 01 Start
   font-size: 16px;
   font-weight: 700;
 }
+
 .h3_service-item-icon {
   margin-bottom: 30px;
 }
+
 .h3_service-item-icon img {
   width: 60px;
   height: 60px;
 }
+
 .h3_service-item-title {
   color: #1B2A52;
   font-size: 20px;
@@ -8096,9 +8987,11 @@ Header CSS 01 Start
   letter-spacing: -0.6px;
   margin-bottom: 8px;
 }
+
 .h3_service-item-title:hover a {
   color: var(--clr-theme-primary);
 }
+
 .h3_service-item p {
   color: #6A738B;
   font-size: 14px;
@@ -8106,6 +8999,7 @@ Header CSS 01 Start
   line-height: 22px;
   margin-bottom: 18px;
 }
+
 .h3_service-item-btn {
   color: #1B2A52;
   font-size: 14px;
@@ -8115,10 +9009,12 @@ Header CSS 01 Start
   gap: 8px;
   line-height: 22px;
 }
+
 .h3_service-item-btn i {
   margin-top: 1px;
   font-weight: 500;
 }
+
 .h3_service-item-btn:hover {
   color: var(--clr-theme-primary);
 }
@@ -8133,6 +9029,7 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h4_service-item-number {
   border-radius: 30px;
   background: #FFF;
@@ -8147,13 +9044,16 @@ Header CSS 01 Start
   font-size: 16px;
   font-weight: 700;
 }
+
 .h4_service-item-icon {
   margin-bottom: 30px;
 }
+
 .h4_service-item-icon img {
   width: 60px;
   height: 60px;
 }
+
 .h4_service-item-title {
   color: #1B2A52;
   font-size: 20px;
@@ -8162,9 +9062,11 @@ Header CSS 01 Start
   letter-spacing: -0.6px;
   margin-bottom: 8px;
 }
+
 .h4_service-item-title:hover a {
   color: var(--clr-theme-primary);
 }
+
 .h4_service-item p {
   color: #7F879E;
   font-size: 14px;
@@ -8172,6 +9074,7 @@ Header CSS 01 Start
   line-height: 22px;
   margin-bottom: 38px;
 }
+
 .h4_service-item-btn {
   color: #1B2A52;
   font-size: 14px;
@@ -8181,18 +9084,22 @@ Header CSS 01 Start
   gap: 8px;
   line-height: 22px;
 }
+
 .h4_service-item-btn i {
   margin-top: 1px;
   font-weight: 500;
 }
+
 .h4_service-item-btn:hover {
   color: var(--clr-theme-primary);
 }
+
 .h4_service-navigation {
   display: flex;
   gap: 10px;
   justify-content: end;
 }
+
 .h4_service-navigation div {
   width: 40px;
   height: 40px;
@@ -8209,12 +9116,14 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   font-weight: 500;
 }
+
 .h4_service-navigation div:hover {
   border-color: transparent;
   color: #fff;
   background: #7D25EC;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
+
 @media (max-width: 575px) {
   .h4_service-navigation {
     justify-content: flex-start;
@@ -8234,33 +9143,40 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 @media (max-width: 1399px) {
   .inner_service-item {
     padding: 40px 30px 35px;
   }
 }
+
 @media (max-width: 1199px) {
   .inner_service-item {
     padding: 40px 29px 35px;
   }
 }
+
 @media (max-width: 991px) {
   .inner_service-item {
     padding: 40px 34px 35px;
   }
 }
+
 .inner_service-item:hover {
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 16px 60px 0px rgba(26, 40, 75, 0.1);
   border-color: transparent;
 }
+
 .inner_service-item-icon {
   margin-bottom: 34px;
 }
+
 .inner_service-item-icon svg {
   color: var(--clr-body-heading);
 }
+
 .inner_service-item-content-title {
   color: #1B2A52;
   font-size: 20px;
@@ -8269,9 +9185,11 @@ Header CSS 01 Start
   letter-spacing: -0.6px;
   margin-bottom: 10px;
 }
+
 .inner_service-item-content-title:hover a {
   color: var(--clr-theme-primary);
 }
+
 .inner_service-item-content p {
   color: #7F879E;
   font-size: 14px;
@@ -8279,6 +9197,7 @@ Header CSS 01 Start
   line-height: 22px;
   margin-bottom: 18px;
 }
+
 .inner_service-item-content-btn {
   color: #1B2A52;
   font-size: 14px;
@@ -8288,9 +9207,11 @@ Header CSS 01 Start
   align-items: center;
   gap: 8px;
 }
+
 .inner_service-item-content-btn i {
   margin-top: 2px;
 }
+
 .inner_service-item-content-btn:hover {
   color: var(--clr-theme-primary);
 }
@@ -8302,30 +9223,36 @@ Header CSS 01 Start
   display: flex;
   flex-wrap: wrap;
 }
+
 .h2_instagram-item {
   width: 20%;
   flex-shrink: 0;
   position: relative;
   z-index: 1;
 }
+
 @media (max-width: 1199px) {
   .h2_instagram-item {
     width: 33.3333333333%;
   }
 }
+
 @media (max-width: 767px) {
   .h2_instagram-item {
     width: 50%;
   }
 }
+
 @media (max-width: 480px) {
   .h2_instagram-item {
     width: 100%;
   }
+
   .h2_instagram-item img {
     width: 100%;
   }
 }
+
 .h2_instagram-item-content {
   position: absolute;
   left: 0;
@@ -8346,6 +9273,7 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h2_instagram-item-content h5 {
   color: #FFF;
   font-size: 20px;
@@ -8354,22 +9282,26 @@ Header CSS 01 Start
   letter-spacing: -0.6px;
   margin-bottom: 15px;
 }
+
 .h2_instagram-item-content svg {
   color: #fff;
   width: 100px;
   margin-bottom: 35px;
 }
+
 @media (max-width: 991px) {
   .h2_instagram-item-content svg {
     width: 80px;
   }
 }
+
 .h2_instagram-item-content a {
   color: #FFF;
   font-size: 15px;
   font-weight: 500;
   line-height: 22px;
 }
+
 .h2_instagram-item:hover .h2_instagram-item-content {
   opacity: 1;
   visibility: visible;
@@ -8378,11 +9310,13 @@ Header CSS 01 Start
 .h3_instagram-area {
   background: #F2F8FD;
 }
+
 .h3_instagram-wrap {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
+
 .h3_instagram-item {
   width: calc(20% - 8px);
   flex-shrink: 0;
@@ -8391,24 +9325,29 @@ Header CSS 01 Start
   border-radius: 14px;
   overflow: hidden;
 }
+
 @media (max-width: 1199px) {
   .h3_instagram-item {
     width: calc(33.3333333333% - 6.7px);
   }
 }
+
 @media (max-width: 767px) {
   .h3_instagram-item {
     width: calc(50% - 5px);
   }
 }
+
 @media (max-width: 480px) {
   .h3_instagram-item {
     width: 100%;
   }
+
   .h3_instagram-item img {
     width: 100%;
   }
 }
+
 .h3_instagram-item-content {
   position: absolute;
   left: 0;
@@ -8429,6 +9368,7 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h3_instagram-item-content h5 {
   color: #FFF;
   font-size: 20px;
@@ -8437,22 +9377,26 @@ Header CSS 01 Start
   letter-spacing: -0.6px;
   margin-bottom: 15px;
 }
+
 .h3_instagram-item-content svg {
   color: #fff;
   width: 100px;
   margin-bottom: 35px;
 }
+
 @media (max-width: 991px) {
   .h3_instagram-item-content svg {
     width: 80px;
   }
 }
+
 .h3_instagram-item-content a {
   color: #FFF;
   font-size: 15px;
   font-weight: 500;
   line-height: 22px;
 }
+
 .h3_instagram-item:hover .h3_instagram-item-content {
   opacity: 1;
   visibility: visible;
@@ -8463,6 +9407,7 @@ Header CSS 01 Start
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .h5_instagram-item {
   width: calc(20% - 24px);
   flex-shrink: 0;
@@ -8471,24 +9416,29 @@ Header CSS 01 Start
   border-radius: 14px;
   overflow: hidden;
 }
+
 .h5_instagram-item img {
   width: 100%;
 }
+
 @media (max-width: 1199px) {
   .h5_instagram-item {
     width: calc(33.3333333333% - 20px);
   }
 }
+
 @media (max-width: 767px) {
   .h5_instagram-item {
     width: calc(50% - 15px);
   }
 }
+
 @media (max-width: 480px) {
   .h5_instagram-item {
     width: 100%;
   }
 }
+
 .h5_instagram-item-content {
   position: absolute;
   left: 0;
@@ -8507,11 +9457,13 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h5_instagram-item-content svg {
   color: #fff;
   width: 50px;
   height: 50px;
 }
+
 .h5_instagram-item:hover .h5_instagram-item-content {
   opacity: 1;
   visibility: visible;
@@ -8526,29 +9478,35 @@ Header CSS 01 Start
   height: 100%;
   padding: 65px 70px 70px;
 }
+
 @media (max-width: 1199px) {
   .h4_assistant-wrap {
     border-radius: 20px 20px 0 0;
   }
 }
+
 @media (max-width: 767px) {
   .h4_assistant-wrap {
     padding: 65px 50px 70px;
   }
 }
+
 @media (max-width: 480px) {
   .h4_assistant-wrap {
     padding: 45px 35px 50px;
   }
 }
+
 .h4_assistant-content {
   margin-top: 51px;
 }
+
 @media (max-width: 480px) {
   .h4_assistant-content {
     margin-top: 51px;
   }
 }
+
 .h4_assistant-content-title {
   color: #FFF;
   font-size: 34px;
@@ -8557,11 +9515,13 @@ Header CSS 01 Start
   letter-spacing: -1.02px;
   margin-bottom: 20px;
 }
+
 @media (max-width: 480px) {
   .h4_assistant-content-title {
     font-size: 22px;
   }
 }
+
 .h4_assistant-content p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 15px;
@@ -8569,6 +9529,7 @@ Header CSS 01 Start
   line-height: 24px;
   margin-bottom: 30px;
 }
+
 .h4_assistant-content a {
   display: flex;
   align-items: center;
@@ -8577,16 +9538,20 @@ Header CSS 01 Start
   font-weight: 600;
   gap: 8px;
 }
+
 .h4_assistant-content a img {
   margin-top: 2px;
 }
+
 .h4_assistant-content a i {
   margin-top: 2px;
   font-weight: 500;
 }
+
 .h4_assistant-content a:hover {
   color: var(--clr-color-violet);
 }
+
 .h4_assistant-top {
   border: none;
   display: flex;
@@ -8594,11 +9559,13 @@ Header CSS 01 Start
   column-gap: 40px;
   row-gap: 10px;
 }
+
 @media (max-width: 767px) {
   .h4_assistant-top {
     column-gap: 25px;
   }
 }
+
 .h4_assistant-top .nav-link {
   color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
@@ -8608,16 +9575,19 @@ Header CSS 01 Start
   padding: 0;
   border: none;
 }
+
 .h4_assistant-top .nav-link:hover {
   color: #fff;
   text-decoration: underline;
   border: none;
 }
+
 .h4_assistant-top .nav-link.active {
   color: #fff;
   text-decoration: underline;
   background-color: transparent;
 }
+
 .h4_assistant-img {
   border-radius: 0px 20px 20px 0px;
   height: 100%;
@@ -8625,6 +9595,7 @@ Header CSS 01 Start
   align-items: center;
   justify-content: center;
 }
+
 @media (max-width: 1199px) {
   .h4_assistant-img {
     border-radius: 0 0 20px 20px;
@@ -8646,13 +9617,16 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h5_shop-img {
   position: relative;
   z-index: 1;
 }
+
 .h5_shop-img img {
   width: 100%;
 }
+
 .h5_shop-img-icon {
   position: absolute;
   left: 50%;
@@ -8669,6 +9643,7 @@ Header CSS 01 Start
   -o-transition: all 0.4s linear 0s;
   transition: all 0.4s linear 0s;
 }
+
 .h5_shop-img-icon a {
   width: 40px;
   height: 40px;
@@ -8685,16 +9660,20 @@ Header CSS 01 Start
   -o-transition: all 0.4s linear 0s;
   transition: all 0.4s linear 0s;
 }
+
 .h5_shop-img-icon a:hover {
   background: #7D25EC;
   color: #fff;
 }
+
 .h5_shop-img-icon a:first-child {
   margin-right: 20px;
 }
+
 .h5_shop-img-icon a:last-child {
   margin-left: 20px;
 }
+
 .h5_shop-premium-icon {
   position: absolute;
   left: 25px;
@@ -8708,18 +9687,22 @@ Header CSS 01 Start
   align-items: center;
   justify-content: center;
 }
+
 .h5_shop-premium-icon svg {
   color: #F59E0B;
   width: 20px;
 }
+
 .h5_shop-content {
   padding: 25px 25px 20px;
 }
+
 @media (max-width: 991px) {
   .h5_shop-content {
     padding: 25px 20px 20px;
   }
 }
+
 .h5_shop-content-title {
   color: #1B2A52;
   font-size: 20px;
@@ -8728,12 +9711,15 @@ Header CSS 01 Start
   letter-spacing: -0.6px;
   margin-bottom: 7px;
 }
+
 .h5_shop-content-title:hover a {
   color: var(--clr-theme-primary);
 }
+
 .h5_shop-content-price {
   transform: translateX(0);
 }
+
 .h5_shop-content-cart {
   opacity: 0;
   visibility: hidden;
@@ -8748,14 +9734,17 @@ Header CSS 01 Start
   -o-transition: all 0.4s linear 0s;
   transition: all 0.4s linear 0s;
 }
+
 .h5_shop-content-cart:hover {
   color: var(--clr-theme-primary);
 }
+
 .h5_shop-content-cart i {
   display: inline-block;
   margin-right: 5px;
   font-size: 15px;
 }
+
 .h5_shop-content-bottom {
   position: relative;
   z-index: 1;
@@ -8764,6 +9753,7 @@ Header CSS 01 Start
   align-items: center;
   gap: 5px;
 }
+
 .h5_shop-content-bottom-link {
   color: rgba(27, 42, 82, 0.7);
   font-size: 16px;
@@ -8782,21 +9772,26 @@ Header CSS 01 Start
 .h5_shop-item:hover {
   box-shadow: 0px 10px 60px 0px rgba(26, 40, 75, 0.14);
 }
+
 .h5_shop-item:hover .h5_shop-img-icon {
   opacity: 1;
   visibility: visible;
 }
+
 .h5_shop-item:hover .h5_shop-img-icon a:first-child {
   margin-right: 0;
 }
+
 .h5_shop-item:hover .h5_shop-img-icon a:last-child {
   margin-left: 0;
 }
+
 .h5_shop-item:hover .h5_shop-content-price {
   opacity: 0;
   visibility: hidden;
   transform: translateX(-50px);
 }
+
 .h5_shop-item:hover .h5_shop-content-cart {
   opacity: 1;
   visibility: visible;
@@ -8837,35 +9832,42 @@ Header CSS 01 Start
   align-items: center;
   gap: 60px;
 }
+
 @media (max-width: 1199px) {
   .shop_details-wrap {
     gap: 40px;
   }
 }
+
 @media (max-width: 991px) {
   .shop_details-wrap {
     flex-wrap: wrap;
   }
 }
+
 .shop_details-img {
   width: calc(44% + 3px);
   flex-shrink: 0;
   border-radius: 14px;
   overflow: hidden;
 }
+
 @media (max-width: 1399px) {
   .shop_details-img {
     width: 45%;
   }
 }
+
 @media (max-width: 991px) {
   .shop_details-img {
     width: 100%;
   }
+
   .shop_details-img img {
     width: 100%;
   }
 }
+
 .shop_details-head {
   display: flex;
   justify-content: space-between;
@@ -8873,12 +9875,14 @@ Header CSS 01 Start
   padding-bottom: 30px;
   margin-bottom: 15px;
 }
+
 @media (max-width: 480px) {
   .shop_details-head {
     flex-wrap: wrap;
     gap: 10px;
   }
 }
+
 .shop_details-head-title {
   color: #1B2A52;
   font-size: 30px;
@@ -8887,16 +9891,19 @@ Header CSS 01 Start
   letter-spacing: -0.9px;
   margin-bottom: 10px;
 }
+
 @media (max-width: 480px) {
   .shop_details-head-title {
     font-size: 26px;
   }
 }
+
 .shop_details-head-rating {
   display: flex;
   align-items: center;
   gap: 8px;
 }
+
 .shop_details-head-rating span {
   color: #6A738B;
   font-size: 15px;
@@ -8904,16 +9911,19 @@ Header CSS 01 Start
   line-height: 25px;
   display: block;
 }
+
 .shop_details-head-rating ul {
   display: flex;
   list-style: none;
   align-items: center;
   gap: 5px;
 }
+
 .shop_details-head-rating ul li {
   color: #F59E0B;
   font-size: 14px;
 }
+
 .shop_details-head-right p {
   color: #1B2A52;
   font-size: 20px;
@@ -8921,11 +9931,13 @@ Header CSS 01 Start
   line-height: 32px;
   letter-spacing: -0.6px;
 }
+
 @media (max-width: 991px) {
   .shop_details-content {
     width: 100%;
   }
 }
+
 .shop_details-content-text {
   color: #6A738B;
   font-size: 15px;
@@ -8933,6 +9945,7 @@ Header CSS 01 Start
   line-height: 24px;
   margin-bottom: 15px;
 }
+
 .shop_details-action {
   border-top: 1px solid rgba(27, 42, 82, 0.08);
   padding-top: 25px;
@@ -8941,11 +9954,13 @@ Header CSS 01 Start
   gap: 20px;
   padding-bottom: 20px;
 }
+
 @media (max-width: 575px) {
   .shop_details-action {
     flex-wrap: wrap;
   }
 }
+
 .shop_details-action-cart {
   border-radius: 8px;
   background: #7D25EC;
@@ -8959,9 +9974,11 @@ Header CSS 01 Start
   font-weight: 600;
   transition: all 0.3s linear 0s;
 }
+
 .shop_details-action-cart:hover {
   color: #fff;
 }
+
 .shop_details-action-buy {
   border-radius: 8px;
   border: 1px solid rgba(27, 42, 82, 0.07);
@@ -8974,15 +9991,18 @@ Header CSS 01 Start
   font-weight: 600;
   transition: all 0.3s linear 0s;
 }
+
 .shop_details-action-buy:hover {
   background: #7D25EC;
   color: #fff;
 }
+
 .shop_details-action-box {
   display: flex;
   border-radius: 8px;
   border: 1px solid rgba(27, 42, 82, 0.07);
 }
+
 .shop_details-action-box a {
   height: 42px;
   width: 40px;
@@ -8995,6 +10015,7 @@ Header CSS 01 Start
   font-weight: 500;
   background-color: transparent;
 }
+
 .shop_details-action-box input {
   width: 40px;
   padding: 0;
@@ -9009,12 +10030,14 @@ Header CSS 01 Start
   font-size: 16px;
   font-weight: 500;
 }
+
 .shop_details-action-2 {
   display: flex;
   align-items: center;
   gap: 16px;
   margin-bottom: 20px;
 }
+
 .shop_details-action-2 a {
   display: flex;
   align-items: center;
@@ -9023,21 +10046,26 @@ Header CSS 01 Start
   font-size: 14px;
   font-weight: 500;
 }
+
 .shop_details-action-2 a:hover {
   color: #7D25EC;
 }
+
 .shop_details-action-2 a i {
   font-size: 16px;
 }
+
 .shop_details-payment {
   display: flex;
   align-items: center;
   gap: 6px;
   margin-bottom: 25px;
 }
+
 .shop_details-meta {
   margin-bottom: 15px;
 }
+
 .shop_details-meta span {
   color: #1B2A52;
   font-size: 14px;
@@ -9047,12 +10075,14 @@ Header CSS 01 Start
   align-items: center;
   gap: 15px;
 }
+
 .shop_details-meta span a {
   color: #6A738B;
   font-size: 14px;
   font-weight: 400;
   line-height: 25px;
 }
+
 .shop_details-order p {
   color: #1B2A52;
   font-size: 14px;
@@ -9070,9 +10100,11 @@ Header CSS 01 Start
   padding: 0 10px;
   margin-bottom: 33px;
 }
+
 .shop_details-tab .nav .nav-item {
   border: none;
 }
+
 .shop_details-tab .nav .nav-item .nav-link {
   border: none;
   background: #F2F8FD;
@@ -9084,6 +10116,7 @@ Header CSS 01 Start
   font-weight: 700;
   letter-spacing: -0.6px;
 }
+
 @media (max-width: 480px) {
   .shop_details-tab .nav .nav-item .nav-link {
     font-size: 18px;
@@ -9091,9 +10124,11 @@ Header CSS 01 Start
     padding: 0 20px;
   }
 }
+
 .shop_details-tab .nav .nav-item .nav-link.active {
   color: var(--clr-theme-primary);
 }
+
 .shop_details-description-text {
   color: #6A738B;
   font-size: 15px;
@@ -9101,11 +10136,13 @@ Header CSS 01 Start
   line-height: 26px;
   margin-bottom: 20px;
 }
+
 .shop_details-description-list {
   list-style: none;
   padding-top: 3px;
   margin-bottom: 21px;
 }
+
 .shop_details-description-list li {
   display: flex;
   align-items: center;
@@ -9116,10 +10153,12 @@ Header CSS 01 Start
   line-height: 26px;
   margin-bottom: 5px;
 }
+
 .shop_details-description-list li svg {
   width: 16px;
   flex-shrink: 0;
 }
+
 .shop_details-review-item {
   display: flex;
   border-radius: 10px;
@@ -9129,17 +10168,20 @@ Header CSS 01 Start
   gap: 25px;
   align-items: start;
 }
+
 @media (max-width: 480px) {
   .shop_details-review-item {
     flex-wrap: wrap;
   }
 }
+
 .shop_details-review-img {
   width: 60px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 50%;
 }
+
 .shop_details-review-content-top {
   display: flex;
   justify-content: space-between;
@@ -9147,12 +10189,14 @@ Header CSS 01 Start
   margin-bottom: 3px;
   gap: 10px;
 }
+
 @media (max-width: 480px) {
   .shop_details-review-content-top {
     flex-wrap: wrap;
     row-gap: 5px;
   }
 }
+
 .shop_details-review-content-top h6 {
   color: #1B2A52;
   font-size: 16px;
@@ -9161,6 +10205,7 @@ Header CSS 01 Start
   letter-spacing: -0.48px;
   margin-bottom: 0;
 }
+
 .shop_details-review-content-top span {
   color: #6A738B;
   font-size: 14px;
@@ -9168,6 +10213,7 @@ Header CSS 01 Start
   line-height: 24px;
   display: block;
 }
+
 .shop_details-review-content-rating {
   list-style: none;
   display: flex;
@@ -9175,10 +10221,12 @@ Header CSS 01 Start
   gap: 5px;
   margin-bottom: 8px;
 }
+
 .shop_details-review-content-rating li {
   font-size: 14px;
   color: #F59E0B;
 }
+
 .shop_details-review-content p {
   color: #6A738B;
   font-size: 15px;
@@ -9186,14 +10234,17 @@ Header CSS 01 Start
   line-height: 24px;
   margin-bottom: 0;
 }
+
 .shop_details-review-right {
   margin-left: 20px;
 }
+
 @media (max-width: 1199px) {
   .shop_details-review-right {
     margin-left: 0;
   }
 }
+
 .shop_details-review-right-title {
   color: #1B2A52;
   font-size: 18px;
@@ -9202,22 +10253,26 @@ Header CSS 01 Start
   letter-spacing: -0.54px;
   margin-bottom: 18px;
 }
+
 .shop_details-review-right-rating {
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 15px;
 }
+
 .shop_details-review-right-rating ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 5px;
 }
+
 .shop_details-review-right-rating ul li {
   font-size: 14px;
   color: #F59E0B;
 }
+
 .shop_details-review-right-rating span {
   color: #1B2A52;
   display: block;
@@ -9230,6 +10285,7 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .shop_details-form-item i {
   position: absolute;
   right: 0;
@@ -9239,7 +10295,9 @@ Header CSS 01 Start
   color: #7F879E;
   font-size: 16px;
 }
-.shop_details-form-item input, .shop_details-form-item textarea {
+
+.shop_details-form-item input,
+.shop_details-form-item textarea {
   width: 100%;
   height: 46px;
   line-height: 46px;
@@ -9250,9 +10308,11 @@ Header CSS 01 Start
   font-size: 14px;
   font-weight: 400;
 }
+
 .shop_details-form-item textarea {
   height: 140px;
 }
+
 .shop_details-form-item button {
   border-radius: 8px;
   background: #7D25EC;
@@ -9271,6 +10331,7 @@ Header CSS 01 Start
 .pagination-area {
   gap: 15px;
 }
+
 .pagination-area span {
   width: 40px;
   height: 40px;
@@ -9291,15 +10352,18 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   cursor: pointer;
 }
+
 .pagination-area span:hover {
   color: var(--clr-theme-primary);
   border-color: var(--clr-theme-primary);
 }
+
 .pagination-area ul {
   display: flex;
   list-style: none;
   gap: 15px;
 }
+
 .pagination-area ul li a {
   width: 40px;
   height: 40px;
@@ -9314,11 +10378,13 @@ Header CSS 01 Start
   font-weight: 500;
   text-transform: uppercase;
 }
+
 .pagination-area ul li a.active {
   background-color: var(--clr-theme-primary);
   color: #fff;
   border-color: transparent;
 }
+
 .pagination-area ul li a:hover {
   background-color: var(--clr-theme-primary);
   color: #fff;
@@ -9345,11 +10411,13 @@ Header CSS 01 Start
   transition: all 0.4s linear 0s;
   padding: 30px 40px 40px 40px;
 }
+
 .side-info:is(.info-open) {
   right: 0;
   overflow-y: scroll;
   scrollbar-width: thin;
 }
+
 @media (max-width: 480px) {
   .side-info {
     padding: 30px 30px 30px 30px;
@@ -9374,6 +10442,7 @@ Header CSS 01 Start
   transition: all 0.4s linear 0s;
   cursor: url(../../assets/img/bg/close.png), auto;
 }
+
 .offcanvas-overlay:is(.overlay-open) {
   left: 0;
   opacity: 1;
@@ -9393,7 +10462,7 @@ Header CSS 01 Start
   color: #fff;
 }
 
-.mean-container .mean-nav ul li:hover > a {
+.mean-container .mean-nav ul li:hover>a {
   background: transparent;
   color: var(--clr-theme-primary);
 }
@@ -9447,6 +10516,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
   font-size: 18px;
 }
+
 .header-menu-bar-icon:hover {
   background-color: var(--clr-theme-primary);
   color: #fff;
@@ -9468,12 +10538,14 @@ Header CSS 01 Start
   margin-right: 30px;
   overflow: hidden;
 }
+
 @media (max-width: 575px) {
   .breadcrumb-area {
     margin-left: 15px;
     margin-right: 15px;
   }
 }
+
 .breadcrumb-title {
   color: #1B2A52;
   font-size: 70px;
@@ -9482,31 +10554,37 @@ Header CSS 01 Start
   letter-spacing: -2.1px;
   margin-bottom: 8px;
 }
+
 @media (max-width: 1199px) {
   .breadcrumb-title {
     font-size: 60px;
   }
 }
+
 @media (max-width: 991px) {
   .breadcrumb-title {
     font-size: 55px;
   }
 }
+
 @media (max-width: 767px) {
   .breadcrumb-title {
     font-size: 50px;
   }
 }
+
 @media (max-width: 480px) {
   .breadcrumb-title {
     font-size: 40px;
   }
 }
+
 .breadcrumb-list {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .breadcrumb-list a {
   color: rgba(27, 42, 82, 0.7);
   font-size: 17px;
@@ -9520,14 +10598,17 @@ Header CSS 01 Start
   align-items: center;
   gap: 10px;
 }
+
 @media (max-width: 480px) {
   .breadcrumb-list a {
     font-size: 16px;
   }
 }
+
 .breadcrumb-list a:hover {
   color: var(--clr-theme-primary);
 }
+
 .breadcrumb-list a::after {
   position: absolute;
   right: 0;
@@ -9539,6 +10620,7 @@ Header CSS 01 Start
   height: 3px;
   border-radius: 50%;
 }
+
 .breadcrumb-list span {
   color: #7D25EC;
   font-size: 17px;
@@ -9546,6 +10628,7 @@ Header CSS 01 Start
   line-height: 25px;
   display: block;
 }
+
 @media (max-width: 480px) {
   .breadcrumb-list span {
     font-size: 16px;
@@ -9557,42 +10640,50 @@ Header CSS 01 Start
   left: 20%;
   top: 30%;
 }
+
 @media (max-width: 991px) {
   .breadcrumb-shape-1 {
     left: 12%;
   }
 }
+
 @media (max-width: 767px) {
   .breadcrumb-shape-1 {
     display: none;
   }
 }
+
 .breadcrumb-shape-2 {
   position: absolute;
   left: 31%;
   bottom: 32%;
 }
+
 @media (max-width: 991px) {
   .breadcrumb-shape-2 {
     left: 20%;
   }
 }
+
 @media (max-width: 767px) {
   .breadcrumb-shape-2 {
     display: none;
   }
 }
+
 .breadcrumb-shape-3 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 24%;
 }
+
 @media (max-width: 991px) {
   .breadcrumb-shape-3 {
     display: none;
   }
 }
+
 .breadcrumb-shape-4 {
   position: absolute;
   right: -155px;
@@ -9605,10 +10696,12 @@ Header CSS 01 Start
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 /* ///////////////////////////////////////////////////////////
 24. modal
 /////////////////////////////////////////////////////////// */
@@ -9616,6 +10709,7 @@ Header CSS 01 Start
 #search-modal {
   background: rgba(0, 0, 0, 0.65);
 }
+
 #search-modal a span {
   color: #fff;
   top: 50px;
@@ -9628,9 +10722,11 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 #search-modal a span:hover {
   color: var(--clr-theme-primary);
 }
+
 #search-modal .modal-dialog {
   position: absolute;
   top: 50%;
@@ -9640,16 +10736,19 @@ Header CSS 01 Start
   border: none;
   outline: 0;
 }
+
 #search-modal .modal-dialog .modal-content {
   background: 0 0;
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
 }
+
 #search-modal .modal-dialog .modal-content form {
   max-width: 555px;
   position: relative;
 }
+
 #search-modal .modal-dialog .modal-content form input {
   width: 100%;
   font-size: 36px;
@@ -9661,22 +10760,27 @@ Header CSS 01 Start
   padding-right: 40px;
   outline: none;
 }
+
 #search-modal .modal-dialog .modal-content form input::-webkit-input-placeholder {
   font-size: 35px;
   color: rgba(255, 255, 255, 0.938);
 }
+
 #search-modal .modal-dialog .modal-content form input:-ms-input-placeholder {
   font-size: 35px;
   color: rgba(255, 255, 255, 0.938);
 }
+
 #search-modal .modal-dialog .modal-content form input::-ms-input-placeholder {
   font-size: 35px;
   color: rgba(255, 255, 255, 0.938);
 }
+
 #search-modal .modal-dialog .modal-content form input::placeholder {
   font-size: 35px;
   color: rgba(255, 255, 255, 0.938);
 }
+
 #search-modal .modal-dialog .modal-content form button {
   position: absolute;
   right: 0;
@@ -9696,11 +10800,13 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .inner_team-img {
   position: relative;
   z-index: 1;
   text-align: center;
 }
+
 .inner_team-img-shape {
   position: absolute;
   left: 50%;
@@ -9708,11 +10814,13 @@ Header CSS 01 Start
   z-index: -1;
   transform: translate(-50%, -50%);
 }
+
 .inner_team-content {
   margin-right: 80px;
   margin-left: 20px;
   margin-top: 45px;
 }
+
 @media (max-width: 1199px) {
   .inner_team-content {
     margin-top: 0;
@@ -9720,11 +10828,13 @@ Header CSS 01 Start
     margin-right: 40px;
   }
 }
+
 @media (max-width: 991px) {
   .inner_team-content {
     margin-right: 0;
   }
 }
+
 .inner_team-content-title {
   color: #1B2A52;
   font-size: 44px;
@@ -9733,11 +10843,13 @@ Header CSS 01 Start
   letter-spacing: -1.76px;
   margin-bottom: 25px;
 }
+
 @media (max-width: 480px) {
   .inner_team-content-title {
     font-size: 35px;
   }
 }
+
 .inner_team-content-subtitle {
   color: #1B2A52;
   font-family: Inter;
@@ -9746,6 +10858,7 @@ Header CSS 01 Start
   line-height: 1.4;
   margin-bottom: 15px;
 }
+
 .inner_team-content p {
   color: #7F879E;
   font-size: 14px;
@@ -9753,24 +10866,29 @@ Header CSS 01 Start
   line-height: 22px;
   margin-bottom: 13px;
 }
+
 .inner_team-signature {
   margin-top: 30px;
 }
+
 .inner_team-shape-1 {
   position: absolute;
   left: 18%;
   top: 24%;
 }
+
 @media (max-width: 575px) {
   .inner_team-shape-1 {
     display: none;
   }
 }
+
 .inner_team-shape-2 {
   position: absolute;
   right: 27%;
   bottom: 15%;
 }
+
 @media (max-width: 575px) {
   .inner_team-shape-2 {
     display: none;
@@ -9780,6 +10898,7 @@ Header CSS 01 Start
 .inner_team_member-area {
   background: linear-gradient(180deg, #F8FAFF 0%, rgba(248, 250, 255, 0) 100%);
 }
+
 .inner_team_member-img {
   border-radius: 14px;
   overflow: hidden;
@@ -9787,9 +10906,11 @@ Header CSS 01 Start
   z-index: 1;
   margin-bottom: 25px;
 }
+
 .inner_team_member-img img {
   width: 100%;
 }
+
 .inner_team_member-social {
   position: absolute;
   left: 0;
@@ -9803,12 +10924,14 @@ Header CSS 01 Start
   -o-transition: all 0.4s linear 0s;
   transition: all 0.4s linear 0s;
 }
+
 .inner_team_member-social ul {
   display: flex;
   gap: 10px;
   list-style: none;
   justify-content: center;
 }
+
 .inner_team_member-social ul li a {
   width: 40px;
   height: 40px;
@@ -9820,9 +10943,11 @@ Header CSS 01 Start
   align-items: center;
   justify-content: center;
 }
+
 .inner_team_member-info {
   text-align: center;
 }
+
 .inner_team_member-info-title {
   color: #1B2A52;
   font-size: 20px;
@@ -9831,9 +10956,11 @@ Header CSS 01 Start
   letter-spacing: -0.6px;
   margin-bottom: 5px;
 }
+
 .inner_team_member-info-title:hover a {
   color: var(--clr-theme-primary);
 }
+
 .inner_team_member-info span {
   color: #7F879E;
   font-size: 14px;
@@ -9862,12 +10989,15 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .inner_portfolio-item:hover {
   box-shadow: 0px 16px 60px 0px rgba(26, 40, 75, 0.1);
 }
+
 .inner_portfolio-content {
   padding: 35px 30px 35px;
 }
+
 .inner_portfolio-content-tag {
   color: #7D25EC;
   font-size: 14px;
@@ -9877,6 +11007,7 @@ Header CSS 01 Start
   display: block;
   margin-bottom: 7px;
 }
+
 .inner_portfolio-content-title {
   color: #1B2A52;
   font-size: 24px;
@@ -9886,9 +11017,11 @@ Header CSS 01 Start
   letter-spacing: -0.72px;
   margin-bottom: 17px;
 }
+
 .inner_portfolio-content-title:hover a {
   color: var(--clr-theme-primary);
 }
+
 .inner_portfolio-content p {
   color: #7F879E;
   font-size: 15px;
@@ -9896,6 +11029,7 @@ Header CSS 01 Start
   line-height: 25px;
   margin-bottom: 21px;
 }
+
 .inner_portfolio-content-btn {
   color: #1B2A52;
   font-size: 14px;
@@ -9904,10 +11038,12 @@ Header CSS 01 Start
   align-items: center;
   gap: 8px;
 }
+
 .inner_portfolio-content-btn i {
   margin-top: 2px;
   font-weight: 500;
 }
+
 .inner_portfolio-content-btn:hover {
   color: var(--clr-theme-primary);
 }
@@ -9923,6 +11059,7 @@ Header CSS 01 Start
 .wishlist-table thead tr {
   border: none;
 }
+
 .wishlist-table thead tr th {
   vertical-align: middle;
   padding: 17px 0;
@@ -9932,28 +11069,34 @@ Header CSS 01 Start
   font-weight: 700;
   letter-spacing: -0.54px;
 }
+
 .wishlist-table thead tr th.first {
   padding-left: 30px;
   border-radius: 8px 0 0 8px;
   padding-left: 65px;
 }
+
 @media (max-width: 991px) {
   .wishlist-table thead tr th.first {
     padding-left: 50px;
   }
 }
+
 .wishlist-table thead tr th.end {
   border-radius: 0 8px 8px 0;
 }
+
 .wishlist-table tbody tr {
   border-bottom: 1px solid rgba(27, 42, 82, 0.07);
 }
+
 .wishlist-table tbody tr td {
   vertical-align: middle;
   padding: 20px 0;
   border: none;
   min-width: 200px;
 }
+
 .wishlist-table tbody tr td h6 {
   color: #1B2A52;
   font-size: 15px;
@@ -9962,6 +11105,7 @@ Header CSS 01 Start
   letter-spacing: -0.45px;
   margin-bottom: 0;
 }
+
 .wishlist-table tbody tr td.product {
   display: flex;
   align-items: center;
@@ -9969,26 +11113,32 @@ Header CSS 01 Start
   padding-left: 20px;
   min-width: 380px;
 }
+
 @media (max-width: 991px) {
   .wishlist-table tbody tr td.product {
     gap: 20px;
   }
 }
+
 .wishlist-table tbody tr td.product a {
   color: rgba(27, 42, 82, 0.2);
   display: block;
 }
+
 .wishlist-table tbody tr td.product a i {
   font-size: 22px;
 }
+
 .wishlist-table tbody tr td.product a:hover {
   color: var(--clr-theme-primary);
 }
+
 .wishlist-table tbody tr td.product .product-inner {
   display: flex;
   align-items: center;
   gap: 15px;
 }
+
 .wishlist-table tbody tr td.product .product-inner img {
   border-radius: 8px;
   width: 70px;
@@ -10001,11 +11151,13 @@ Header CSS 01 Start
   align-items: center;
   gap: 10px;
 }
+
 @media (max-width: 480px) {
   .wishlist-coupon {
     flex-wrap: wrap;
   }
 }
+
 .wishlist-coupon input {
   border-radius: 6px;
   border: 1.5px solid rgba(8, 5, 33, 0.1);
@@ -10018,21 +11170,25 @@ Header CSS 01 Start
   color: #7F879E;
   font-size: 14px;
 }
+
 @media (max-width: 1199px) {
   .wishlist-coupon input {
     width: 320px;
   }
 }
+
 @media (max-width: 991px) {
   .wishlist-coupon input {
     width: 420px;
   }
 }
+
 @media (max-width: 767px) {
   .wishlist-coupon input {
     width: 100%;
   }
 }
+
 .wishlist-coupon button {
   border-radius: 10px;
   background: #7D25EC;
@@ -10047,22 +11203,26 @@ Header CSS 01 Start
   justify-content: center;
   flex-shrink: 0;
 }
+
 .wishlist-cart {
   display: flex;
   justify-content: end;
   gap: 10px;
   align-items: center;
 }
+
 @media (max-width: 1199px) {
   .wishlist-cart {
     justify-content: start;
   }
 }
+
 @media (max-width: 480px) {
   .wishlist-cart {
     flex-wrap: wrap;
   }
 }
+
 .wishlist-cart a {
   border-radius: 10px;
   background: #7D25EC;
@@ -10075,6 +11235,7 @@ Header CSS 01 Start
   align-items: center;
   justify-content: center;
 }
+
 .wishlist-cart a:last-child {
   padding: 0 32px;
 }
@@ -10087,17 +11248,20 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .login-content {
   border-radius: 14px;
   background: #FFF;
   box-shadow: 0px 1px 6px 0.5px rgba(27, 42, 82, 0.14);
   padding: 70px 35px 70px;
 }
+
 @media (max-width: 767px) {
   .login-content {
     padding: 70px 30px 70px;
   }
 }
+
 .login-content-subtitle {
   color: #7D25EC;
   text-align: center;
@@ -10108,6 +11272,7 @@ Header CSS 01 Start
   margin-bottom: 6px;
   line-height: 20px;
 }
+
 .login-content-title {
   color: #1B2A52;
   text-align: center;
@@ -10117,10 +11282,12 @@ Header CSS 01 Start
   letter-spacing: -0.9px;
   margin-bottom: 40px;
 }
+
 .login-content-link {
   text-align: center;
   margin-bottom: 48px;
 }
+
 .login-content-link p {
   color: #6A738B;
   font-size: 14px;
@@ -10128,19 +11295,23 @@ Header CSS 01 Start
   line-height: 22px;
   margin-bottom: 0;
 }
+
 .login-content-link p a {
   color: #7D25EC;
 }
+
 .login-content-account {
   display: flex;
   gap: 15px;
   padding-top: 55px;
 }
+
 @media (max-width: 575px) {
   .login-content-account {
     flex-wrap: wrap;
   }
 }
+
 .login-content-account-item {
   width: 100%;
   border-radius: 8px;
@@ -10151,21 +11322,25 @@ Header CSS 01 Start
   align-items: center;
   justify-content: center;
 }
+
 .login-content-account-item span {
   color: #1B2A52;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
 }
+
 .login-content-account-item a {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .login-form-item {
   position: relative;
   z-index: 1;
 }
+
 .login-form-item i {
   position: absolute;
   right: 0;
@@ -10175,6 +11350,7 @@ Header CSS 01 Start
   color: #7F879E;
   font-size: 16px;
 }
+
 .login-form-item input {
   width: 100%;
   border: 1px solid rgba(27, 42, 82, 0.07);
@@ -10187,6 +11363,7 @@ Header CSS 01 Start
   font-weight: 400;
   padding-right: 50px;
 }
+
 .login-form-item button {
   width: 100%;
   border: none;
@@ -10198,10 +11375,12 @@ Header CSS 01 Start
   font-size: 14px;
   font-weight: 600;
 }
+
 .login-break {
   position: relative;
   z-index: 1;
 }
+
 .login-break::before {
   position: absolute;
   left: 0;
@@ -10211,6 +11390,7 @@ Header CSS 01 Start
   height: 1px;
   background: rgba(4, 0, 23, 0.14);
 }
+
 .login-break span {
   display: block;
   position: absolute;
@@ -10223,17 +11403,20 @@ Header CSS 01 Start
   padding: 5px 11px;
   color: rgba(4, 0, 23, 0.7);
 }
+
 .login-condition {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 27px;
 }
+
 @media (max-width: 480px) {
   .login-condition {
     flex-wrap: wrap;
   }
 }
+
 .login-condition a {
   color: #7D25EC;
   font-size: 14px;
@@ -10241,6 +11424,7 @@ Header CSS 01 Start
   line-height: 24px;
   display: block;
 }
+
 .login-condition .condition-checkbox {
   color: #6A738B;
   font-size: 14px;
@@ -10253,6 +11437,7 @@ Header CSS 01 Start
   user-select: none;
   padding-left: 26px;
 }
+
 .login-condition .condition-checkbox input {
   position: absolute;
   opacity: 0;
@@ -10260,12 +11445,15 @@ Header CSS 01 Start
   height: 0;
   width: 0;
 }
-.login-condition .condition-checkbox input:checked ~ .checkmark {
+
+.login-condition .condition-checkbox input:checked~.checkmark {
   background-color: transparent;
 }
-.login-condition .condition-checkbox input:checked ~ .checkmark:after {
+
+.login-condition .condition-checkbox input:checked~.checkmark:after {
   display: block;
 }
+
 .login-condition .condition-checkbox .checkmark {
   position: absolute;
   top: 50%;
@@ -10277,11 +11465,13 @@ Header CSS 01 Start
   border: 1px solid rgba(27, 42, 82, 0.7);
   background-color: transparent;
 }
+
 .login-condition .condition-checkbox .checkmark::after {
   content: "";
   position: absolute;
   display: none;
 }
+
 .login-condition .condition-checkbox .checkmark:after {
   left: 4.5px;
   top: 1px;
@@ -10317,7 +11507,7 @@ Header CSS 01 Start
 .contact-item {
   width: 100%;
   display: flex;
-  flex-direction:row ;
+  flex-direction: row;
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 6px 70px 0px rgba(27, 42, 82, 0.06);
@@ -10326,22 +11516,26 @@ Header CSS 01 Start
   text-align: center;
 }
 
-.contact-item form{
+.contact-item form {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.contact-item form .filter{
-  width:100%;
+.contact-item form .filter {
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-.contact-item form .filter input{
-  width:100%;
+.contact-item form .filter input {
+  width: 100%;
+  height: 46px;
+  border: 1px solid rgba(27, 42, 82, 0.07);
+  border-radius: 8px;
+  padding: 0 20px;
 }
 
 
@@ -10359,6 +11553,7 @@ Header CSS 01 Start
   margin-right: auto;
   margin-bottom: 20px;
 }
+
 .contact-content-title {
   color: #1B2A52;
   font-size: 24px;
@@ -10367,6 +11562,7 @@ Header CSS 01 Start
   letter-spacing: -0.72px;
   margin-bottom: 13px;
 }
+
 .contact-content p {
   color: #7F879E;
   text-align: center;
@@ -10375,6 +11571,7 @@ Header CSS 01 Start
   line-height: 25px;
   margin-bottom: 0;
 }
+
 .contact-content a {
   color: #7F879E;
   text-align: center;
@@ -10383,6 +11580,7 @@ Header CSS 01 Start
   line-height: 25px;
   display: block;
 }
+
 .contact-content a:not(:last-child) {
   margin-bottom: 2px;
 }
@@ -10393,11 +11591,13 @@ Header CSS 01 Start
   box-shadow: 0px 6px 70px 0px rgba(27, 42, 82, 0.06);
   padding: 44px 40px 50px;
 }
+
 @media (max-width: 575px) {
   .contact-form {
     padding: 44px 30px 50px;
   }
 }
+
 .contact-form-title {
   color: #1B2A52;
   font-size: 30px;
@@ -10406,15 +11606,18 @@ Header CSS 01 Start
   letter-spacing: -0.9px;
   margin-bottom: 35px;
 }
+
 @media (max-width: 480px) {
   .contact-form-title {
     font-size: 26px;
   }
 }
+
 .contact-form-item {
   position: relative;
   z-index: auto;
 }
+
 .contact-form-item i {
   position: absolute;
   right: 0;
@@ -10424,7 +11627,9 @@ Header CSS 01 Start
   color: #7F879E;
   font-size: 16px;
 }
-.contact-form-item input, .contact-form-item textarea {
+
+.contact-form-item input,
+.contact-form-item textarea {
   width: 100%;
   border: 1px solid rgba(27, 42, 82, 0.07);
   border-radius: 8px;
@@ -10435,10 +11640,12 @@ Header CSS 01 Start
   color: #7F879E;
   font-size: 14px;
 }
+
 .contact-form-item textarea {
   height: 155px;
   padding-right: 20px;
 }
+
 .contact-form-item button {
   width: 100%;
   border: none;
@@ -10453,21 +11660,25 @@ Header CSS 01 Start
   font-size: 14px;
   font-weight: 600;
 }
+
 .contact-bottom-left {
   height: 100%;
   display: flex;
   flex-direction: column;
   margin-right: 30px;
 }
+
 @media (max-width: 1199px) {
   .contact-bottom-left {
     margin-right: 0;
   }
 }
+
 .contact-map {
   height: 100%;
   width: 100%;
 }
+
 .contact-map iframe {
   min-height: 300px;
   width: 100%;
@@ -10491,6 +11702,7 @@ Header CSS 01 Start
   padding: 0 20px;
   padding-right: 50px;
 }
+
 .subject-option.nice-select ul {
   background-color: #fff;
   width: 100%;
@@ -10500,6 +11712,7 @@ Header CSS 01 Start
   margin-top: 5px;
   box-shadow: 0px 6px 50px 0px rgba(27, 42, 82, 0.2);
 }
+
 .subject-option.nice-select ul li {
   color: #7F879E;
   font-size: 14px;
@@ -10509,6 +11722,7 @@ Header CSS 01 Start
   height: 46px;
   line-height: 46px;
 }
+
 .subject-option.nice-select .option.selected {
   font-weight: 500;
 }
@@ -10516,8 +11730,9 @@ Header CSS 01 Start
 .subject-option.nice-select::after {
   display: none;
 }
+
 .subject-option.nice-select::before {
-   border-bottom: 1.5px solid rgba(18, 18, 18, 0.6);
+  border-bottom: 1.5px solid rgba(18, 18, 18, 0.6);
   border-right: 1.5px solid rgba(18, 18, 18, 0.6);
   content: "";
   display: block;
@@ -10532,6 +11747,7 @@ Header CSS 01 Start
   transition: all 0.3s ease-in-out;
   width: 5px;
 }
+
 .subject-option.nice-select.open::before {
   content: "\f106";
 }
@@ -10544,11 +11760,13 @@ Header CSS 01 Start
     margin-right: 20px;
   }
 }
+
 @media (max-width: 1199px) {
   .checkout-left {
     margin-right: 0;
   }
 }
+
 .checkout-title {
   color: #1B2A52;
   font-size: 44px;
@@ -10557,25 +11775,30 @@ Header CSS 01 Start
   letter-spacing: -1.76px;
   margin-bottom: 20px;
 }
+
 @media (max-width: 1199px) {
   .checkout-title {
     font-size: 36px;
   }
 }
+
 @media (max-width: 767px) {
   .checkout-title {
     font-size: 34px;
   }
 }
+
 @media (max-width: 480px) {
   .checkout-title {
     font-size: 32px;
   }
 }
+
 .checkout-top {
   display: flex;
   justify-content: center;
 }
+
 @media (max-width: 767px) {
   .checkout-top {
     flex-wrap: wrap;
@@ -10583,6 +11806,7 @@ Header CSS 01 Start
     column-gap: 30px;
   }
 }
+
 .checkout-top-item {
   display: flex;
   align-items: center;
@@ -10590,10 +11814,12 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .checkout-top-item:not(:last-child) {
   padding-right: 84px;
   margin-right: 70px;
 }
+
 .checkout-top-item:not(:last-child)::after {
   position: absolute;
   right: 0;
@@ -10603,21 +11829,25 @@ Header CSS 01 Start
   font-family: "Font Awesome 6 Pro";
   color: rgba(106, 115, 139, 0.7);
 }
+
 @media (max-width: 991px) {
   .checkout-top-item:not(:last-child) {
     margin-right: 30px;
     padding-right: 44px;
   }
 }
+
 @media (max-width: 767px) {
   .checkout-top-item:not(:last-child) {
     padding-right: 0;
     margin-right: 0;
   }
+
   .checkout-top-item:not(:last-child)::after {
     display: none;
   }
 }
+
 .checkout-top-item span {
   border-radius: 8px;
   background: #7D25EC;
@@ -10630,6 +11860,7 @@ Header CSS 01 Start
   font-size: 14px;
   font-weight: 600;
 }
+
 .checkout-top-item p {
   color: #1B2A52;
   font-size: 15px;
@@ -10638,17 +11869,21 @@ Header CSS 01 Start
   letter-spacing: -0.45px;
   margin-bottom: 0;
 }
+
 .checkout-top-item.last-item span {
   background: #F2F8FD;
   color: #6A738B;
 }
+
 .checkout-top-item.last-item p {
   color: #6A738B;
 }
+
 .checkout-form-item {
   position: relative;
   z-index: 1;
 }
+
 .checkout-form-item i {
   position: absolute;
   right: 0;
@@ -10658,7 +11893,9 @@ Header CSS 01 Start
   color: #7F879E;
   font-size: 16px;
 }
-.checkout-form-item input, .checkout-form-item textarea {
+
+.checkout-form-item input,
+.checkout-form-item textarea {
   width: 100%;
   border: 1px solid rgba(27, 42, 82, 0.07);
   border-radius: 8px;
@@ -10669,10 +11906,12 @@ Header CSS 01 Start
   color: #7F879E;
   font-size: 14px;
 }
+
 .checkout-form-item textarea {
   height: 155px;
   padding-right: 20px;
 }
+
 .checkout-form-item button {
   width: 100%;
   border: none;
@@ -10693,6 +11932,7 @@ Header CSS 01 Start
   background: #F8FAFF;
   padding: 26px 30px 22px;
 }
+
 .checkout-order h5 {
   color: #1B2A52;
   font-size: 20px;
@@ -10701,9 +11941,11 @@ Header CSS 01 Start
   letter-spacing: -0.6px;
   margin-bottom: 1px;
 }
+
 .checkout-order ul {
   list-style: none;
 }
+
 .checkout-order ul li {
   color: rgba(27, 42, 82, 0.7);
   font-size: 15px;
@@ -10715,6 +11957,7 @@ Header CSS 01 Start
   padding: 14px 0 6px;
   line-height: 24px;
 }
+
 .checkout-order ul li:last-child {
   border-bottom: 0;
   color: rgb(27, 42, 82);
@@ -10725,11 +11968,13 @@ Header CSS 01 Start
   background: #F8FAFF;
   padding: 35px 30px 35px;
 }
+
 .checkout-payment-item {
   margin-bottom: 14px;
   padding-bottom: 16px;
   border-bottom: 1px solid rgba(27, 42, 82, 0.07);
 }
+
 .checkout-payment-item p {
   color: #7F879E;
   font-size: 14px;
@@ -10738,6 +11983,7 @@ Header CSS 01 Start
   margin-top: 4px;
   margin-bottom: 9px;
 }
+
 .checkout-payment-text p {
   color: #7F879E;
   font-size: 12px;
@@ -10745,11 +11991,13 @@ Header CSS 01 Start
   line-height: 20px;
   margin-bottom: 35px;
 }
+
 .checkout-payment-text p a {
   color: #7D25EC;
   text-decoration: underline;
   display: inline-block;
 }
+
 .checkout-payment-btn {
   border-radius: 10px;
   background: #7D25EC;
@@ -10774,6 +12022,7 @@ Header CSS 01 Start
   user-select: none;
   padding-left: 26px;
 }
+
 .checkout-payment-item .condition-checkbox input {
   position: absolute;
   opacity: 0;
@@ -10781,12 +12030,15 @@ Header CSS 01 Start
   height: 0;
   width: 0;
 }
-.checkout-payment-item .condition-checkbox input:checked ~ .checkmark {
+
+.checkout-payment-item .condition-checkbox input:checked~.checkmark {
   background-color: transparent;
 }
-.checkout-payment-item .condition-checkbox input:checked ~ .checkmark:after {
+
+.checkout-payment-item .condition-checkbox input:checked~.checkmark:after {
   display: block;
 }
+
 .checkout-payment-item .condition-checkbox .checkmark {
   position: absolute;
   top: 0;
@@ -10797,11 +12049,13 @@ Header CSS 01 Start
   border: 1px solid #7F879E;
   background-color: transparent;
 }
+
 .checkout-payment-item .condition-checkbox .checkmark::after {
   content: "";
   position: absolute;
   display: none;
 }
+
 .checkout-payment-item .condition-checkbox .checkmark:after {
   left: 50%;
   top: 50%;
@@ -10818,6 +12072,7 @@ Header CSS 01 Start
 .cart-table thead tr {
   border: none;
 }
+
 .cart-table thead tr th {
   vertical-align: middle;
   padding: 17px 0;
@@ -10827,22 +12082,27 @@ Header CSS 01 Start
   font-weight: 700;
   letter-spacing: -0.54px;
 }
+
 .cart-table thead tr th.first {
   padding-left: 30px;
   border-radius: 8px 0 0 8px;
 }
+
 .cart-table thead tr th.end {
   border-radius: 0 8px 8px 0;
 }
+
 .cart-table tbody tr {
   border-bottom: 1px solid rgba(27, 42, 82, 0.07);
 }
+
 .cart-table tbody tr td {
   vertical-align: middle;
   padding: 20px 0;
   border: none;
   min-width: 160px;
 }
+
 .cart-table tbody tr td h6 {
   color: #1B2A52;
   font-size: 15px;
@@ -10851,9 +12111,11 @@ Header CSS 01 Start
   letter-spacing: -0.45px;
   margin-bottom: 0;
 }
+
 .cart-table tbody tr td h6 a:hover {
   color: var(--clr-theme-primary);
 }
+
 .cart-table tbody tr td.product {
   padding-left: 30px;
   display: flex;
@@ -10861,17 +12123,20 @@ Header CSS 01 Start
   gap: 15px;
   min-width: 400px;
 }
+
 .cart-table tbody tr td.product img {
   border-radius: 8px;
   width: 70px;
   height: 70px;
   object-fit: cover;
 }
+
 .cart-table tbody tr td a.close {
   color: rgba(27, 42, 82, 0.2);
   color: rgb(106, 115, 139);
   display: block;
 }
+
 .cart-table tbody tr td a.close i {
   font-size: 22px;
 }
@@ -10888,6 +12153,7 @@ Header CSS 01 Start
   width: 100%;
   padding: 0 15px;
 }
+
 .cart-action-box a {
   display: block;
   color: #1B2A52;
@@ -10895,6 +12161,7 @@ Header CSS 01 Start
   font-weight: 500;
   background-color: transparent;
 }
+
 .cart-action-box input {
   padding: 0;
   border: 0;
@@ -10905,12 +12172,14 @@ Header CSS 01 Start
   font-size: 16px;
   font-weight: 500;
 }
+
 .cart-coupon {
   display: flex;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
 }
+
 .cart-coupon input {
   border-radius: 6px;
   border: 1.5px solid rgba(8, 5, 33, 0.1);
@@ -10924,6 +12193,7 @@ Header CSS 01 Start
   font-size: 14px;
   flex: 1;
 }
+
 .cart-coupon button {
   border-radius: 10px;
   background: #7D25EC;
@@ -10937,6 +12207,7 @@ Header CSS 01 Start
   align-items: center;
   justify-content: center;
 }
+
 .cart-coupon a {
   border-radius: 10px;
   background: #1B2A52;
@@ -10955,6 +12226,7 @@ Header CSS 01 Start
   background: #F8FAFF;
   padding: 26px 30px 35px;
 }
+
 .cart-order h5 {
   color: #1B2A52;
   font-size: 20px;
@@ -10963,9 +12235,11 @@ Header CSS 01 Start
   letter-spacing: -0.6px;
   margin-bottom: 1px;
 }
+
 .cart-order ul {
   list-style: none;
 }
+
 .cart-order ul li {
   color: rgba(27, 42, 82, 0.7);
   font-size: 15px;
@@ -10977,10 +12251,12 @@ Header CSS 01 Start
   padding: 14px 0 6px;
   line-height: 24px;
 }
+
 .cart-order ul li:last-child {
   border-bottom: 0;
   color: rgb(27, 42, 82);
 }
+
 .cart-order-btn {
   border-radius: 10px;
   background: #7D25EC;
@@ -10992,6 +12268,7 @@ Header CSS 01 Start
   font-size: 14px;
   font-weight: 600;
 }
+
 .cart-order-btn:hover {
   color: #fff;
 }
@@ -11010,6 +12287,7 @@ Header CSS 01 Start
   opacity: 0.5;
   cursor: not-allowed;
 }
+
 .disable-cart-btn:hover {
   color: #fff;
 }
@@ -11025,16 +12303,19 @@ Header CSS 01 Start
   letter-spacing: -1.76px;
   margin-bottom: 8px;
 }
+
 @media (max-width: 767px) {
   .error-content-title {
     font-size: 40px;
   }
 }
+
 @media (max-width: 480px) {
   .error-content-title {
     font-size: 35px;
   }
 }
+
 .error-content p {
   color: rgba(27, 42, 82, 0.7);
   font-size: 15px;
@@ -11042,6 +12323,7 @@ Header CSS 01 Start
   line-height: 24px;
   margin-bottom: 33px;
 }
+
 @media (max-width: 480px) {
   .error-content p br {
     display: none;
@@ -11054,22 +12336,26 @@ Header CSS 01 Start
 .footer-area {
   background: #1B2A52;
 }
+
 .footer-logo {
   margin-bottom: 60px;
   width: 135px;
 }
+
 .footer-newsletter h5 {
   color: #FFF;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .footer-newsletter form {
   position: relative;
   z-index: 1;
   position: relative;
   z-index: 1;
 }
+
 .footer-newsletter form::before {
   position: absolute;
   left: 0;
@@ -11078,6 +12364,7 @@ Header CSS 01 Start
   width: 16px;
   height: auto;
 }
+
 .footer-newsletter form input {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
@@ -11088,30 +12375,35 @@ Header CSS 01 Start
   width: 100%;
   padding: 8px 24px 15px 24px;
 }
+
 .footer-newsletter form input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   font-weight: 400;
   opacity: 1;
 }
+
 .footer-newsletter form input:-moz-placeholder {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   font-weight: 400;
   opacity: 1;
 }
+
 .footer-newsletter form input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   font-weight: 400;
   opacity: 1;
 }
+
 .footer-newsletter form input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   font-weight: 400;
   opacity: 1;
 }
+
 .footer-newsletter form button {
   position: absolute;
   right: 0;
@@ -11121,9 +12413,11 @@ Header CSS 01 Start
   padding: 8px 0 15px;
   color: #fff;
 }
+
 .footer-newsletter-condition {
   margin-top: 22px;
 }
+
 .footer-newsletter-condition .condition-checkbox {
   color: rgba(255, 255, 255, 0.7);
   font-size: 13px;
@@ -11136,10 +12430,12 @@ Header CSS 01 Start
   user-select: none;
   padding-left: 26px;
 }
+
 .footer-newsletter-condition .condition-checkbox a {
   color: #fff;
   text-decoration: underline;
 }
+
 .footer-newsletter-condition .condition-checkbox input {
   position: absolute;
   opacity: 0;
@@ -11147,12 +12443,15 @@ Header CSS 01 Start
   height: 0;
   width: 0;
 }
-.footer-newsletter-condition .condition-checkbox input:checked ~ .checkmark {
+
+.footer-newsletter-condition .condition-checkbox input:checked~.checkmark {
   background-color: transparent;
 }
-.footer-newsletter-condition .condition-checkbox input:checked ~ .checkmark:after {
+
+.footer-newsletter-condition .condition-checkbox input:checked~.checkmark:after {
   display: block;
 }
+
 .footer-newsletter-condition .condition-checkbox .checkmark {
   position: absolute;
   top: -2px;
@@ -11163,11 +12462,13 @@ Header CSS 01 Start
   border: 1px solid rgba(255, 255, 255, 0.7);
   background-color: transparent;
 }
+
 .footer-newsletter-condition .condition-checkbox .checkmark::after {
   content: "";
   position: absolute;
   display: none;
 }
+
 .footer-newsletter-condition .condition-checkbox .checkmark:after {
   left: 4.5px;
   top: 1px;
@@ -11186,30 +12487,37 @@ Header CSS 01 Start
   letter-spacing: -1.2px;
   margin-bottom: 60px;
 }
+
 .footer-widget-wrap {
   display: flex;
   justify-content: space-between;
 }
+
 @media (max-width: 480px) {
   .footer-widget-wrap {
     flex-wrap: wrap;
   }
 }
+
 .footer-widget h5 {
   color: #FFF;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 22px;
 }
+
 .footer-widget ul {
   list-style: none;
 }
+
 .footer-widget ul li {
   margin-bottom: 15px;
 }
+
 .footer-widget ul li:last-child {
   margin-bottom: 0;
 }
+
 .footer-widget ul li a {
   color: rgba(255, 255, 255, 0.7);
   font-size: 15px;
@@ -11217,6 +12525,7 @@ Header CSS 01 Start
   line-height: 20px;
   display: block;
 }
+
 .footer-widget ul li a:hover {
   color: var(--clr-color-violet);
 }
@@ -11225,11 +12534,13 @@ Header CSS 01 Start
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding: 19px 0 20px;
 }
+
 @media (max-width: 767px) {
   .footer-bottom-copyright {
     margin-bottom: 13px;
   }
 }
+
 .footer-bottom-copyright p {
   margin-bottom: 0;
   color: #FFF;
@@ -11237,18 +12548,21 @@ Header CSS 01 Start
   font-weight: 500;
   line-height: 22px;
 }
+
 .footer-bottom-menu ul {
   display: flex;
   align-items: center;
   list-style: none;
   justify-content: end;
 }
+
 .footer-bottom-menu ul li {
   position: relative;
   z-index: 1;
   margin-right: 10px;
   padding-right: 11px;
 }
+
 .footer-bottom-menu ul li::after {
   position: absolute;
   right: 0;
@@ -11259,13 +12573,16 @@ Header CSS 01 Start
   height: 16px;
   background: #fff;
 }
+
 .footer-bottom-menu ul li:last-child {
   margin-right: 0;
   padding-right: 0;
 }
+
 .footer-bottom-menu ul li:last-child::after {
   display: none;
 }
+
 .footer-bottom-menu ul li a {
   color: #fff;
   font-size: 14px;
@@ -11273,6 +12590,7 @@ Header CSS 01 Start
   line-height: 22px;
   display: block;
 }
+
 .footer-bottom-menu ul li a:hover {
   color: var(--clr-color-violet);
 }
@@ -11281,6 +12599,7 @@ Header CSS 01 Start
   position: relative;
   z-index: 1;
 }
+
 .h2_footer-top-title {
   font-size: 55px;
   font-weight: 700;
@@ -11288,19 +12607,23 @@ Header CSS 01 Start
   letter-spacing: -2.2px;
   margin-bottom: 40px;
 }
+
 @media (max-width: 767px) {
   .h2_footer-top-title {
     font-size: 45px;
   }
 }
+
 @media (max-width: 480px) {
   .h2_footer-top-title {
     font-size: 35px;
   }
 }
+
 .h2_footer-top-content {
   text-align: center;
 }
+
 .h2_footer-top-content form {
   position: relative;
   z-index: 1;
@@ -11310,6 +12633,7 @@ Header CSS 01 Start
   margin-right: auto;
   margin-bottom: 20px;
 }
+
 .h2_footer-top-content form input {
   border-radius: 10px;
   background: #FFF;
@@ -11323,11 +12647,13 @@ Header CSS 01 Start
   width: 100%;
   padding-right: 158px;
 }
+
 @media (max-width: 480px) {
   .h2_footer-top-content form input {
     padding-right: 132px;
   }
 }
+
 .h2_footer-top-content form button {
   position: absolute;
   right: 6px;
@@ -11342,11 +12668,13 @@ Header CSS 01 Start
   font-size: 14px;
   font-weight: 600;
 }
+
 @media (max-width: 480px) {
   .h2_footer-top-content form button {
     padding: 0 20px;
   }
 }
+
 .h2_footer-top-condition .condition-checkbox {
   color: #6A738B;
   font-size: 14px;
@@ -11359,10 +12687,12 @@ Header CSS 01 Start
   user-select: none;
   padding-left: 26px;
 }
+
 .h2_footer-top-condition .condition-checkbox a {
   color: #1B2A52;
   text-decoration: underline;
 }
+
 .h2_footer-top-condition .condition-checkbox input {
   position: absolute;
   opacity: 0;
@@ -11370,12 +12700,15 @@ Header CSS 01 Start
   height: 0;
   width: 0;
 }
-.h2_footer-top-condition .condition-checkbox input:checked ~ .checkmark {
+
+.h2_footer-top-condition .condition-checkbox input:checked~.checkmark {
   background-color: transparent;
 }
-.h2_footer-top-condition .condition-checkbox input:checked ~ .checkmark:after {
+
+.h2_footer-top-condition .condition-checkbox input:checked~.checkmark:after {
   display: block;
 }
+
 .h2_footer-top-condition .condition-checkbox .checkmark {
   position: absolute;
   top: 0;
@@ -11386,11 +12719,13 @@ Header CSS 01 Start
   border: 1px solid rgba(27, 42, 82, 0.7);
   background-color: transparent;
 }
+
 .h2_footer-top-condition .condition-checkbox .checkmark::after {
   content: "";
   position: absolute;
   display: none;
 }
+
 .h2_footer-top-condition .condition-checkbox .checkmark:after {
   left: 4.5px;
   top: 1px;
@@ -11400,33 +12735,39 @@ Header CSS 01 Start
   border-width: 0 1px 1px 0;
   transform: rotate(45deg);
 }
+
 .h2_footer-shape-1 {
   position: absolute;
   left: 10%;
   top: 16%;
 }
+
 .h2_footer-shape-2 {
   position: absolute;
   left: 21%;
   bottom: 27%;
 }
+
 @media (max-width: 767px) {
   .h2_footer-shape-2 {
     left: 15%;
     bottom: 20%;
   }
 }
+
 .h2_footer-shape-3 {
   position: absolute;
   top: 27%;
   right: calc(10% + 13px);
 }
+
 @media (max-width: 767px) {
   .h2_footer-shape-3 {
     top: 18%;
     right: 5%;
   }
 }
+
 .h2_footer-shape-4 {
   position: absolute;
   right: 27%;
@@ -11437,6 +12778,7 @@ Header CSS 01 Start
   background-color: #1B2A52;
   padding: 20px 0;
 }
+
 .h2_footer-bottom-copyright p {
   margin-bottom: 0;
   color: #FFF;
@@ -11444,6 +12786,7 @@ Header CSS 01 Start
   font-weight: 500;
   line-height: 28px;
 }
+
 .h2_footer-bottom-social ul {
   display: flex;
   align-items: center;
@@ -11451,6 +12794,7 @@ Header CSS 01 Start
   justify-content: end;
   gap: 10px;
 }
+
 .h2_footer-bottom-social ul li a {
   color: #FFF;
   font-size: 15px;
@@ -11463,10 +12807,12 @@ Header CSS 01 Start
   display: grid;
   place-items: center;
 }
+
 .h2_footer-bottom-social ul li a:hover {
   background-color: var(--clr-theme-primary);
   border-color: transparent;
 }
+
 .h2_footer-bottom-logo {
   width: 135px;
 }
@@ -11474,19 +12820,23 @@ Header CSS 01 Start
 .h3_footer-area {
   background: #F2F8FD;
 }
+
 .h3_footer-top {
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(27, 42, 82, 0.07);
   margin-bottom: 25px;
 }
+
 @media (max-width: 575px) {
   .h3_footer-top {
     padding-bottom: 10px;
   }
 }
+
 .h3_footer-logo {
   width: 135px;
 }
+
 .h3_footer-menu ul {
   display: flex;
   flex-wrap: wrap;
@@ -11495,16 +12845,19 @@ Header CSS 01 Start
   justify-content: center;
   list-style: none;
 }
+
 .h3_footer-menu ul li a {
   color: rgba(27, 42, 82, 0.7);
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
 }
+
 .h3_footer-menu ul li a:hover {
   color: #1B2A52;
   font-weight: 500;
 }
+
 .h3_footer-social ul {
   display: flex;
   align-items: center;
@@ -11512,18 +12865,21 @@ Header CSS 01 Start
   justify-content: end;
   gap: 10px;
 }
+
 @media (max-width: 991px) {
   .h3_footer-social ul {
     justify-content: center;
     padding-top: 10px;
   }
 }
+
 @media (max-width: 767px) {
   .h3_footer-social ul {
     justify-content: end;
     padding-top: 0;
   }
 }
+
 .h3_footer-social ul li a {
   color: #1B2A52;
   font-size: 15px;
@@ -11536,14 +12892,17 @@ Header CSS 01 Start
   display: grid;
   place-items: center;
 }
+
 .h3_footer-social ul li a:hover {
   background-color: var(--clr-theme-primary);
   border-color: transparent;
   color: #fff;
 }
+
 .h3_footer-bottom-copyright {
   text-align: center;
 }
+
 .h3_footer-bottom-copyright p {
   margin-bottom: 0;
   color: rgba(27, 42, 82, 0.7);
@@ -11555,14 +12914,17 @@ Header CSS 01 Start
 .h4_footer-area {
   background: linear-gradient(90deg, #F6C125 0%, #F64438 50%, #F6C125 100%);
 }
+
 .h4_footer-top {
   border-radius: 0px 0px 30px 30px;
   background: #F0F2F8;
 }
+
 .h4_footer-logo {
   width: 135px;
   margin-bottom: 15px;
 }
+
 .h4_footer-widget-text {
   color: #7F879E;
   font-size: 15px;
@@ -11570,11 +12932,13 @@ Header CSS 01 Start
   line-height: 24px;
   margin-bottom: 23px;
 }
+
 .h4_footer-widget-social {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .h4_footer-widget-social a {
   width: 40px;
   height: 40px;
@@ -11587,23 +12951,28 @@ Header CSS 01 Start
   color: #7F879E;
   font-size: 14px;
 }
+
 .h4_footer-widget-social a:hover {
   background: #7D25EC;
   color: #fff;
   border-color: transparent;
 }
+
 .h4_footer-widget-title {
   font-family: Inter;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
 }
+
 .h4_footer-widget ul {
   list-style: none;
 }
+
 .h4_footer-widget ul li:not(:last-child) {
   margin-bottom: 15px;
 }
+
 .h4_footer-widget ul li a {
   color: #7F879E;
   font-size: 15px;
@@ -11611,9 +12980,11 @@ Header CSS 01 Start
   line-height: 21px;
   display: block;
 }
+
 .h4_footer-widget ul li a:hover {
   color: var(--clr-theme-primary);
 }
+
 .h4_footer-widget-address p {
   color: #55585B;
   font-size: 14px;
@@ -11621,6 +12992,7 @@ Header CSS 01 Start
   line-height: 24px;
   margin-bottom: 22px;
 }
+
 .h4_footer-widget-address a {
   color: #55585B;
   font-size: 14px;
@@ -11630,6 +13002,7 @@ Header CSS 01 Start
   align-items: center;
   gap: 8px;
 }
+
 .h4_footer-widget-address a svg {
   color: #010F1C;
   margin-top: 3px;
@@ -11639,20 +13012,25 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h4_footer-widget-address a:hover {
   color: var(--clr-theme-primary);
 }
+
 .h4_footer-widget-address a:hover svg {
   color: var(--clr-theme-primary);
 }
+
 .h4_footer-bottom {
   padding: 9px 0 10px;
 }
+
 @media (max-width: 767px) {
   .h4_footer-bottom-copyright {
     margin-bottom: 13px;
   }
 }
+
 .h4_footer-bottom-copyright p {
   margin-bottom: 0;
   color: #FFF;
@@ -11660,18 +13038,21 @@ Header CSS 01 Start
   font-weight: 500;
   line-height: 22px;
 }
+
 .h4_footer-bottom-menu ul {
   display: flex;
   align-items: center;
   list-style: none;
   justify-content: end;
 }
+
 .h4_footer-bottom-menu ul li {
   position: relative;
   z-index: 1;
   margin-right: 10px;
   padding-right: 11px;
 }
+
 .h4_footer-bottom-menu ul li::after {
   position: absolute;
   right: 0;
@@ -11682,13 +13063,16 @@ Header CSS 01 Start
   height: 16px;
   background: #fff;
 }
+
 .h4_footer-bottom-menu ul li:last-child {
   margin-right: 0;
   padding-right: 0;
 }
+
 .h4_footer-bottom-menu ul li:last-child::after {
   display: none;
 }
+
 .h4_footer-bottom-menu ul li a {
   color: #FFF;
   font-size: 14px;
@@ -11696,6 +13080,7 @@ Header CSS 01 Start
   line-height: 22px;
   display: block;
 }
+
 .h4_footer-bottom-menu ul li a:hover {
   color: var(--clr-theme-primary);
 }
@@ -11703,14 +13088,17 @@ Header CSS 01 Start
 .h5_footer-area {
   background: #1B2A52;
 }
+
 .h5_footer-top {
   border-radius: 0px 0px 30px 30px;
   background: #F2F8FD;
 }
+
 .h5_footer-logo {
   width: 135px;
   margin-bottom: 15px;
 }
+
 .h5_footer-widget-text {
   color: #7F879E;
   font-size: 15px;
@@ -11718,16 +13106,19 @@ Header CSS 01 Start
   line-height: 24px;
   margin-bottom: 23px;
 }
+
 @media (max-width: 1199px) {
   .h5_footer-widget-text br {
     display: none;
   }
 }
+
 .h5_footer-widget-social {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .h5_footer-widget-social a {
   width: 40px;
   height: 40px;
@@ -11740,23 +13131,28 @@ Header CSS 01 Start
   color: #7F879E;
   font-size: 14px;
 }
+
 .h5_footer-widget-social a:hover {
   background: #7D25EC;
   color: #fff;
   border-color: transparent;
 }
+
 .h5_footer-widget-title {
   font-family: Inter;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
 }
+
 .h5_footer-widget ul {
   list-style: none;
 }
+
 .h5_footer-widget ul li:not(:last-child) {
   margin-bottom: 15px;
 }
+
 .h5_footer-widget ul li a {
   color: #7F879E;
   font-size: 15px;
@@ -11764,15 +13160,18 @@ Header CSS 01 Start
   line-height: 21px;
   display: block;
 }
+
 .h5_footer-widget ul li a:hover {
   color: var(--clr-theme-primary);
 }
+
 .h5_footer-widget form {
   position: relative;
   z-index: 1;
   width: 100%;
   margin-bottom: 20px;
 }
+
 .h5_footer-widget form input {
   border-radius: 10px;
   background: #FFF;
@@ -11786,11 +13185,13 @@ Header CSS 01 Start
   width: 100%;
   padding-right: 158px;
 }
+
 @media (max-width: 480px) {
   .h5_footer-widget form input {
     padding-right: 132px;
   }
 }
+
 .h5_footer-widget form button {
   position: absolute;
   right: 6px;
@@ -11810,22 +13211,27 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .h5_footer-widget form button:hover {
   background: linear-gradient(180deg, #e20de6 0%, #E825EC 100%);
 }
+
 @media (max-width: 480px) {
   .h5_footer-widget form button {
     padding: 0 20px;
   }
 }
+
 .h5_footer-bottom {
   padding: 9px 0 10px;
 }
+
 @media (max-width: 767px) {
   .h5_footer-bottom-copyright {
     margin-bottom: 13px;
   }
 }
+
 .h5_footer-bottom-copyright p {
   margin-bottom: 0;
   color: #FFF;
@@ -11833,18 +13239,21 @@ Header CSS 01 Start
   font-weight: 500;
   line-height: 22px;
 }
+
 .h5_footer-bottom-menu ul {
   display: flex;
   align-items: center;
   list-style: none;
   justify-content: end;
 }
+
 .h5_footer-bottom-menu ul li {
   position: relative;
   z-index: 1;
   margin-right: 10px;
   padding-right: 11px;
 }
+
 .h5_footer-bottom-menu ul li::after {
   position: absolute;
   right: 0;
@@ -11855,13 +13264,16 @@ Header CSS 01 Start
   height: 16px;
   background: #fff;
 }
+
 .h5_footer-bottom-menu ul li:last-child {
   margin-right: 0;
   padding-right: 0;
 }
+
 .h5_footer-bottom-menu ul li:last-child::after {
   display: none;
 }
+
 .h5_footer-bottom-menu ul li a {
   color: #FFF;
   font-size: 14px;
@@ -11869,29 +13281,30 @@ Header CSS 01 Start
   line-height: 22px;
   display: block;
 }
+
 .h5_footer-bottom-menu ul li a:hover {
   color: var(--clr-theme-primary);
 }
 
 
 .progress-wrap::after {
-    position: absolute;
-    content: '\f176';               
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;             
-    text-align: center;
-    line-height: 46px;
-    font-size: 20px;
-    color: #da0b0b;
-    left: 0;
-    top: 0;
-    height: 46px;
-    width: 46px;
-    cursor: pointer;
-    display: block;
-    z-index: 1;
-    -webkit-transition: all 200ms linear;
-    transition: all 200ms linear;
+  position: absolute;
+  content: '\f176';
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  text-align: center;
+  line-height: 46px;
+  font-size: 20px;
+  color: #da0b0b;
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 
 .progress-wrap .progress-circle path {
