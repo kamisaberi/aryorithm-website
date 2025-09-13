@@ -101,6 +101,15 @@
                                     </nav>
                                 </div>
                             </div>
+                            <div class="col-xl-3 col-lg-3 col-6">
+                                <div class="header-action-wrap d-flex align-items-center justify-content-end">
+                                    <div class="header-menu-bar d-lg-none ml-10">
+                                        <span class="header-menu-bar-icon side-toggle">
+                                            <i class="fa-solid fa-bars"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </header>
@@ -148,21 +157,31 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-6 mb-30 tp_fade_left" data-fade-from="left">
                                     <div class="contact-item">
-                                        <form action="index-4.html#">
-                                            
-                                            <select name="select" class="h4_banner-form-option has-nice-select">
-                                                <option value="1">All</option>
-                                                <option value="2">Vision</option>
-                                                <option value="3">NLP</option>
-                                                <!-- <option value="4">UX/UI Design</option> -->
-                                            </select>
-                                            <select name="select" class="h4_banner-form-option has-nice-select">
-                                                <option value="1">All</option>
-                                                <option value="2">FP32</option>
-                                                <option value="3">FP16</option>
-                                                <option value="4">INT8</option>
-                                            </select>
-                                            <input type="text" placeholder="Start with a detailed description">
+                                        <form action="engines.html">
+                                            <div class="filter">
+                                                <span>Category:</span>
+                                                <select name="select" class="subject-option has-nice-select  mb-25">
+                                                    <option value="1">All</option>
+                                                    <option value="2">Vision</option>
+                                                    <option value="3">NLP</option>
+                                                    <!-- <option value="4">UX/UI Design</option> -->
+                                                </select>
+                                            </div>
+
+                                            <div class="filter">
+                                                <span>Precision: </span>
+                                                <select name="select" class="subject-option has-nice-select  mb-25">
+                                                    <option value="1">All</option>
+                                                    <option value="2">FP32</option>
+                                                    <option value="3">FP16</option>
+                                                    <option value="4">INT8</option>
+                                                </select>
+                                            </div>
+                                            <div class="filter">
+                                                <span>Search:</span>
+                                                <input type="text" placeholder="Enter model name">
+                                            </div>
+
                                         </form>
                                     </div>
                                 </div>

@@ -10333,6 +10333,18 @@ Header CSS 01 Start
   justify-content: space-between;
 }
 
+.contact-item form .filter{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-item form .filter input{
+  width:100%;
+}
+
+
 .contact-icon {
   width: 70px;
   height: 70px;
@@ -10500,17 +10512,25 @@ Header CSS 01 Start
 .subject-option.nice-select .option.selected {
   font-weight: 500;
 }
+
 .subject-option.nice-select::after {
   display: none;
 }
 .subject-option.nice-select::before {
+   border-bottom: 1.5px solid rgba(18, 18, 18, 0.6);
+  border-right: 1.5px solid rgba(18, 18, 18, 0.6);
+  content: "";
+  display: block;
+  height: 5px;
+  margin-top: -1px;
+  pointer-events: none;
   position: absolute;
-  right: 20px;
+  right: 18px;
   top: 50%;
-  transform: translateY(-50%);
-  font-family: "Font Awesome 6 Pro";
-  content: "\f107";
-  margin-top: 1px;
+  transform-origin: 50% 50%;
+  transform: rotate(45deg) translateY(-50%);
+  transition: all 0.3s ease-in-out;
+  width: 5px;
 }
 .subject-option.nice-select.open::before {
   content: "\f106";
