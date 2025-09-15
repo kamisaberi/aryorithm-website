@@ -11053,7 +11053,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 /////////////////////////////////////////////////////////// */
 
 .wishlist-area{
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 
@@ -11491,10 +11491,6 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 /* ///////////////////////////////////////////////////////////
 29. contact
 /////////////////////////////////////////////////////////// */
-.contact-area{
-  padding-bottom: 50px;
-}
-
 
 .contact-item {
   width: 100%;
