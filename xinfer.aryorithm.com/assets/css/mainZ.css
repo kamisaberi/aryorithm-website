@@ -3393,7 +3393,7 @@ Header CSS 01 Start
 }
 
 .theme-btn-2:hover {
-  background: linear-gradient(180deg, #da0b0b 0%, #da0b0b 100%);
+  background: linear-gradient(180deg, #aa0303 0%, #aa0303 100%);
   color: #fff;
 }
 
@@ -11051,6 +11051,12 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 /* ///////////////////////////////////////////////////////////
 27. wishlist
 /////////////////////////////////////////////////////////// */
+
+.wishlist-area{
+  padding-bottom: 50px;
+}
+
+
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -11084,6 +11090,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .wishlist-table thead tr th.end {
   border-radius: 0 8px 8px 0;
+  padding-left: 65px;
 }
 
 .wishlist-table tbody tr {
@@ -11095,6 +11102,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   padding: 20px 0;
   border: none;
   min-width: 200px;
+}
+
+.wishlist-table tbody tr td.button {
+  padding-left: 30px;
 }
 
 .wishlist-table tbody tr td h6 {
@@ -11110,7 +11121,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   display: flex;
   align-items: center;
   gap: 35px;
-  padding-left: 20px;
+  padding-left: 65px;
   min-width: 380px;
 }
 
@@ -11120,31 +11131,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   }
 }
 
-.wishlist-table tbody tr td.product a {
-  color: rgba(27, 42, 82, 0.2);
-  display: block;
-}
 
-.wishlist-table tbody tr td.product a i {
-  font-size: 22px;
-}
-
-.wishlist-table tbody tr td.product a:hover {
-  color: var(--clr-theme-primary);
-}
-
-.wishlist-table tbody tr td.product .product-inner {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.wishlist-table tbody tr td.product .product-inner img {
-  border-radius: 8px;
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-}
 
 .wishlist-coupon {
   display: flex;
@@ -11504,6 +11491,11 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 /* ///////////////////////////////////////////////////////////
 29. contact
 /////////////////////////////////////////////////////////// */
+.contact-area{
+  padding-bottom: 50px;
+}
+
+
 .contact-item {
   width: 100%;
   display: flex;
