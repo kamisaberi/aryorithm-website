@@ -9342,8 +9342,6 @@ Header CSS 01 Start
   border-color: transparent;
 }
 
-
-
 /* ///////////////////////////////////////////////////////////
 23. breadcrumb
 /////////////////////////////////////////////////////////// */
@@ -11757,5 +11755,32 @@ Header CSS 01 Start
 .progress-wrap .progress-circle path {
   stroke: #da0b0b !important;
 }
+
+
+/* 
+main */
+main .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.container .sidebar-l{
+  
+  background-color: black;
+  width: 253px;
+  height: 320px;
+}
+
+.container .sidebar-r{
+  background-color: black;
+  width: 220px;
+  height: 320px;
+}
+
+
+
 
 /*# sourceMappingURL=main.css.map */
