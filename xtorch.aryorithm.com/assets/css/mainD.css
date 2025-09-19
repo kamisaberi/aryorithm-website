@@ -11821,20 +11821,35 @@ main .container .main-content{
   width: 750px;
 }
 
-.container .sidebar-l{
-  
-  /* background-color: black; */
+main .container .sidebar-l{
   width: 253px;
   height: 320px;
 }
 
-.container .sidebar-r{
-   /* background-color: #1B2A52; */
-  /* background-color: black; */
+main .container .sidebar-r{
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
   border-left: solid #da0b0b 1px;
-  width: 220px;
+  width: 235px;
   height: 320px;
+  gap: 10px;
 }
+
+main .container .sidebar-r a p:hover{
+  color: #da0b0b;
+}
+
+
+.container .sidebar-r p {
+  font-size: 14px;
+}
+
+.container .sidebar-r .child {
+  padding-left: 25px;
+}
+
+
 
 
 
