@@ -11834,9 +11834,9 @@ main .container .sidebar-r{
   padding-left: 20px;
   display: flex;
   flex-direction: column;
-  border-left: solid #da0b0b 1px;
+  border-left:1px solid rgba(51, 51, 51, 0.25) ;
   width: 235px;
-  height: 320px;
+  height: 250px;
   gap: 10px;
   margin-left: 30px;
 }
@@ -11848,6 +11848,10 @@ main .container .sidebar-r a p:hover{
 
 .container .sidebar-r p {
   font-size: 14px;
+}
+
+.container .sidebar-r .subject {
+  font-size: 16px;
 }
 
 .container .sidebar-r .child {
@@ -11892,16 +11896,20 @@ main .container .sidebar-r a p:hover{
 }
 
 
-.sidebar-l a {
-  color: #333;
-  text-decoration: none;
-  display: block;
-  padding: 6px 8px;
-  transition: color 0.2s ease;
+.sidebar-l .toc-list p {
+  font-size: 14px;
 }
 
-.sidebar-l a:hover {
+.sidebar-l a p:hover {
   color: #da0b0b;           
+}
+
+p + hr {
+  height: 1px;
+  background: #333;
+  opacity: 0.25;
+  border: none;
+  margin: 24px 0 40px;
 }
 
 
