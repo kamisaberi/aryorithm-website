@@ -11827,7 +11827,7 @@ main .container .main-content ul{
 
 main .container .sidebar-l{
   width: 253px;
-  height: 320px;
+  height: 100vh; 
 }
 
 main .container .sidebar-r{
@@ -11883,7 +11883,25 @@ main .container .sidebar-r a p:hover{
   transform: scaleX(1);
 }
 
+.sidebar-l {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-right: 20px;
+}
 
+
+.sidebar-l a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 6px 8px;
+  transition: color 0.2s ease;
+}
+
+.sidebar-l a:hover {
+  color: red;           
+}
 
 
 /*# sourceMappingURL=main.css.map */
