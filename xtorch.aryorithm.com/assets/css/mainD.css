@@ -2154,7 +2154,7 @@ Header CSS 01 Start
 .header-top {
   background: linear-gradient(90deg, #da0b0b 0%, #da0b0b 100%);
   background: linear-gradient(90deg, #da0b0b 0%, #da0b0b 100%);
-  height: 40px;
+  height: 50px;
   display: flex;
   align-items: center;
 }
@@ -2180,7 +2180,7 @@ Header CSS 01 Start
 
 .header-top .container .row .l-sec .header-logo img{
   width: 64px;
-  height: 24px;
+  height: 26px;
 }
 
 .header-top .container .row .l-sec .header-logo{
@@ -2199,7 +2199,7 @@ Header CSS 01 Start
 
 .header-top-text p {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   margin-bottom: 0;
 }
@@ -11850,6 +11850,34 @@ main .container .sidebar-r a p:hover{
 }
 
 
+
+.header-nav-menu a{
+  position: relative;     
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.header-nav-menu a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  height: 2px;
+  width: 100%;
+  background: var(--menu-accent, #da0b0b);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .18s ease-out;
+}
+
+.header-nav-menu li:hover > a::after,
+.header-nav-menu a:focus-visible::after,
+.header-nav-menu a[aria-current="page"]::after,
+.header-nav-menu li.is-active > a::after{
+  transform: scaleX(1);
+}
 
 
 
