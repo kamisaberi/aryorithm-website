@@ -11821,6 +11821,10 @@ main .container .main-content{
   width: 750px;
 }
 
+main .container .main-content ul{
+  list-style-position: inside;
+}
+
 main .container .sidebar-l{
   width: 253px;
   height: 320px;
