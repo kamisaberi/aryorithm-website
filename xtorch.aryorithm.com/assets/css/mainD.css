@@ -11831,13 +11831,14 @@ main .container .sidebar-l{
 }
 
 main .container .sidebar-r{
-  padding-left: 10px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
   border-left: solid #da0b0b 1px;
   width: 235px;
   height: 320px;
   gap: 10px;
+  margin-left: 30px;
 }
 
 main .container .sidebar-r a p:hover{
@@ -11887,7 +11888,7 @@ main .container .sidebar-r a p:hover{
   max-height: calc(100vh - 100px);
   overflow-y: auto;
   padding-right: 10px;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 
@@ -11900,7 +11901,7 @@ main .container .sidebar-r a p:hover{
 }
 
 .sidebar-l a:hover {
-  color: red;           
+  color: #da0b0b;           
 }
 
 
