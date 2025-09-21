@@ -248,13 +248,19 @@
                                 ```cpp</p>
 
                             <div class="code-container">
-                                <button class="copy-btn" onclick="copyCode(this)" title="Copy to clipboard">📋</button>
+                                <button class="copy-code-btn" onclick="copyCode(this)" title="Copy code">
+                                    <i class="fas fa-copy"></i>
+                                </button>
                                 <pre><code>
-                                // Example C++ code
-                                int main() {
-                                    std::cout << "Hello, xInfer!" << std::endl;
-                                    return 0;
-                                }
+                                // 1. Configure the detector to use your pre-built TensorRT engine
+                                xinfer::zoo::vision::DetectorConfig config; config.engine_path = "yolov8n.engine";
+                                config.labels_path = "coco.names";
+                                // 2. Initialize the detector. All complexity is handled internally.
+                                xinfer::zoo::vision::ObjectDetector detector(config);
+
+                                // 3. Load an image and predict in one line.
+                                cv::Mat image = cv::imread("my_image.jpg");
+                                auto detections = detector.predict(image);
                                 </code></pre>
                             </div>
 
